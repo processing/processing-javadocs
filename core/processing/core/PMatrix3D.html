@@ -114,7 +114,21 @@ var activeTableTab = "activeTableTab";
 <pre>public final class <span class="typeNameLabel">PMatrix3D</span>
 extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></pre>
-<div class="block">4x4 matrix implementation.</div>
+<div class="block">4x4 matrix implementation.
+ Matrices are used to describe a transformation; see <a href="../../processing/core/PMatrix.html" title="interface in processing.core"><code>PMatrix</code></a> for a
+ general description. This matrix looks like the following when multiplying
+ a vector (x, y, z, w) in <code>mult()</code>.
+ <pre>
+ [m00 m01 m02 m03][x]   [m00*x + m01*y + m02*z + m03*w]   [x']
+ [m10 m11 m12 m13][y] = [m10*x + m11*y + m12*z + m13*w] = [y']
+ [m20 m21 m22 m23][z]   [m20*x + m21*y + m22*z + m23*w]   [z']
+ [m30 m31 m32 m33][w]   [m30*x + m31*y + m32*z + m33*w]   [w']</pre>
+ (x', y', z', w') is returned. The values in the matrix determine the
+ transformation. They are modified by the various transformation functions.
+
+ To transform 3D coordinates, w is set to 1, amd w' is made to be 1 by
+ setting the bottom row of the matrix to <code>[0 0 0 1]</code>. The
+ resulting point is then (x', y', z').</div>
 </li>
 </ul>
 </div>
@@ -265,7 +279,9 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
      float&nbsp;n02,
      float&nbsp;n10,
      float&nbsp;n11,
-     float&nbsp;n12)</code>&nbsp;</td>
+     float&nbsp;n12)</code>
+<div class="block">Multiply this matrix by another.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -284,7 +300,9 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
      float&nbsp;n30,
      float&nbsp;n31,
      float&nbsp;n32,
-     float&nbsp;n33)</code>&nbsp;</td>
+     float&nbsp;n33)</code>
+<div class="block">Multiply this matrix by another.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -294,11 +312,15 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#apply-processing.core.PMatrix2D-">apply</a></span>(<a href="../../processing/core/PMatrix2D.html" title="class in processing.core">PMatrix2D</a>&nbsp;source)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#apply-processing.core.PMatrix2D-">apply</a></span>(<a href="../../processing/core/PMatrix2D.html" title="class in processing.core">PMatrix2D</a>&nbsp;source)</code>
+<div class="block">Multiply this matrix by another.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#apply-processing.core.PMatrix3D-">apply</a></span>(<a href="../../processing/core/PMatrix3D.html" title="class in processing.core">PMatrix3D</a>&nbsp;source)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#apply-processing.core.PMatrix3D-">apply</a></span>(<a href="../../processing/core/PMatrix3D.html" title="class in processing.core">PMatrix3D</a>&nbsp;source)</code>
+<div class="block">Multiply this matrix by another.</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>float</code></td>
@@ -333,70 +355,100 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <td class="colFirst"><code><a href="../../processing/core/PVector.html" title="class in processing.core">PVector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#mult-processing.core.PVector-processing.core.PVector-">mult</a></span>(<a href="../../processing/core/PVector.html" title="class in processing.core">PVector</a>&nbsp;source,
     <a href="../../processing/core/PVector.html" title="class in processing.core">PVector</a>&nbsp;target)</code>
-<div class="block">Multiply a PVector by this matrix.</div>
+<div class="block">Multiply source by this matrix, and return the result.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#multW-float-float-float-">multW</a></span>(float&nbsp;x,
      float&nbsp;y,
-     float&nbsp;z)</code>&nbsp;</td>
+     float&nbsp;z)</code>
+<div class="block">Returns the fourth element of the result of multiplying the vector
+ (x, y, z) by this matrix.</div>
+</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#multW-float-float-float-float-">multW</a></span>(float&nbsp;x,
      float&nbsp;y,
      float&nbsp;z,
-     float&nbsp;w)</code>&nbsp;</td>
+     float&nbsp;w)</code>
+<div class="block">Returns the w-coordinate of the result of multiplying the vector
+ (x, y, z, w) by this matrix.</div>
+</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#multX-float-float-">multX</a></span>(float&nbsp;x,
-     float&nbsp;y)</code>&nbsp;</td>
+     float&nbsp;y)</code>
+<div class="block">Returns the x-coordinate of the result of multiplying the point (x, y)
+ by this matrix.</div>
+</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#multX-float-float-float-">multX</a></span>(float&nbsp;x,
      float&nbsp;y,
-     float&nbsp;z)</code>&nbsp;</td>
+     float&nbsp;z)</code>
+<div class="block">Returns the x-coordinate of the result of multiplying the point (x, y, z)
+ by this matrix.</div>
+</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#multX-float-float-float-float-">multX</a></span>(float&nbsp;x,
      float&nbsp;y,
      float&nbsp;z,
-     float&nbsp;w)</code>&nbsp;</td>
+     float&nbsp;w)</code>
+<div class="block">Returns the x-coordinate of the result of multiplying the vector
+ (x, y, z, w) by this matrix.</div>
+</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#multY-float-float-">multY</a></span>(float&nbsp;x,
-     float&nbsp;y)</code>&nbsp;</td>
+     float&nbsp;y)</code>
+<div class="block">Returns the y-coordinate of the result of multiplying the point (x, y)
+ by this matrix.</div>
+</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#multY-float-float-float-">multY</a></span>(float&nbsp;x,
      float&nbsp;y,
-     float&nbsp;z)</code>&nbsp;</td>
+     float&nbsp;z)</code>
+<div class="block">Returns the y-coordinate of the result of multiplying the point (x, y, z)
+ by this matrix.</div>
+</td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#multY-float-float-float-float-">multY</a></span>(float&nbsp;x,
      float&nbsp;y,
      float&nbsp;z,
-     float&nbsp;w)</code>&nbsp;</td>
+     float&nbsp;w)</code>
+<div class="block">Returns the y-coordinate of the result of multiplying the vector
+ (x, y, z, w) by this matrix.</div>
+</td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#multZ-float-float-float-">multZ</a></span>(float&nbsp;x,
      float&nbsp;y,
-     float&nbsp;z)</code>&nbsp;</td>
+     float&nbsp;z)</code>
+<div class="block">Returns the z-coordinate of the result of multiplying the point (x, y, z)
+ by this matrix.</div>
+</td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#multZ-float-float-float-float-">multZ</a></span>(float&nbsp;x,
      float&nbsp;y,
      float&nbsp;z,
-     float&nbsp;w)</code>&nbsp;</td>
+     float&nbsp;w)</code>
+<div class="block">Returns the z-coordinate of the result of multiplying the vector
+ (x, y, z, w) by this matrix.</div>
+</td>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -405,7 +457,9 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
         float&nbsp;n02,
         float&nbsp;n10,
         float&nbsp;n11,
-        float&nbsp;n12)</code>&nbsp;</td>
+        float&nbsp;n12)</code>
+<div class="block">Apply the 3D equivalent of the 2D matrix supplied to the left of this one.</div>
+</td>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -424,7 +478,9 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
         float&nbsp;n30,
         float&nbsp;n31,
         float&nbsp;n32,
-        float&nbsp;n33)</code>&nbsp;</td>
+        float&nbsp;n33)</code>
+<div class="block">Apply another matrix to the left of this one.</div>
+</td>
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -434,11 +490,15 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 </tr>
 <tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#preApply-processing.core.PMatrix2D-">preApply</a></span>(<a href="../../processing/core/PMatrix2D.html" title="class in processing.core">PMatrix2D</a>&nbsp;left)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#preApply-processing.core.PMatrix2D-">preApply</a></span>(<a href="../../processing/core/PMatrix2D.html" title="class in processing.core">PMatrix2D</a>&nbsp;left)</code>
+<div class="block">Apply the 3D equivalent of the 2D matrix supplied to the left of this one.</div>
+</td>
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#preApply-processing.core.PMatrix3D-">preApply</a></span>(<a href="../../processing/core/PMatrix3D.html" title="class in processing.core">PMatrix3D</a>&nbsp;left)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#preApply-processing.core.PMatrix3D-">preApply</a></span>(<a href="../../processing/core/PMatrix3D.html" title="class in processing.core">PMatrix3D</a>&nbsp;left)</code>
+<div class="block">Apply another matrix to the left of this one.</div>
+</td>
 </tr>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -446,7 +506,9 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#reset--">reset</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#reset--">reset</a></span>()</code>
+<div class="block">Make this an identity matrix.</div>
+</td>
 </tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -488,7 +550,9 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 </tr>
 <tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#set-float:A-">set</a></span>(float[]&nbsp;source)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#set-float:A-">set</a></span>(float[]&nbsp;source)</code>
+<div class="block">Set the contents of this matrix to the contents of source.</div>
+</td>
 </tr>
 <tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -497,7 +561,9 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
    float&nbsp;m02,
    float&nbsp;m10,
    float&nbsp;m11,
-   float&nbsp;m12)</code>&nbsp;</td>
+   float&nbsp;m12)</code>
+<div class="block">Set the matrix content to this 2D matrix or its 3D equivalent.</div>
+</td>
 </tr>
 <tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -516,11 +582,15 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
    float&nbsp;m30,
    float&nbsp;m31,
    float&nbsp;m32,
-   float&nbsp;m33)</code>&nbsp;</td>
+   float&nbsp;m33)</code>
+<div class="block">Set the matrix content to the 3D matrix supplied, if this matrix is 3D.</div>
+</td>
 </tr>
 <tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#set-processing.core.PMatrix-">set</a></span>(<a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a>&nbsp;matrix)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#set-processing.core.PMatrix-">set</a></span>(<a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a>&nbsp;matrix)</code>
+<div class="block">Make this matrix become a copy of src.</div>
+</td>
 </tr>
 <tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -544,7 +614,7 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix3D.html#transpose--">transpose</a></span>()</code>
-<div class="block">Transpose this matrix.</div>
+<div class="block">Transpose this matrix; rows become columns and columns rows.</div>
 </td>
 </tr>
 </table>
@@ -792,6 +862,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>reset</h4>
 <pre>public&nbsp;void&nbsp;reset()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../processing/core/PMatrix.html#reset--">PMatrix</a></code></span></div>
+<div class="block">Make this an identity matrix. Multiplying by it will have no effect.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#reset--">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -834,6 +906,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>set</h4>
 <pre>public&nbsp;void&nbsp;set(<a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a>&nbsp;matrix)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../processing/core/PMatrix.html#set-processing.core.PMatrix-">PMatrix</a></code></span></div>
+<div class="block">Make this matrix become a copy of src.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#set-processing.core.PMatrix-">set</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -847,6 +921,9 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>set</h4>
 <pre>public&nbsp;void&nbsp;set(float[]&nbsp;source)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../processing/core/PMatrix.html#set-float:A-">PMatrix</a></code></span></div>
+<div class="block">Set the contents of this matrix to the contents of source. Fills the
+ matrix left-to-right, starting in the top row.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#set-float:A-">set</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -865,6 +942,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
                 float&nbsp;m10,
                 float&nbsp;m11,
                 float&nbsp;m12)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../processing/core/PMatrix.html#set-float-float-float-float-float-float-">PMatrix</a></code></span></div>
+<div class="block">Set the matrix content to this 2D matrix or its 3D equivalent.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#set-float-float-float-float-float-float-">set</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -893,6 +972,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
                 float&nbsp;m31,
                 float&nbsp;m32,
                 float&nbsp;m33)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../processing/core/PMatrix.html#set-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-">PMatrix</a></code></span></div>
+<div class="block">Set the matrix content to the 3D matrix supplied, if this matrix is 3D.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#set-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-">set</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -1086,6 +1167,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>apply</h4>
 <pre>public&nbsp;void&nbsp;apply(<a href="../../processing/core/PMatrix2D.html" title="class in processing.core">PMatrix2D</a>&nbsp;source)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../processing/core/PMatrix.html#apply-processing.core.PMatrix2D-">PMatrix</a></code></span></div>
+<div class="block">Multiply this matrix by another.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#apply-processing.core.PMatrix2D-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -1099,6 +1182,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>apply</h4>
 <pre>public&nbsp;void&nbsp;apply(<a href="../../processing/core/PMatrix3D.html" title="class in processing.core">PMatrix3D</a>&nbsp;source)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../processing/core/PMatrix.html#apply-processing.core.PMatrix3D-">PMatrix</a></code></span></div>
+<div class="block">Multiply this matrix by another.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#apply-processing.core.PMatrix3D-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -1117,6 +1202,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
                   float&nbsp;n10,
                   float&nbsp;n11,
                   float&nbsp;n12)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../processing/core/PMatrix.html#apply-float-float-float-float-float-float-">PMatrix</a></code></span></div>
+<div class="block">Multiply this matrix by another.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#apply-float-float-float-float-float-float-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -1145,6 +1232,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
                   float&nbsp;n31,
                   float&nbsp;n32,
                   float&nbsp;n33)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../processing/core/PMatrix.html#apply-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-">PMatrix</a></code></span></div>
+<div class="block">Multiply this matrix by another.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#apply-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -1158,6 +1247,7 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>preApply</h4>
 <pre>public&nbsp;void&nbsp;preApply(<a href="../../processing/core/PMatrix2D.html" title="class in processing.core">PMatrix2D</a>&nbsp;left)</pre>
+<div class="block">Apply the 3D equivalent of the 2D matrix supplied to the left of this one.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#preApply-processing.core.PMatrix2D-">preApply</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -1185,6 +1275,7 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>preApply</h4>
 <pre>public&nbsp;void&nbsp;preApply(<a href="../../processing/core/PMatrix3D.html" title="class in processing.core">PMatrix3D</a>&nbsp;left)</pre>
+<div class="block">Apply another matrix to the left of this one.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#preApply-processing.core.PMatrix3D-">preApply</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -1203,6 +1294,7 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
                      float&nbsp;n10,
                      float&nbsp;n11,
                      float&nbsp;n12)</pre>
+<div class="block">Apply the 3D equivalent of the 2D matrix supplied to the left of this one.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#preApply-float-float-float-float-float-float-">preApply</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -1231,6 +1323,7 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
                      float&nbsp;n31,
                      float&nbsp;n32,
                      float&nbsp;n33)</pre>
+<div class="block">Apply another matrix to the left of this one.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#preApply-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-">preApply</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -1245,8 +1338,10 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <h4>mult</h4>
 <pre>public&nbsp;<a href="../../processing/core/PVector.html" title="class in processing.core">PVector</a>&nbsp;mult(<a href="../../processing/core/PVector.html" title="class in processing.core">PVector</a>&nbsp;source,
                     <a href="../../processing/core/PVector.html" title="class in processing.core">PVector</a>&nbsp;target)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../processing/core/PMatrix.html#mult-processing.core.PVector-processing.core.PVector-">PMatrix</a></code></span></div>
-<div class="block">Multiply a PVector by this matrix.</div>
+<div class="block">Multiply source by this matrix, and return the result.
+ The result will be stored in target if target is non-null, and target
+ will then be the matrix returned. This improves performance if you reuse
+ target, so it's recommended if you call this many times in draw().</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#mult-processing.core.PVector-processing.core.PVector-">mult</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -1262,7 +1357,9 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <pre>public&nbsp;float[]&nbsp;mult(float[]&nbsp;source,
                     float[]&nbsp;target)</pre>
 <div class="block">Multiply a three or four element vector against this matrix. If out is
- null or not length 3 or 4, a new float array (length 3) will be returned.</div>
+ null or not length 3 or 4, a new float array (length 3) will be returned.
+ Supplying and recycling a target array improves performance, so it's
+ recommended if you call this many times in draw.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#mult-float:A-float:A-">mult</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -1277,6 +1374,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <h4>multX</h4>
 <pre>public&nbsp;float&nbsp;multX(float&nbsp;x,
                    float&nbsp;y)</pre>
+<div class="block">Returns the x-coordinate of the result of multiplying the point (x, y)
+ by this matrix.</div>
 </li>
 </ul>
 <a name="multY-float-float-">
@@ -1287,6 +1386,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <h4>multY</h4>
 <pre>public&nbsp;float&nbsp;multY(float&nbsp;x,
                    float&nbsp;y)</pre>
+<div class="block">Returns the y-coordinate of the result of multiplying the point (x, y)
+ by this matrix.</div>
 </li>
 </ul>
 <a name="multX-float-float-float-">
@@ -1298,6 +1399,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <pre>public&nbsp;float&nbsp;multX(float&nbsp;x,
                    float&nbsp;y,
                    float&nbsp;z)</pre>
+<div class="block">Returns the x-coordinate of the result of multiplying the point (x, y, z)
+ by this matrix.</div>
 </li>
 </ul>
 <a name="multY-float-float-float-">
@@ -1309,6 +1412,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <pre>public&nbsp;float&nbsp;multY(float&nbsp;x,
                    float&nbsp;y,
                    float&nbsp;z)</pre>
+<div class="block">Returns the y-coordinate of the result of multiplying the point (x, y, z)
+ by this matrix.</div>
 </li>
 </ul>
 <a name="multZ-float-float-float-">
@@ -1320,6 +1425,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <pre>public&nbsp;float&nbsp;multZ(float&nbsp;x,
                    float&nbsp;y,
                    float&nbsp;z)</pre>
+<div class="block">Returns the z-coordinate of the result of multiplying the point (x, y, z)
+ by this matrix.</div>
 </li>
 </ul>
 <a name="multW-float-float-float-">
@@ -1331,6 +1438,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <pre>public&nbsp;float&nbsp;multW(float&nbsp;x,
                    float&nbsp;y,
                    float&nbsp;z)</pre>
+<div class="block">Returns the fourth element of the result of multiplying the vector
+ (x, y, z) by this matrix. (Acts as if w = 1 was supplied.)</div>
 </li>
 </ul>
 <a name="multX-float-float-float-float-">
@@ -1343,6 +1452,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
                    float&nbsp;y,
                    float&nbsp;z,
                    float&nbsp;w)</pre>
+<div class="block">Returns the x-coordinate of the result of multiplying the vector
+ (x, y, z, w) by this matrix.</div>
 </li>
 </ul>
 <a name="multY-float-float-float-float-">
@@ -1355,6 +1466,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
                    float&nbsp;y,
                    float&nbsp;z,
                    float&nbsp;w)</pre>
+<div class="block">Returns the y-coordinate of the result of multiplying the vector
+ (x, y, z, w) by this matrix.</div>
 </li>
 </ul>
 <a name="multZ-float-float-float-float-">
@@ -1367,6 +1480,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
                    float&nbsp;y,
                    float&nbsp;z,
                    float&nbsp;w)</pre>
+<div class="block">Returns the z-coordinate of the result of multiplying the vector
+ (x, y, z, w) by this matrix.</div>
 </li>
 </ul>
 <a name="multW-float-float-float-float-">
@@ -1379,6 +1494,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
                    float&nbsp;y,
                    float&nbsp;z,
                    float&nbsp;w)</pre>
+<div class="block">Returns the w-coordinate of the result of multiplying the vector
+ (x, y, z, w) by this matrix.</div>
 </li>
 </ul>
 <a name="transpose--">
@@ -1388,7 +1505,7 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>transpose</h4>
 <pre>public&nbsp;void&nbsp;transpose()</pre>
-<div class="block">Transpose this matrix.</div>
+<div class="block">Transpose this matrix; rows become columns and columns rows.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#transpose--">transpose</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -1402,7 +1519,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>invert</h4>
 <pre>public&nbsp;boolean&nbsp;invert()</pre>
-<div class="block">Invert this matrix.</div>
+<div class="block">Invert this matrix. Will not necessarily succeed, because some matrices
+ map more than one point to the same image point, and so are irreversible.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#invert--">invert</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>

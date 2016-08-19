@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":42,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":42,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":42,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -140,6 +140,8 @@ implements <a href="../../processing/core/PConstants.html" title="interface in p
 <dd><a href="../../processing/core/PApplet.html#loadImage-java.lang.String-"><code>PApplet.loadImage(String)</code></a>, 
 <a href="../../processing/core/PApplet.html#imageMode-int-"><code>PApplet.imageMode(int)</code></a>, 
 <a href="../../processing/core/PApplet.html#createImage-int-int-int-"><code>PApplet.createImage(int, int, int)</code></a></dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>Web &amp; Application</dd>
 </dl>
 </li>
 </ul>
@@ -414,7 +416,8 @@ implements <a href="../../processing/core/PConstants.html" title="interface in p
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Image.html?is-external=true" title="class or interface in java.awt">Image</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PImage.html#getImage--">getImage</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Use the getNative() method instead, which allows library interfaces to be
+ written in a cross-platform fashion for desktop, Android, and others.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
@@ -617,6 +620,12 @@ implements <a href="../../processing/core/PConstants.html" title="interface in p
  releases) result in a NullPointerException.
 
  ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Array containing the color of every pixel in the image</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 <a name="pixelDensity">
@@ -660,6 +669,12 @@ implements <a href="../../processing/core/PConstants.html" title="interface in p
  The width of the image in units of pixels.
 
  ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Image width</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 <a name="height">
@@ -674,6 +689,12 @@ implements <a href="../../processing/core/PConstants.html" title="interface in p
  The height of the image in units of pixels.
 
  ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Image height</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 <a name="parent">
@@ -788,6 +809,8 @@ implements <a href="../../processing/core/PConstants.html" title="interface in p
 <dd><a href="../../processing/core/PApplet.html#loadImage-java.lang.String-java.lang.String-"><code>PApplet.loadImage(String, String)</code></a>, 
 <a href="../../processing/core/PApplet.html#imageMode-int-"><code>PApplet.imageMode(int)</code></a>, 
 <a href="../../processing/core/PApplet.html#createImage-int-int-int-"><code>PApplet.createImage(int, int, int)</code></a></dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
 </dl>
 </li>
 </ul>
@@ -893,11 +916,10 @@ implements <a href="../../processing/core/PConstants.html" title="interface in p
 <ul class="blockList">
 <li class="blockList">
 <h4>getImage</h4>
-<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Image.html?is-external=true" title="class or interface in java.awt">Image</a>&nbsp;getImage()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Image.html?is-external=true" title="class or interface in java.awt">Image</a>&nbsp;getImage()</pre>
 <div class="block">Use the getNative() method instead, which allows library interfaces to be
- written in a cross-platform fashion for desktop, Android, and others.</div>
+ written in a cross-platform fashion for desktop, Android, and others.
+ This is still included for PGraphics objects, which may need the image.</div>
 </li>
 </ul>
 <a name="getNative--">
@@ -999,6 +1021,12 @@ public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Image.htm
  <p/>
  For subclasses where the pixels[] buffer isn't set by default,
  this should copy all data into the pixels[] array</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Loads the pixel data for the image into its pixels[] array</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 <a name="updatePixels--">
@@ -1048,6 +1076,10 @@ public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Image.htm
 <dd><code>y</code> - y-coordinate of the upper-left corner</dd>
 <dd><code>w</code> - width</dd>
 <dd><code>h</code> - height</dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Updates the image with the data in its pixels[] array</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
 </dl>
 </li>
 </ul>
@@ -1102,6 +1134,10 @@ public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Image.htm
 <dd><code>h</code> - the resized image height</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/core/PImage.html#get-int-int-int-int-"><code>get(int, int, int, int)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Changes the size of an image to a new width and height</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
 </dl>
 </li>
 </ul>
@@ -1188,6 +1224,10 @@ public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Image.htm
 <dd><a href="../../processing/core/PApplet.html#set-int-int-int-"><code>PApplet.set(int, int, int)</code></a>, 
 <a href="../../processing/core/PApplet.html#pixels"><code>PApplet.pixels</code></a>, 
 <a href="../../processing/core/PApplet.html#copy-processing.core.PImage-int-int-int-int-int-int-int-int-"><code>PApplet.copy(PImage, int, int, int, int, int, int, int, int)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Reads the color of any pixel or grabs a rectangle of pixels</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
 </dl>
 </li>
 </ul>
@@ -1265,6 +1305,10 @@ public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Image.htm
 <dd><a href="../../processing/core/PImage.html#get-int-int-int-int-"><code>get(int, int, int, int)</code></a>, 
 <a href="../../processing/core/PImage.html#pixels"><code>pixels</code></a>, 
 <a href="../../processing/core/PImage.html#copy-processing.core.PImage-int-int-int-int-int-int-int-int-"><code>copy(PImage, int, int, int, int, int, int, int, int)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>writes a color to any pixel or writes an image into another</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
 </dl>
 </li>
 </ul>
@@ -1335,7 +1379,11 @@ public&nbsp;void&nbsp;mask(int[]&nbsp;maskArray)</pre>
  performing a proper luminance-based conversion.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>maskArray</code> - array of integers used as the alpha channel, needs to be the same length as the image's pixel array</dd>
+<dd><code>img</code> - image to use as the mask</dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Masks part of an image with another image as an alpha channel</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
 </dl>
 </li>
 </ul>
@@ -1405,6 +1453,10 @@ public&nbsp;void&nbsp;mask(int[]&nbsp;maskArray)</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>kind</code> - Either THRESHOLD, GRAY, OPAQUE, INVERT, POSTERIZE, BLUR, ERODE, or DILATE</dd>
 <dd><code>param</code> - unique for each, see above</dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Converts the image to grayscale or black and white</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
 </dl>
 </li>
 </ul>
@@ -1446,6 +1498,10 @@ public&nbsp;void&nbsp;mask(int[]&nbsp;maskArray)</pre>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/core/PGraphics.html#alpha-int-"><code>PGraphics.alpha(int)</code></a>, 
 <a href="../../processing/core/PImage.html#blend-processing.core.PImage-int-int-int-int-int-int-int-int-int-"><code>blend(PImage, int, int, int, int, int, int, int, int, int)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Copies the entire image</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
 </dl>
 </li>
 </ul>
@@ -1556,6 +1612,8 @@ public&nbsp;void&nbsp;mask(int[]&nbsp;maskArray)</pre>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/core/PImage.html#blend-processing.core.PImage-int-int-int-int-int-int-int-int-int-"><code>blend(PImage, int, int, int, int, int, int, int, int, int)</code></a>, 
 <a href="../../processing/core/PApplet.html#color-float-float-float-float-"><code>PApplet.color(float, float, float, float)</code></a></dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
 </dl>
 </li>
 </ul>
@@ -1657,6 +1715,8 @@ public&nbsp;void&nbsp;mask(int[]&nbsp;maskArray)</pre>
 <dd><a href="../../processing/core/PApplet.html#alpha-int-"><code>PApplet.alpha(int)</code></a>, 
 <a href="../../processing/core/PImage.html#copy-processing.core.PImage-int-int-int-int-int-int-int-int-"><code>copy(PImage, int, int, int, int, int, int, int, int)</code></a>, 
 <a href="../../processing/core/PImage.html#blendColor-int-int-int-"><code>blendColor(int,int,int)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Copies a pixel or rectangle of pixels using different blending modes</dd>
 </dl>
 </li>
 </ul>
@@ -1711,6 +1771,10 @@ public&nbsp;void&nbsp;mask(int[]&nbsp;maskArray)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>filename</code> - a sequence of letters and numbers</dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Saves the image to a TIFF, TARGA, PNG, or JPEG file</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>application</dd>
 </dl>
 </li>
 </ul>

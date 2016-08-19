@@ -124,6 +124,12 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  servers usually use port 80 and POP mail uses port 110.
  
  ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>The server class is used to create server objects which send and receives data to and from its associated clients (other programs connected to it).</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>application</dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -169,11 +175,11 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/net/Server.html#Server-processing.core.PApplet-int-">Server</a></span>(PApplet&nbsp;parent,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/net/Server.html#Server-processing.core.PApplet-int-">Server</a></span>(<a href="../../../../javadoc/core/processing/core/PApplet.html?is-external=true" title="class or interface in processing.core">PApplet</a>&nbsp;parent,
       int&nbsp;port)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/net/Server.html#Server-processing.core.PApplet-int-java.lang.String-">Server</a></span>(PApplet&nbsp;parent,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/net/Server.html#Server-processing.core.PApplet-int-java.lang.String-">Server</a></span>(<a href="../../../../javadoc/core/processing/core/PApplet.html?is-external=true" title="class or interface in processing.core">PApplet</a>&nbsp;parent,
       int&nbsp;port,
       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;host)</code>&nbsp;</td>
 </tr>
@@ -311,7 +317,7 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
 <ul class="blockList">
 <li class="blockList">
 <h4>Server</h4>
-<pre>public&nbsp;Server(PApplet&nbsp;parent,
+<pre>public&nbsp;Server(<a href="../../../../javadoc/core/processing/core/PApplet.html?is-external=true" title="class or interface in processing.core">PApplet</a>&nbsp;parent,
               int&nbsp;port)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -326,7 +332,7 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Server</h4>
-<pre>public&nbsp;Server(PApplet&nbsp;parent,
+<pre>public&nbsp;Server(<a href="../../../../javadoc/core/processing/core/PApplet.html?is-external=true" title="class or interface in processing.core">PApplet</a>&nbsp;parent,
               int&nbsp;port,
               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;host)</pre>
 <dl>
@@ -360,6 +366,8 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>client</code> - the client to disconnect</dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Disconnect a particular client.</dd>
 </dl>
 </li>
 </ul>
@@ -376,6 +384,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  into any trouble.
  
  ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Return true if this server is still active.</dd>
+</dl>
 </li>
 </ul>
 <a name="ip--">
@@ -399,6 +411,12 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  Returns the next client in line with a new message.
  
  ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Returns the next client in line with a new message.</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>application</dd>
+</dl>
 </li>
 </ul>
 <a name="stop--">
@@ -417,6 +435,12 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  Use this to shut down the server if you finish using it while your applet 
  is still running. Otherwise, it will be automatically be shut down by the 
  host PApplet using dispose(), which is identical.</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Disconnects all clients and stops the server.</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>application</dd>
+</dl>
 </li>
 </ul>
 <a name="dispose--">
@@ -458,6 +482,8 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>data</code> - data to write</dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Writes data to all connected clients</dd>
 </dl>
 </li>
 </ul>

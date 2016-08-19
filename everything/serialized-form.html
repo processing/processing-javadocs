@@ -365,6 +365,10 @@
 <pre><a href="processing/app/syntax/im/InputMethodSupport.html" title="class in processing.app.syntax.im">InputMethodSupport</a> inputMethodSupport</pre>
 </li>
 <li class="blockList">
+<h4>defaults</h4>
+<pre><a href="processing/app/syntax/TextAreaDefaults.html" title="class in processing.app.syntax">TextAreaDefaults</a> defaults</pre>
+</li>
+<li class="blockList">
 <h4>bracketHelper</h4>
 <pre><a href="processing/app/syntax/Brackets.html" title="class in processing.app.syntax">Brackets</a> bracketHelper</pre>
 </li>
@@ -504,13 +508,74 @@
 <h4>magicCaret</h4>
 <pre>int magicCaret</pre>
 </li>
-<li class="blockList">
+<li class="blockListLast">
 <h4>overwrite</h4>
 <pre>boolean overwrite</pre>
 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="processing.app.syntax.PdeTextArea">
+<!--   -->
+</a>
+<h3>Class <a href="processing/app/syntax/PdeTextArea.html" title="class in processing.app.syntax">PdeTextArea</a> extends <a href="processing/app/syntax/JEditTextArea.html" title="class in processing.app.syntax">JEditTextArea</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>editor</h4>
+<pre><a href="processing/app/ui/Editor.html" title="class in processing.app.ui">Editor</a> editor</pre>
+</li>
+<li class="blockList">
+<h4>gutterGradient</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Image.html?is-external=true" title="class or interface in java.awt">Image</a> gutterGradient</pre>
+</li>
+<li class="blockList">
+<h4>gutterText</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">K</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">V</a>&gt; gutterText</pre>
+</li>
 <li class="blockListLast">
-<h4>rectSelect</h4>
-<pre>boolean rectSelect</pre>
+<h4>gutterCursorMouseAdapter</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/event/MouseMotionAdapter.html?is-external=true" title="class or interface in java.awt.event">MouseMotionAdapter</a> gutterCursorMouseAdapter</pre>
+<div class="block">Sets default cursor (instead of text cursor) in the gutter area.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="processing.app.syntax.PdeTextAreaPainter">
+<!--   -->
+</a>
+<h3>Class <a href="processing/app/syntax/PdeTextAreaPainter.html" title="class in processing.app.syntax">PdeTextAreaPainter</a> extends <a href="processing/app/syntax/TextAreaPainter.html" title="class in processing.app.syntax">TextAreaPainter</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>errorUnderlineColor</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a> errorUnderlineColor</pre>
+</li>
+<li class="blockList">
+<h4>warningUnderlineColor</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a> warningUnderlineColor</pre>
+</li>
+<li class="blockList">
+<h4>gutterTextFont</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Font.html?is-external=true" title="class or interface in java.awt">Font</a> gutterTextFont</pre>
+</li>
+<li class="blockList">
+<h4>gutterTextColor</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a> gutterTextColor</pre>
+</li>
+<li class="blockList">
+<h4>gutterPastColor</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a> gutterPastColor</pre>
+</li>
+<li class="blockListLast">
+<h4>gutterLineHighlightColor</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a> gutterLineHighlightColor</pre>
 </li>
 </ul>
 </li>
@@ -540,11 +605,6 @@
 <li class="blockList">
 <h3>Serialized Fields</h3>
 <ul class="blockList">
-<li class="blockList">
-<h4>printing</h4>
-<pre>boolean printing</pre>
-<div class="block">True if inside printing, will handle disabling the highlight</div>
-</li>
 <li class="blockList">
 <h4>compositionTextPainter</h4>
 <pre><a href="processing/app/syntax/im/CompositionTextPainter.html" title="class in processing.app.syntax.im">CompositionTextPainter</a> compositionTextPainter</pre>
@@ -746,6 +806,10 @@
 <pre><a href="processing/app/Mode.html" title="class in processing.app">Mode</a> mode</pre>
 </li>
 <li class="blockList">
+<h4>errorColumn</h4>
+<pre><a href="processing/app/ui/MarkerColumn.html" title="class in processing.app.ui">MarkerColumn</a> errorColumn</pre>
+</li>
+<li class="blockList">
 <h4>pageFormat</h4>
 <pre><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/print/PageFormat.html?is-external=true" title="class or interface in java.awt.print">PageFormat</a> pageFormat</pre>
 <div class="block">true if this file has not yet been given a name by the user</div>
@@ -880,9 +944,13 @@
 <h4>modePopup</h4>
 <pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenu.html?is-external=true" title="class or interface in javax.swing">JMenu</a> modePopup</pre>
 </li>
-<li class="blockListLast">
+<li class="blockList">
 <h4>backgroundGradient</h4>
 <pre><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Image.html?is-external=true" title="class or interface in java.awt">Image</a> backgroundGradient</pre>
+</li>
+<li class="blockListLast">
+<h4>problems</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; problems</pre>
 </li>
 </ul>
 </li>
@@ -1447,6 +1515,34 @@
 </li>
 </ul>
 </li>
+<li class="blockList"><a name="processing.app.ui.MarkerColumn">
+<!--   -->
+</a>
+<h3>Class <a href="processing/app/ui/MarkerColumn.html" title="class in processing.app.ui">MarkerColumn</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JPanel.html?is-external=true" title="class or interface in javax.swing">JPanel</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>editor</h4>
+<pre><a href="processing/app/ui/Editor.html" title="class in processing.app.ui">Editor</a> editor</pre>
+</li>
+<li class="blockList">
+<h4>errorColor</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a> errorColor</pre>
+</li>
+<li class="blockList">
+<h4>warningColor</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Color.html?is-external=true" title="class or interface in java.awt">Color</a> warningColor</pre>
+</li>
+<li class="blockListLast">
+<h4>errorPoints</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">E</a>&gt; errorPoints</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="blockList"><a name="processing.app.ui.SketchbookFrame">
 <!--   -->
 </a>
@@ -1588,6 +1684,12 @@
  get and set the value (see above example.)
 
  ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>The x component of the vector</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 <li class="blockList">
 <h4>y</h4>
@@ -1598,6 +1700,12 @@
  get and set the value (see above example.)
 
  ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>The y component of the vector</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 <li class="blockListLast">
 <h4>z</h4>
@@ -1608,6 +1716,12 @@
  get and set the value (see above example.)
 
  ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>The z component of the vector</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 </li>

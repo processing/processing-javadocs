@@ -118,8 +118,7 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
  representing a single node of an XML tree.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><code>PApplet#createXML(String)</code>, 
-<a href="../../processing/core/PApplet.html#loadXML-java.lang.String-"><code>PApplet.loadXML(String)</code></a>, 
+<dd><a href="../../processing/core/PApplet.html#loadXML-java.lang.String-"><code>PApplet.loadXML(String)</code></a>, 
 <a href="../../processing/core/PApplet.html#parseXML-java.lang.String-"><code>PApplet.parseXML(String)</code></a>, 
 <a href="../../processing/core/PApplet.html#saveXML-processing.data.XML-java.lang.String-"><code>PApplet.saveXML(XML, String)</code></a>, 
 <a href="../../serialized-form.html#processing.data.XML">Serialized Form</a></dd>
@@ -648,6 +647,8 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/org/xml/sax/SAXException.html?is-external=true" title="class or interface in org.xml.sax">SAXException</a></code></dd>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/parsers/ParserConfigurationException.html?is-external=true" title="class or interface in javax.xml.parsers">ParserConfigurationException</a></code></dd>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Converts String content to an XML object</dd>
 </dl>
 </li>
 </ul>
@@ -707,6 +708,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <pre>public&nbsp;<a href="../../processing/data/XML.html" title="class in processing.data">XML</a>&nbsp;getParent()</pre>
 <div class="block">Returns the parent element. This method returns null for the root
  element.</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets a copy of the element's parent</dd>
+</dl>
 </li>
 </ul>
 <a name="getName--">
@@ -721,6 +726,8 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the name, or null if the element only contains #PCDATA.</dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the element's full name</dd>
 </dl>
 </li>
 </ul>
@@ -731,6 +738,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <li class="blockList">
 <h4>setName</h4>
 <pre>public&nbsp;void&nbsp;setName(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newName)</pre>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Sets the element's name</dd>
+</dl>
 </li>
 </ul>
 <a name="getLocalName--">
@@ -756,6 +767,8 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the count.</dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Returns the element's number of children</dd>
 </dl>
 </li>
 </ul>
@@ -767,6 +780,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <h4>hasChildren</h4>
 <pre>public&nbsp;boolean&nbsp;hasChildren()</pre>
 <div class="block">Returns a boolean of whether or not there are children.</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Checks whether or not an element has any children</dd>
+</dl>
 </li>
 </ul>
 <a name="listChildren--">
@@ -778,6 +795,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;listChildren()</pre>
 <div class="block">Put the names of all children into an array. Same as looping through
  each child and calling getName() on each XMLElement.</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Returns the names of all children as an array</dd>
+</dl>
 </li>
 </ul>
 <a name="getChildren--">
@@ -788,6 +809,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <h4>getChildren</h4>
 <pre>public&nbsp;<a href="../../processing/data/XML.html" title="class in processing.data">XML</a>[]&nbsp;getChildren()</pre>
 <div class="block">Returns an array containing all the child elements.</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Returns an array containing all child elements</dd>
+</dl>
 </li>
 </ul>
 <a name="getChild-int-">
@@ -798,6 +823,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <h4>getChild</h4>
 <pre>public&nbsp;<a href="../../processing/data/XML.html" title="class in processing.data">XML</a>&nbsp;getChild(int&nbsp;index)</pre>
 <div class="block">Quick accessor for an element at a particular index.</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Returns the child element with the specified index value or path</dd>
+</dl>
 </li>
 </ul>
 <a name="getChild-java.lang.String-">
@@ -840,6 +869,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <li class="blockList">
 <h4>addChild</h4>
 <pre>public&nbsp;<a href="../../processing/data/XML.html" title="class in processing.data">XML</a>&nbsp;addChild(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tag)</pre>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Appends a new child to the element</dd>
+</dl>
 </li>
 </ul>
 <a name="addChild-processing.data.XML-">
@@ -858,6 +891,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <li class="blockList">
 <h4>removeChild</h4>
 <pre>public&nbsp;void&nbsp;removeChild(<a href="../../processing/data/XML.html" title="class in processing.data">XML</a>&nbsp;kid)</pre>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Removes the specified child</dd>
+</dl>
 </li>
 </ul>
 <a name="trim--">
@@ -877,6 +914,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <h4>getAttributeCount</h4>
 <pre>public&nbsp;int&nbsp;getAttributeCount()</pre>
 <div class="block">Returns the number of attributes.</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Counts the specified element's number of attributes</dd>
+</dl>
 </li>
 </ul>
 <a name="listAttributes--">
@@ -887,6 +928,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <h4>listAttributes</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;listAttributes()</pre>
 <div class="block">Get a list of the names for all of the attributes for this node.</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Returns a list of names of all attributes as an array</dd>
+</dl>
 </li>
 </ul>
 <a name="hasAttribute-java.lang.String-">
@@ -897,6 +942,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <h4>hasAttribute</h4>
 <pre>public&nbsp;boolean&nbsp;hasAttribute(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
 <div class="block">Returns whether an attribute exists.</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Checks whether or not an element has the specified attribute</dd>
+</dl>
 </li>
 </ul>
 <a name="getString-java.lang.String-">
@@ -906,6 +955,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <li class="blockList">
 <h4>getString</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getString(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the content of an attribute as a String</dd>
+</dl>
 </li>
 </ul>
 <a name="getString-java.lang.String-java.lang.String-">
@@ -926,6 +979,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <h4>setString</h4>
 <pre>public&nbsp;void&nbsp;setString(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
                       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</pre>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Sets the content of an attribute as a String</dd>
+</dl>
 </li>
 </ul>
 <a name="getInt-java.lang.String-">
@@ -935,6 +992,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <li class="blockList">
 <h4>getInt</h4>
 <pre>public&nbsp;int&nbsp;getInt(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the content of an attribute as an int</dd>
+</dl>
 </li>
 </ul>
 <a name="setInt-java.lang.String-int-">
@@ -945,6 +1006,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <h4>setInt</h4>
 <pre>public&nbsp;void&nbsp;setInt(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
                    int&nbsp;value)</pre>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Sets the content of an attribute as an int</dd>
+</dl>
 </li>
 </ul>
 <a name="getInt-java.lang.String-int-">
@@ -973,6 +1038,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <h4>setLong</h4>
 <pre>public&nbsp;void&nbsp;setLong(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
                     long&nbsp;value)</pre>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Sets the content of an element as an int</dd>
+</dl>
 </li>
 </ul>
 <a name="getLong-java.lang.String-long-">
@@ -1001,6 +1070,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <h4>getFloat</h4>
 <pre>public&nbsp;float&nbsp;getFloat(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
 <div class="block">Returns the value of an attribute, or zero if not present.</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the content of an attribute as a float</dd>
+</dl>
 </li>
 </ul>
 <a name="getFloat-java.lang.String-float-">
@@ -1029,6 +1102,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <h4>setFloat</h4>
 <pre>public&nbsp;void&nbsp;setFloat(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
                      float&nbsp;value)</pre>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Sets the content of an attribute as a float</dd>
+</dl>
 </li>
 </ul>
 <a name="getDouble-java.lang.String-">
@@ -1085,6 +1162,8 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/XML.html#getIntContent--"><code>getIntContent()</code></a>, 
 <a href="../../processing/data/XML.html#getFloatContent--"><code>getFloatContent()</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the content of an element</dd>
 </dl>
 </li>
 </ul>
@@ -1110,6 +1189,8 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/XML.html#getContent--"><code>getContent()</code></a>, 
 <a href="../../processing/data/XML.html#getFloatContent--"><code>getFloatContent()</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the content of an element as an int</dd>
 </dl>
 </li>
 </ul>
@@ -1139,6 +1220,8 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/XML.html#getContent--"><code>getContent()</code></a>, 
 <a href="../../processing/data/XML.html#getIntContent--"><code>getIntContent()</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the content of an element as a float</dd>
 </dl>
 </li>
 </ul>
@@ -1198,6 +1281,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <li class="blockList">
 <h4>setContent</h4>
 <pre>public&nbsp;void&nbsp;setContent(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text)</pre>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Sets the content of an element</dd>
+</dl>
 </li>
 </ul>
 <a name="setIntContent-int-">
@@ -1251,6 +1338,8 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <dd>the content</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/XML.html#toString--"><code>toString()</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Formats XML data as a String</dd>
 </dl>
 </li>
 </ul>
@@ -1271,6 +1360,8 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <dd>the content</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/XML.html#format-int-"><code>format(int)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets XML data as a String using default formatting</dd>
 </dl>
 </li>
 </ul>

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../processing/app/syntax/KeywordMap.html" title="class in processing.app.syntax"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../processing/app/syntax/PdeKeywords.html" title="class in processing.app.syntax"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../processing/app/syntax/PdeTextArea.html" title="class in processing.app.syntax"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?processing/app/syntax/PdeInputHandler.html" target="_top">Frames</a></li>
@@ -148,7 +148,7 @@ extends <a href="../../../processing/app/syntax/DefaultInputHandler.html" title=
 <!--   -->
 </a>
 <h3>Nested classes/interfaces inherited from class&nbsp;<a href="../../../processing/app/syntax/InputHandler.html" title="class in processing.app.syntax">InputHandler</a></h3>
-<code><a href="../../../processing/app/syntax/InputHandler.backspace.html" title="class in processing.app.syntax">InputHandler.backspace</a>, <a href="../../../processing/app/syntax/InputHandler.backspace_word.html" title="class in processing.app.syntax">InputHandler.backspace_word</a>, <a href="../../../processing/app/syntax/InputHandler.clipboard_copy.html" title="class in processing.app.syntax">InputHandler.clipboard_copy</a>, <a href="../../../processing/app/syntax/InputHandler.clipboard_cut.html" title="class in processing.app.syntax">InputHandler.clipboard_cut</a>, <a href="../../../processing/app/syntax/InputHandler.clipboard_paste.html" title="class in processing.app.syntax">InputHandler.clipboard_paste</a>, <a href="../../../processing/app/syntax/InputHandler.delete.html" title="class in processing.app.syntax">InputHandler.delete</a>, <a href="../../../processing/app/syntax/InputHandler.delete_word.html" title="class in processing.app.syntax">InputHandler.delete_word</a>, <a href="../../../processing/app/syntax/InputHandler.document_end.html" title="class in processing.app.syntax">InputHandler.document_end</a>, <a href="../../../processing/app/syntax/InputHandler.document_home.html" title="class in processing.app.syntax">InputHandler.document_home</a>, <a href="../../../processing/app/syntax/InputHandler.end.html" title="class in processing.app.syntax">InputHandler.end</a>, <a href="../../../processing/app/syntax/InputHandler.home.html" title="class in processing.app.syntax">InputHandler.home</a>, <a href="../../../processing/app/syntax/InputHandler.insert_break.html" title="class in processing.app.syntax">InputHandler.insert_break</a>, <a href="../../../processing/app/syntax/InputHandler.insert_char.html" title="class in processing.app.syntax">InputHandler.insert_char</a>, <a href="../../../processing/app/syntax/InputHandler.insert_tab.html" title="class in processing.app.syntax">InputHandler.insert_tab</a>, <a href="../../../processing/app/syntax/InputHandler.MacroRecorder.html" title="interface in processing.app.syntax">InputHandler.MacroRecorder</a>, <a href="../../../processing/app/syntax/InputHandler.next_char.html" title="class in processing.app.syntax">InputHandler.next_char</a>, <a href="../../../processing/app/syntax/InputHandler.next_line.html" title="class in processing.app.syntax">InputHandler.next_line</a>, <a href="../../../processing/app/syntax/InputHandler.next_page.html" title="class in processing.app.syntax">InputHandler.next_page</a>, <a href="../../../processing/app/syntax/InputHandler.next_word.html" title="class in processing.app.syntax">InputHandler.next_word</a>, <a href="../../../processing/app/syntax/InputHandler.NonRecordable.html" title="interface in processing.app.syntax">InputHandler.NonRecordable</a>, <a href="../../../processing/app/syntax/InputHandler.NonRepeatable.html" title="interface in processing.app.syntax">InputHandler.NonRepeatable</a>, <a href="../../../processing/app/syntax/InputHandler.overwrite.html" title="class in processing.app.syntax">InputHandler.overwrite</a>, <a href="../../../processing/app/syntax/InputHandler.prev_char.html" title="class in processing.app.syntax">InputHandler.prev_char</a>, <a href="../../../processing/app/syntax/InputHandler.prev_line.html" title="class in processing.app.syntax">InputHandler.prev_line</a>, <a href="../../../processing/app/syntax/InputHandler.prev_page.html" title="class in processing.app.syntax">InputHandler.prev_page</a>, <a href="../../../processing/app/syntax/InputHandler.prev_word.html" title="class in processing.app.syntax">InputHandler.prev_word</a>, <a href="../../../processing/app/syntax/InputHandler.repeat.html" title="class in processing.app.syntax">InputHandler.repeat</a>, <a href="../../../processing/app/syntax/InputHandler.toggle_rect.html" title="class in processing.app.syntax">InputHandler.toggle_rect</a>, <a href="../../../processing/app/syntax/InputHandler.Wrapper.html" title="interface in processing.app.syntax">InputHandler.Wrapper</a></code></li>
+<code><a href="../../../processing/app/syntax/InputHandler.backspace.html" title="class in processing.app.syntax">InputHandler.backspace</a>, <a href="../../../processing/app/syntax/InputHandler.backspace_word.html" title="class in processing.app.syntax">InputHandler.backspace_word</a>, <a href="../../../processing/app/syntax/InputHandler.clipboard_copy.html" title="class in processing.app.syntax">InputHandler.clipboard_copy</a>, <a href="../../../processing/app/syntax/InputHandler.clipboard_cut.html" title="class in processing.app.syntax">InputHandler.clipboard_cut</a>, <a href="../../../processing/app/syntax/InputHandler.clipboard_paste.html" title="class in processing.app.syntax">InputHandler.clipboard_paste</a>, <a href="../../../processing/app/syntax/InputHandler.delete.html" title="class in processing.app.syntax">InputHandler.delete</a>, <a href="../../../processing/app/syntax/InputHandler.delete_word.html" title="class in processing.app.syntax">InputHandler.delete_word</a>, <a href="../../../processing/app/syntax/InputHandler.document_end.html" title="class in processing.app.syntax">InputHandler.document_end</a>, <a href="../../../processing/app/syntax/InputHandler.document_home.html" title="class in processing.app.syntax">InputHandler.document_home</a>, <a href="../../../processing/app/syntax/InputHandler.end.html" title="class in processing.app.syntax">InputHandler.end</a>, <a href="../../../processing/app/syntax/InputHandler.home.html" title="class in processing.app.syntax">InputHandler.home</a>, <a href="../../../processing/app/syntax/InputHandler.insert_break.html" title="class in processing.app.syntax">InputHandler.insert_break</a>, <a href="../../../processing/app/syntax/InputHandler.insert_char.html" title="class in processing.app.syntax">InputHandler.insert_char</a>, <a href="../../../processing/app/syntax/InputHandler.insert_tab.html" title="class in processing.app.syntax">InputHandler.insert_tab</a>, <a href="../../../processing/app/syntax/InputHandler.MacroRecorder.html" title="interface in processing.app.syntax">InputHandler.MacroRecorder</a>, <a href="../../../processing/app/syntax/InputHandler.next_char.html" title="class in processing.app.syntax">InputHandler.next_char</a>, <a href="../../../processing/app/syntax/InputHandler.next_line.html" title="class in processing.app.syntax">InputHandler.next_line</a>, <a href="../../../processing/app/syntax/InputHandler.next_page.html" title="class in processing.app.syntax">InputHandler.next_page</a>, <a href="../../../processing/app/syntax/InputHandler.next_word.html" title="class in processing.app.syntax">InputHandler.next_word</a>, <a href="../../../processing/app/syntax/InputHandler.NonRecordable.html" title="interface in processing.app.syntax">InputHandler.NonRecordable</a>, <a href="../../../processing/app/syntax/InputHandler.NonRepeatable.html" title="interface in processing.app.syntax">InputHandler.NonRepeatable</a>, <a href="../../../processing/app/syntax/InputHandler.overwrite.html" title="class in processing.app.syntax">InputHandler.overwrite</a>, <a href="../../../processing/app/syntax/InputHandler.prev_char.html" title="class in processing.app.syntax">InputHandler.prev_char</a>, <a href="../../../processing/app/syntax/InputHandler.prev_line.html" title="class in processing.app.syntax">InputHandler.prev_line</a>, <a href="../../../processing/app/syntax/InputHandler.prev_page.html" title="class in processing.app.syntax">InputHandler.prev_page</a>, <a href="../../../processing/app/syntax/InputHandler.prev_word.html" title="class in processing.app.syntax">InputHandler.prev_word</a>, <a href="../../../processing/app/syntax/InputHandler.repeat.html" title="class in processing.app.syntax">InputHandler.repeat</a>, <a href="../../../processing/app/syntax/InputHandler.Wrapper.html" title="interface in processing.app.syntax">InputHandler.Wrapper</a></code></li>
 </ul>
 </li>
 </ul>
@@ -163,7 +163,7 @@ extends <a href="../../../processing/app/syntax/DefaultInputHandler.html" title=
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;<a href="../../../processing/app/syntax/InputHandler.html" title="class in processing.app.syntax">InputHandler</a></h3>
-<code><a href="../../../processing/app/syntax/InputHandler.html#BACKSPACE">BACKSPACE</a>, <a href="../../../processing/app/syntax/InputHandler.html#BACKSPACE_WORD">BACKSPACE_WORD</a>, <a href="../../../processing/app/syntax/InputHandler.html#CLIPBOARD_COPY">CLIPBOARD_COPY</a>, <a href="../../../processing/app/syntax/InputHandler.html#CLIPBOARD_CUT">CLIPBOARD_CUT</a>, <a href="../../../processing/app/syntax/InputHandler.html#CLIPBOARD_PASTE">CLIPBOARD_PASTE</a>, <a href="../../../processing/app/syntax/InputHandler.html#CONTEXT_AWARE_HOME_END">CONTEXT_AWARE_HOME_END</a>, <a href="../../../processing/app/syntax/InputHandler.html#DELETE">DELETE</a>, <a href="../../../processing/app/syntax/InputHandler.html#DELETE_WORD">DELETE_WORD</a>, <a href="../../../processing/app/syntax/InputHandler.html#DOCUMENT_END">DOCUMENT_END</a>, <a href="../../../processing/app/syntax/InputHandler.html#DOCUMENT_HOME">DOCUMENT_HOME</a>, <a href="../../../processing/app/syntax/InputHandler.html#END">END</a>, <a href="../../../processing/app/syntax/InputHandler.html#HOME">HOME</a>, <a href="../../../processing/app/syntax/InputHandler.html#INSERT_BREAK">INSERT_BREAK</a>, <a href="../../../processing/app/syntax/InputHandler.html#INSERT_CHAR">INSERT_CHAR</a>, <a href="../../../processing/app/syntax/InputHandler.html#INSERT_TAB">INSERT_TAB</a>, <a href="../../../processing/app/syntax/InputHandler.html#NEXT_CHAR">NEXT_CHAR</a>, <a href="../../../processing/app/syntax/InputHandler.html#NEXT_LINE">NEXT_LINE</a>, <a href="../../../processing/app/syntax/InputHandler.html#NEXT_PAGE">NEXT_PAGE</a>, <a href="../../../processing/app/syntax/InputHandler.html#NEXT_WORD">NEXT_WORD</a>, <a href="../../../processing/app/syntax/InputHandler.html#OVERWRITE">OVERWRITE</a>, <a href="../../../processing/app/syntax/InputHandler.html#PREV_CHAR">PREV_CHAR</a>, <a href="../../../processing/app/syntax/InputHandler.html#PREV_LINE">PREV_LINE</a>, <a href="../../../processing/app/syntax/InputHandler.html#PREV_PAGE">PREV_PAGE</a>, <a href="../../../processing/app/syntax/InputHandler.html#PREV_WORD">PREV_WORD</a>, <a href="../../../processing/app/syntax/InputHandler.html#REPEAT">REPEAT</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_DOC_END">SELECT_DOC_END</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_DOC_HOME">SELECT_DOC_HOME</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_END">SELECT_END</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_HOME">SELECT_HOME</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_NEXT_CHAR">SELECT_NEXT_CHAR</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_NEXT_LINE">SELECT_NEXT_LINE</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_NEXT_PAGE">SELECT_NEXT_PAGE</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_NEXT_WORD">SELECT_NEXT_WORD</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_PREV_CHAR">SELECT_PREV_CHAR</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_PREV_LINE">SELECT_PREV_LINE</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_PREV_PAGE">SELECT_PREV_PAGE</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_PREV_WORD">SELECT_PREV_WORD</a>, <a href="../../../processing/app/syntax/InputHandler.html#SMART_HOME_END_PROPERTY">SMART_HOME_END_PROPERTY</a>, <a href="../../../processing/app/syntax/InputHandler.html#TOGGLE_RECT">TOGGLE_RECT</a></code></li>
+<code><a href="../../../processing/app/syntax/InputHandler.html#BACKSPACE">BACKSPACE</a>, <a href="../../../processing/app/syntax/InputHandler.html#BACKSPACE_WORD">BACKSPACE_WORD</a>, <a href="../../../processing/app/syntax/InputHandler.html#CLIPBOARD_COPY">CLIPBOARD_COPY</a>, <a href="../../../processing/app/syntax/InputHandler.html#CLIPBOARD_CUT">CLIPBOARD_CUT</a>, <a href="../../../processing/app/syntax/InputHandler.html#CLIPBOARD_PASTE">CLIPBOARD_PASTE</a>, <a href="../../../processing/app/syntax/InputHandler.html#CONTEXT_AWARE_HOME_END">CONTEXT_AWARE_HOME_END</a>, <a href="../../../processing/app/syntax/InputHandler.html#DELETE">DELETE</a>, <a href="../../../processing/app/syntax/InputHandler.html#DELETE_WORD">DELETE_WORD</a>, <a href="../../../processing/app/syntax/InputHandler.html#DOCUMENT_END">DOCUMENT_END</a>, <a href="../../../processing/app/syntax/InputHandler.html#DOCUMENT_HOME">DOCUMENT_HOME</a>, <a href="../../../processing/app/syntax/InputHandler.html#END">END</a>, <a href="../../../processing/app/syntax/InputHandler.html#HOME">HOME</a>, <a href="../../../processing/app/syntax/InputHandler.html#INSERT_BREAK">INSERT_BREAK</a>, <a href="../../../processing/app/syntax/InputHandler.html#INSERT_CHAR">INSERT_CHAR</a>, <a href="../../../processing/app/syntax/InputHandler.html#INSERT_TAB">INSERT_TAB</a>, <a href="../../../processing/app/syntax/InputHandler.html#NEXT_CHAR">NEXT_CHAR</a>, <a href="../../../processing/app/syntax/InputHandler.html#NEXT_LINE">NEXT_LINE</a>, <a href="../../../processing/app/syntax/InputHandler.html#NEXT_PAGE">NEXT_PAGE</a>, <a href="../../../processing/app/syntax/InputHandler.html#NEXT_WORD">NEXT_WORD</a>, <a href="../../../processing/app/syntax/InputHandler.html#OVERWRITE">OVERWRITE</a>, <a href="../../../processing/app/syntax/InputHandler.html#PREV_CHAR">PREV_CHAR</a>, <a href="../../../processing/app/syntax/InputHandler.html#PREV_LINE">PREV_LINE</a>, <a href="../../../processing/app/syntax/InputHandler.html#PREV_PAGE">PREV_PAGE</a>, <a href="../../../processing/app/syntax/InputHandler.html#PREV_WORD">PREV_WORD</a>, <a href="../../../processing/app/syntax/InputHandler.html#REPEAT">REPEAT</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_DOC_END">SELECT_DOC_END</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_DOC_HOME">SELECT_DOC_HOME</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_END">SELECT_END</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_HOME">SELECT_HOME</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_NEXT_CHAR">SELECT_NEXT_CHAR</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_NEXT_LINE">SELECT_NEXT_LINE</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_NEXT_PAGE">SELECT_NEXT_PAGE</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_NEXT_WORD">SELECT_NEXT_WORD</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_PREV_CHAR">SELECT_PREV_CHAR</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_PREV_LINE">SELECT_PREV_LINE</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_PREV_PAGE">SELECT_PREV_PAGE</a>, <a href="../../../processing/app/syntax/InputHandler.html#SELECT_PREV_WORD">SELECT_PREV_WORD</a>, <a href="../../../processing/app/syntax/InputHandler.html#SMART_HOME_END_PROPERTY">SMART_HOME_END_PROPERTY</a></code></li>
 </ul>
 </li>
 </ul>
@@ -179,7 +179,12 @@ extends <a href="../../../processing/app/syntax/DefaultInputHandler.html" title=
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../processing/app/syntax/PdeInputHandler.html#PdeInputHandler--">PdeInputHandler</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../processing/app/syntax/PdeInputHandler.html#PdeInputHandler--">PdeInputHandler</a></span>()</code>
+<div class="block">Not recommended, but included for compatibility.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../processing/app/syntax/PdeInputHandler.html#PdeInputHandler-processing.app.ui.Editor-">PdeInputHandler</a></span>(<a href="../../../processing/app/ui/Editor.html" title="class in processing.app.ui">Editor</a>&nbsp;editor)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -197,24 +202,30 @@ extends <a href="../../../processing/app/syntax/DefaultInputHandler.html" title=
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/syntax/PdeInputHandler.html#handleInputMethodCommit--">handleInputMethodCommit</a></span>()</code>
+<div class="block">Called when input method support committed a character.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/syntax/PdeInputHandler.html#handlePressed-java.awt.event.KeyEvent-">handlePressed</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/event/KeyEvent.html?is-external=true" title="class or interface in java.awt.event">KeyEvent</a>&nbsp;event)</code>
 <div class="block">Override this function in your InputHandler to do any gymnastics.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/syntax/PdeInputHandler.html#handleTyped-java.awt.event.KeyEvent-">handleTyped</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/event/KeyEvent.html?is-external=true" title="class or interface in java.awt.event">KeyEvent</a>&nbsp;event)</code>
 <div class="block">Override this instead of keyPressed/keyTyped</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/syntax/PdeInputHandler.html#keyPressed-java.awt.event.KeyEvent-">keyPressed</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/event/KeyEvent.html?is-external=true" title="class or interface in java.awt.event">KeyEvent</a>&nbsp;event)</code>
 <div class="block">Handle a key pressed event.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/syntax/PdeInputHandler.html#keyTyped-java.awt.event.KeyEvent-">keyTyped</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/event/KeyEvent.html?is-external=true" title="class or interface in java.awt.event">KeyEvent</a>&nbsp;event)</code>
 <div class="block">Handle a key typed event.</div>
@@ -266,10 +277,20 @@ extends <a href="../../../processing/app/syntax/DefaultInputHandler.html" title=
 <a name="PdeInputHandler--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>PdeInputHandler</h4>
 <pre>public&nbsp;PdeInputHandler()</pre>
+<div class="block">Not recommended, but included for compatibility.</div>
+</li>
+</ul>
+<a name="PdeInputHandler-processing.app.ui.Editor-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>PdeInputHandler</h4>
+<pre>public&nbsp;PdeInputHandler(<a href="../../../processing/app/ui/Editor.html" title="class in processing.app.ui">Editor</a>&nbsp;editor)</pre>
 </li>
 </ul>
 </li>
@@ -332,7 +353,7 @@ extends <a href="../../../processing/app/syntax/DefaultInputHandler.html" title=
 <a name="handleTyped-java.awt.event.KeyEvent-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>handleTyped</h4>
 <pre>public&nbsp;boolean&nbsp;handleTyped(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/event/KeyEvent.html?is-external=true" title="class or interface in java.awt.event">KeyEvent</a>&nbsp;event)</pre>
@@ -340,6 +361,21 @@ extends <a href="../../../processing/app/syntax/DefaultInputHandler.html" title=
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if key has been handled (no further handling should be done)</dd>
+</dl>
+</li>
+</ul>
+<a name="handleInputMethodCommit--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>handleInputMethodCommit</h4>
+<pre>public&nbsp;void&nbsp;handleInputMethodCommit()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../processing/app/syntax/InputHandler.html#handleInputMethodCommit--">InputHandler</a></code></span></div>
+<div class="block">Called when input method support committed a character.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../processing/app/syntax/InputHandler.html#handleInputMethodCommit--">handleInputMethodCommit</a></code>&nbsp;in class&nbsp;<code><a href="../../../processing/app/syntax/InputHandler.html" title="class in processing.app.syntax">InputHandler</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -371,7 +407,7 @@ extends <a href="../../../processing/app/syntax/DefaultInputHandler.html" title=
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../processing/app/syntax/KeywordMap.html" title="class in processing.app.syntax"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../processing/app/syntax/PdeKeywords.html" title="class in processing.app.syntax"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../processing/app/syntax/PdeTextArea.html" title="class in processing.app.syntax"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?processing/app/syntax/PdeInputHandler.html" target="_top">Frames</a></li>

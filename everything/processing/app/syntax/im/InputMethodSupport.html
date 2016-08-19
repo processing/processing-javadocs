@@ -114,13 +114,14 @@ var activeTableTab = "activeTableTab";
 <pre>public class <span class="typeNameLabel">InputMethodSupport</span>
 extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="http://docs.oracle.com/javase/7/docs/api/java/awt/im/InputMethodRequests.html?is-external=true" title="class or interface in java.awt.im">InputMethodRequests</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/awt/event/InputMethodListener.html?is-external=true" title="class or interface in java.awt.event">InputMethodListener</a></pre>
-<div class="block">Support in-line Japanese input for PDE. (Maybe Chinese, Korean and more)
- This class is implemented by Java Input Method Framework and handles
- If you would like to know more about Java Input Method Framework,
- Please see http://java.sun.com/j2se/1.5.0/docs/guide/imf/
- 
- This class is implemented to fix Bug #854.
- http://dev.processing.org/bugs/show_bug.cgi?id=854</div>
+<div class="block">On-the-spot style input support for CJK (Chinese, Japanese, Korean).</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://processing.org/bugs/bugzilla/854.html">Bugzilla 854: implement input method support for Japanese (and other languages)</a>, 
+<a href="https://processing.org/bugs/bugzilla/1531.html">Bugzilla 1531: Can't input full-width space when Japanese IME is on.</a>, 
+<a href="http://docs.oracle.com/javase/8/docs/technotes/guides/imf/index.html">Java Input Method Framework (IMF) Technology</a>, 
+<a href="http://docs.oracle.com/javase/tutorial/2d/text/index.html">The Java Tutorials</a></dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -337,9 +338,7 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/awt/im/InputMe
 <li class="blockList">
 <h4>inputMethodTextChanged</h4>
 <pre>public&nbsp;void&nbsp;inputMethodTextChanged(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/event/InputMethodEvent.html?is-external=true" title="class or interface in java.awt.event">InputMethodEvent</a>&nbsp;event)</pre>
-<div class="block">Handles events from InputMethod.
- This method judges whether beginning of input or 
- progress of input or end and call related method.</div>
+<div class="block">Handles events from InputMethod.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/event/InputMethodListener.html?is-external=true#inputMethodTextChanged-java.awt.event.InputMethodEvent-" title="class or interface in java.awt.event">inputMethodTextChanged</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/event/InputMethodListener.html?is-external=true" title="class or interface in java.awt.event">InputMethodListener</a></code></dd>

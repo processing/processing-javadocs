@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../processing/app/ui/ExamplesFrame.html" title="class in processing.app.ui"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../processing/app/ui/PreferencesFrame.html" title="class in processing.app.ui"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../processing/app/ui/MarkerColumn.html" title="class in processing.app.ui"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?processing/app/ui/FindReplace.html" target="_top">Frames</a></li>
@@ -266,24 +266,31 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JFrame.htm
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/FindReplace.html#replace--">replace</a></span>()</code>
 <div class="block">Replace the current selection with whatever's in the
- replacement text field.</div>
+ replacement text field, marking the action as a compound edit.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/FindReplace.html#replace-boolean-">replace</a></span>(boolean&nbsp;isCompoundEdit)</code>
+<div class="block">Replace the current selection with whatever's in the
+ replacement text field.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/FindReplace.html#replaceAll--">replaceAll</a></span>()</code>
 <div class="block">Replace everything that matches by doing find and replace
  alternately until nothing more found.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/FindReplace.html#replaceAndFindNext--">replaceAndFindNext</a></span>()</code>
 <div class="block">Replace the current selection with whatever's in the
  replacement text field, and then find the next match</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/FindReplace.html#setFindText-java.lang.String-">setFindText</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;t)</code>&nbsp;</td>
 </tr>
@@ -377,6 +384,21 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JFrame.htm
 <pre>public&nbsp;void&nbsp;handleClose()</pre>
 </li>
 </ul>
+<a name="replace-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>replace</h4>
+<pre>public&nbsp;void&nbsp;replace(boolean&nbsp;isCompoundEdit)</pre>
+<div class="block">Replace the current selection with whatever's in the
+ replacement text field.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>isCompoundEdit</code> - True if the action is to be marked as a copmound edit</dd>
+</dl>
+</li>
+</ul>
 <a name="replace--">
 <!--   -->
 </a>
@@ -385,7 +407,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JFrame.htm
 <h4>replace</h4>
 <pre>public&nbsp;void&nbsp;replace()</pre>
 <div class="block">Replace the current selection with whatever's in the
- replacement text field.</div>
+ replacement text field, marking the action as a compound edit.</div>
 </li>
 </ul>
 <a name="replaceAndFindNext--">
@@ -476,7 +498,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JFrame.htm
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../processing/app/ui/ExamplesFrame.html" title="class in processing.app.ui"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../processing/app/ui/PreferencesFrame.html" title="class in processing.app.ui"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../processing/app/ui/MarkerColumn.html" title="class in processing.app.ui"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?processing/app/ui/FindReplace.html" target="_top">Frames</a></li>

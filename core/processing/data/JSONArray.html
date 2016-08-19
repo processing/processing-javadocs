@@ -582,8 +582,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dd><code>source</code> - A string that begins with
  <code>[</code>&nbsp;<small>(left bracket)</small>
   and ends with <code>]</code>&nbsp;<small>(right bracket)</small>.</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If there is a syntax error.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>null</code> if there is a syntax error.</dd>
 </dl>
 </li>
 </ul>
@@ -601,11 +601,13 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A string value.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If there is no string value for the index.</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If there is no string value for the index.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONArray.html#getInt-int-"><code>getInt(int)</code></a>, 
 <a href="../../processing/data/JSONArray.html#getFloat-int-"><code>getFloat(int)</code></a>, 
 <a href="../../processing/data/JSONArray.html#getBoolean-int-"><code>getBoolean(int)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the String value associated with an index</dd>
 </dl>
 </li>
 </ul>
@@ -642,11 +644,13 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The value.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If the key is not found or if the value is not a number.</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If the key is not found or if the value is not a number.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONArray.html#getFloat-int-"><code>getFloat(int)</code></a>, 
 <a href="../../processing/data/JSONArray.html#getString-int-"><code>getString(int)</code></a>, 
 <a href="../../processing/data/JSONArray.html#getBoolean-int-"><code>getBoolean(int)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the int value associated with an index</dd>
 </dl>
 </li>
 </ul>
@@ -684,7 +688,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The value.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If the key is not found or if the value cannot
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If the key is not found or if the value cannot
   be converted to a number.</dd>
 </dl>
 </li>
@@ -725,6 +729,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dd><a href="../../processing/data/JSONArray.html#getInt-int-"><code>getInt(int)</code></a>, 
 <a href="../../processing/data/JSONArray.html#getString-int-"><code>getString(int)</code></a>, 
 <a href="../../processing/data/JSONArray.html#getBoolean-int-"><code>getBoolean(int)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the float value associated with an index</dd>
 </dl>
 </li>
 </ul>
@@ -752,7 +758,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The value.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If the key is not found or if the value cannot
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If the key is not found or if the value cannot
   be converted to a number.</dd>
 </dl>
 </li>
@@ -792,12 +798,14 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The truth.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If there is no value for the index or if the
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If there is no value for the index or if the
   value is not convertible to boolean.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONArray.html#getInt-int-"><code>getInt(int)</code></a>, 
 <a href="../../processing/data/JSONArray.html#getFloat-int-"><code>getFloat(int)</code></a>, 
 <a href="../../processing/data/JSONArray.html#getString-int-"><code>getString(int)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the boolean value associated with an index</dd>
 </dl>
 </li>
 </ul>
@@ -835,12 +843,14 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A JSONArray value.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If there is no value for the index. or if the
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If there is no value for the index. or if the
  value is not a JSONArray</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONArray.html#getJSONObject-int-"><code>getJSONObject(int)</code></a>, 
 <a href="../../processing/data/JSONArray.html#setJSONObject-int-processing.data.JSONObject-"><code>setJSONObject(int, JSONObject)</code></a>, 
 <a href="../../processing/data/JSONArray.html#setJSONArray-int-processing.data.JSONArray-"><code>setJSONArray(int, JSONArray)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the JSONArray associated with an index value</dd>
 </dl>
 </li>
 </ul>
@@ -868,12 +878,14 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A JSONObject value.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If there is no value for the index or if the
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If there is no value for the index or if the
  value is not a JSONObject</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONArray.html#getJSONArray-int-"><code>getJSONArray(int)</code></a>, 
 <a href="../../processing/data/JSONArray.html#setJSONObject-int-processing.data.JSONObject-"><code>setJSONObject(int, JSONObject)</code></a>, 
 <a href="../../processing/data/JSONArray.html#setJSONArray-int-processing.data.JSONArray-"><code>setJSONArray(int, JSONArray)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the JSONObject associated with an index value</dd>
 </dl>
 </li>
 </ul>
@@ -898,6 +910,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONArray.html#getIntArray--"><code>getIntArray()</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the entire array as an array of Strings</dd>
 </dl>
 </li>
 </ul>
@@ -912,6 +926,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONArray.html#getStringArray--"><code>getStringArray()</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the entire array as array of ints</dd>
 </dl>
 </li>
 </ul>
@@ -971,6 +987,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONArray.html#size--"><code>size()</code></a>, 
 <a href="../../processing/data/JSONArray.html#remove-int-"><code>remove(int)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Appends a value, increasing the array's length by one</dd>
 </dl>
 </li>
 </ul>
@@ -1021,7 +1039,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - if the value is not finite.</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - if the value is not finite.</dd>
 </dl>
 </li>
 </ul>
@@ -1039,7 +1057,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - if the value is not finite.</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - if the value is not finite.</dd>
 </dl>
 </li>
 </ul>
@@ -1103,11 +1121,13 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If the index is negative.</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If the index is negative.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONArray.html#setInt-int-int-"><code>setInt(int, int)</code></a>, 
 <a href="../../processing/data/JSONArray.html#setFloat-int-float-"><code>setFloat(int, float)</code></a>, 
 <a href="../../processing/data/JSONArray.html#setBoolean-int-boolean-"><code>setBoolean(int, boolean)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Put a String value in the JSONArray</dd>
 </dl>
 </li>
 </ul>
@@ -1129,11 +1149,13 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If the index is negative.</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If the index is negative.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONArray.html#setFloat-int-float-"><code>setFloat(int, float)</code></a>, 
 <a href="../../processing/data/JSONArray.html#setString-int-java.lang.String-"><code>setString(int, String)</code></a>, 
 <a href="../../processing/data/JSONArray.html#setBoolean-int-boolean-"><code>setBoolean(int, boolean)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Put an int value in the JSONArray</dd>
 </dl>
 </li>
 </ul>
@@ -1155,7 +1177,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If the index is negative.</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If the index is negative.</dd>
 </dl>
 </li>
 </ul>
@@ -1184,6 +1206,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dd><a href="../../processing/data/JSONArray.html#setInt-int-int-"><code>setInt(int, int)</code></a>, 
 <a href="../../processing/data/JSONArray.html#setString-int-java.lang.String-"><code>setString(int, String)</code></a>, 
 <a href="../../processing/data/JSONArray.html#setBoolean-int-boolean-"><code>setBoolean(int, boolean)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Put a float value in the JSONArray</dd>
 </dl>
 </li>
 </ul>
@@ -1205,7 +1229,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If the index is negative or if the value is
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If the index is negative or if the value is
  not finite.</dd>
 </dl>
 </li>
@@ -1228,11 +1252,13 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If the index is negative.</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If the index is negative.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONArray.html#setInt-int-int-"><code>setInt(int, int)</code></a>, 
 <a href="../../processing/data/JSONArray.html#setFloat-int-float-"><code>setFloat(int, float)</code></a>, 
 <a href="../../processing/data/JSONArray.html#setString-int-java.lang.String-"><code>setString(int, String)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Put a boolean value in the JSONArray</dd>
 </dl>
 </li>
 </ul>
@@ -1252,6 +1278,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dd><a href="../../processing/data/JSONArray.html#setJSONObject-int-processing.data.JSONObject-"><code>setJSONObject(int, JSONObject)</code></a>, 
 <a href="../../processing/data/JSONArray.html#getJSONObject-int-"><code>getJSONObject(int)</code></a>, 
 <a href="../../processing/data/JSONArray.html#getJSONArray-int-"><code>getJSONArray(int)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Sets the JSONArray value associated with an index value</dd>
 </dl>
 </li>
 </ul>
@@ -1271,6 +1299,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dd><a href="../../processing/data/JSONArray.html#setJSONArray-int-processing.data.JSONArray-"><code>setJSONArray(int, JSONArray)</code></a>, 
 <a href="../../processing/data/JSONArray.html#getJSONObject-int-"><code>getJSONObject(int)</code></a>, 
 <a href="../../processing/data/JSONArray.html#getJSONArray-int-"><code>getJSONArray(int)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Sets the JSONObject value associated with an index value</dd>
 </dl>
 </li>
 </ul>
@@ -1288,6 +1318,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONArray.html#append-java.lang.String-"><code>append(String)</code></a>, 
 <a href="../../processing/data/JSONArray.html#remove-int-"><code>remove(int)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the number of elements in the JSONArray</dd>
 </dl>
 </li>
 </ul>
@@ -1323,6 +1355,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONArray.html#size--"><code>size()</code></a>, 
 <a href="../../processing/data/JSONArray.html#append-java.lang.String-"><code>append(String)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Removes an element</dd>
 </dl>
 </li>
 </ul>
@@ -1408,7 +1442,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a string.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If the array contains an invalid number.</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If the array contains an invalid number.</dd>
 </dl>
 </li>
 </ul>

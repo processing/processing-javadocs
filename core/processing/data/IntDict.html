@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -244,9 +244,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/IntDict.html#keys--">keys</a></span>()</code>
-<div class="block">Return the internal array being used to store the keys.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/IntDict.html#keys--">keys</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>int</code></td>
@@ -254,7 +252,9 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/IntDict.html#maxKey--">maxKey</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/IntDict.html#maxKey--">maxKey</a></span>()</code>
+<div class="block">return the key corresponding to the maximum value or null if no entries</div>
+</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>int</code></td>
@@ -322,50 +322,66 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/IntDict.html#sortValuesReverse--">sortValuesReverse</a></span>()</code>
-<div class="block">Sort by values in descending order.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/IntDict.html#sortValues-boolean-">sortValues</a></span>(boolean&nbsp;stable)</code>
+<div class="block">Set true to ensure that the order returned is identical.</div>
 </td>
 </tr>
 <tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/IntDict.html#sortValuesReverse--">sortValuesReverse</a></span>()</code>
+<div class="block">Sort by values in descending order.</div>
+</td>
+</tr>
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/IntDict.html#sortValuesReverse-boolean-">sortValuesReverse</a></span>(boolean&nbsp;stable)</code>&nbsp;</td>
+</tr>
+<tr id="i33" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/IntDict.html#sub-java.lang.String-int-">sub</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
    int&nbsp;amount)</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/IntDict.html#swap-int-int-">swap</a></span>(int&nbsp;a,
     int&nbsp;b)</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/IntDict.html#toJSON--">toJSON</a></span>()</code>
+<div class="block">Return this dictionary as a String in JSON format.</div>
+</td>
+</tr>
+<tr id="i36" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/IntDict.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/IntDict.html#value-int-">value</a></span>(int&nbsp;index)</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>int[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/IntDict.html#valueArray--">valueArray</a></span>()</code>
 <div class="block">Create a new array and copy each of the values into it.</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>int[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/IntDict.html#valueArray-int:A-">valueArray</a></span>(int[]&nbsp;array)</code>
 <div class="block">Fill an already-allocated array with the values (more efficient than
  creating a new array each time).</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/IntDict.html#valueIterator--">valueIterator</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/IntDict.html#values--">values</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/IntDict.html#write-java.io.PrintWriter-">write</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/PrintWriter.html?is-external=true" title="class or interface in java.io">PrintWriter</a>&nbsp;writer)</code>
 <div class="block">Write tab-delimited entries out to</div>
@@ -466,6 +482,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <h4>size</h4>
 <pre>public&nbsp;int&nbsp;size()</pre>
 <div class="block">Returns the number of key/value pairs</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Returns the number of key/value pairs</dd>
+</dl>
 </li>
 </ul>
 <a name="clear--">
@@ -476,6 +496,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <h4>clear</h4>
 <pre>public&nbsp;void&nbsp;clear()</pre>
 <div class="block">Remove all entries.</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Remove all entries</dd>
+</dl>
 </li>
 </ul>
 <a name="key-int-">
@@ -494,8 +518,6 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>keys</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;keys()</pre>
-<div class="block">Return the internal array being used to store the keys. Allocated but
- unused entries will be removed. This array should not be modified.</div>
 </li>
 </ul>
 <a name="keyIterator--">
@@ -515,6 +537,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <h4>keyArray</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;keyArray()</pre>
 <div class="block">Return a copy of the internal keys array. This array can be modified.</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Return a copy of the internal keys array</dd>
+</dl>
 </li>
 </ul>
 <a name="keyArray-java.lang.String:A-">
@@ -542,6 +568,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>values</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;values()</pre>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Return the internal array being used to store the values</dd>
+</dl>
 </li>
 </ul>
 <a name="valueIterator--">
@@ -561,6 +591,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <h4>valueArray</h4>
 <pre>public&nbsp;int[]&nbsp;valueArray()</pre>
 <div class="block">Create a new array and copy each of the values into it.</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Create a new array and copy each of the values into it</dd>
+</dl>
 </li>
 </ul>
 <a name="valueArray-int:A-">
@@ -587,6 +621,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <h4>get</h4>
 <pre>public&nbsp;int&nbsp;get(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Return a value for the specified key.</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Return a value for the specified key</dd>
+</dl>
 </li>
 </ul>
 <a name="get-java.lang.String-int-">
@@ -608,6 +646,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <pre>public&nbsp;void&nbsp;set(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
                 int&nbsp;amount)</pre>
 <div class="block">Create a new key/value pair or change the value of one.</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Create a new key/value pair or change the value of one</dd>
+</dl>
 </li>
 </ul>
 <a name="hasKey-java.lang.String-">
@@ -617,6 +659,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>hasKey</h4>
 <pre>public&nbsp;boolean&nbsp;hasKey(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Check if a key is a part of the data structure</dd>
+</dl>
 </li>
 </ul>
 <a name="increment-java.lang.String-">
@@ -627,6 +673,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <h4>increment</h4>
 <pre>public&nbsp;void&nbsp;increment(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 <div class="block">Increase the value associated with a specific key by 1.</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Increase the value of a specific key value by 1</dd>
+</dl>
 </li>
 </ul>
 <a name="add-java.lang.String-int-">
@@ -637,6 +687,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <h4>add</h4>
 <pre>public&nbsp;void&nbsp;add(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
                 int&nbsp;amount)</pre>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Add to a value</dd>
+</dl>
 </li>
 </ul>
 <a name="sub-java.lang.String-int-">
@@ -647,6 +701,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <h4>sub</h4>
 <pre>public&nbsp;void&nbsp;sub(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
                 int&nbsp;amount)</pre>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Subtract from a value</dd>
+</dl>
 </li>
 </ul>
 <a name="mult-java.lang.String-int-">
@@ -657,6 +715,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <h4>mult</h4>
 <pre>public&nbsp;void&nbsp;mult(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
                  int&nbsp;amount)</pre>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Multiply a value</dd>
+</dl>
 </li>
 </ul>
 <a name="div-java.lang.String-int-">
@@ -667,6 +729,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <h4>div</h4>
 <pre>public&nbsp;void&nbsp;div(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
                 int&nbsp;amount)</pre>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Divide a value</dd>
+</dl>
 </li>
 </ul>
 <a name="minIndex--">
@@ -678,15 +744,6 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <pre>public&nbsp;int&nbsp;minIndex()</pre>
 </li>
 </ul>
-<a name="minValue--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>minValue</h4>
-<pre>public&nbsp;int&nbsp;minValue()</pre>
-</li>
-</ul>
 <a name="minKey--">
 <!--   -->
 </a>
@@ -694,6 +751,15 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>minKey</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;minKey()</pre>
+</li>
+</ul>
+<a name="minValue--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>minValue</h4>
+<pre>public&nbsp;int&nbsp;minValue()</pre>
 </li>
 </ul>
 <a name="maxIndex--">
@@ -705,15 +771,6 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <pre>public&nbsp;int&nbsp;maxIndex()</pre>
 </li>
 </ul>
-<a name="maxValue--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>maxValue</h4>
-<pre>public&nbsp;int&nbsp;maxValue()</pre>
-</li>
-</ul>
 <a name="maxKey--">
 <!--   -->
 </a>
@@ -721,6 +778,16 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>maxKey</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;maxKey()</pre>
+<div class="block">return the key corresponding to the maximum value or null if no entries</div>
+</li>
+</ul>
+<a name="maxValue--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>maxValue</h4>
+<pre>public&nbsp;int&nbsp;maxValue()</pre>
 </li>
 </ul>
 <a name="index-java.lang.String-">
@@ -739,6 +806,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>remove</h4>
 <pre>public&nbsp;int&nbsp;remove(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Remove a key/value pair</dd>
+</dl>
 </li>
 </ul>
 <a name="removeIndex-int-">
@@ -769,6 +840,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <pre>public&nbsp;void&nbsp;sortKeys()</pre>
 <div class="block">Sort the keys alphabetically (ignoring case). Uses the value as a
  tie-breaker (only really possible with a key that has a case change).</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Sort the keys alphabetically</dd>
+</dl>
 </li>
 </ul>
 <a name="sortKeysReverse--">
@@ -780,6 +855,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <pre>public&nbsp;void&nbsp;sortKeysReverse()</pre>
 <div class="block">Sort the keys alphabetically in reverse (ignoring case). Uses the value as a
  tie-breaker (only really possible with a key that has a case change).</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Sort the keys alphabetically in reverse</dd>
+</dl>
 </li>
 </ul>
 <a name="sortValues--">
@@ -790,6 +869,25 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <h4>sortValues</h4>
 <pre>public&nbsp;void&nbsp;sortValues()</pre>
 <div class="block">Sort by values in ascending order. The smallest value will be at [0].</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Sort by values in ascending order</dd>
+</dl>
+</li>
+</ul>
+<a name="sortValues-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sortValues</h4>
+<pre>public&nbsp;void&nbsp;sortValues(boolean&nbsp;stable)</pre>
+<div class="block">Set true to ensure that the order returned is identical. Slightly
+ slower because the tie-breaker for identical values compares the keys.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>stable</code> - </dd>
+</dl>
 </li>
 </ul>
 <a name="sortValuesReverse--">
@@ -800,6 +898,19 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <h4>sortValuesReverse</h4>
 <pre>public&nbsp;void&nbsp;sortValuesReverse()</pre>
 <div class="block">Sort by values in descending order. The largest value will be at [0].</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Sort by values in descending order</dd>
+</dl>
+</li>
+</ul>
+<a name="sortValuesReverse-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sortValuesReverse</h4>
+<pre>public&nbsp;void&nbsp;sortValuesReverse(boolean&nbsp;stable)</pre>
 </li>
 </ul>
 <a name="getPercent--">
@@ -813,7 +924,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
  each key, divided by the total sum. The total for all values will be ~1.0.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a Dict with the original keys, mapped to their pct of the total</dd>
+<dd>an IntDict with the original keys, mapped to their pct of the total</dd>
 </dl>
 </li>
 </ul>
@@ -825,6 +936,15 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <h4>copy</h4>
 <pre>public&nbsp;<a href="../../processing/data/IntDict.html" title="class in processing.data">IntDict</a>&nbsp;copy()</pre>
 <div class="block">Returns a duplicate copy of this object.</div>
+</li>
+</ul>
+<a name="print--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>print</h4>
+<pre>public&nbsp;void&nbsp;print()</pre>
 </li>
 </ul>
 <a name="write-java.io.PrintWriter-">
@@ -841,13 +961,14 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
-<a name="print--">
+<a name="toJSON--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>print</h4>
-<pre>public&nbsp;void&nbsp;print()</pre>
+<h4>toJSON</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toJSON()</pre>
+<div class="block">Return this dictionary as a String in JSON format.</div>
 </li>
 </ul>
 <a name="toString--">

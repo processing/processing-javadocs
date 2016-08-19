@@ -1734,13 +1734,14 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i96" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/opengl/PGL.html#initPresentMode-float-float-">initPresentMode</a></span>(float&nbsp;x,
-               float&nbsp;y)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/opengl/PGL.html#initPresentMode-float-float-int-">initPresentMode</a></span>(float&nbsp;x,
+               float&nbsp;y,
+               int&nbsp;stopColor)</code>&nbsp;</td>
 </tr>
 <tr id="i97" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/opengl/PGL.html#insideCloseButton-float-float-">insideCloseButton</a></span>(float&nbsp;x,
-                 float&nbsp;y)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/opengl/PGL.html#insideStopButton-float-float-">insideStopButton</a></span>(float&nbsp;x,
+                float&nbsp;y)</code>&nbsp;</td>
 </tr>
 <tr id="i98" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
@@ -4588,14 +4589,15 @@ public&nbsp;void&nbsp;requestFBOLayer()</pre>
 <pre>public&nbsp;void&nbsp;resetFBOLayer()</pre>
 </li>
 </ul>
-<a name="initPresentMode-float-float-">
+<a name="initPresentMode-float-float-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>initPresentMode</h4>
 <pre>public&nbsp;void&nbsp;initPresentMode(float&nbsp;x,
-                            float&nbsp;y)</pre>
+                            float&nbsp;y,
+                            int&nbsp;stopColor)</pre>
 </li>
 </ul>
 <a name="presentMode--">
@@ -4625,14 +4627,14 @@ public&nbsp;void&nbsp;requestFBOLayer()</pre>
 <pre>public&nbsp;float&nbsp;presentY()</pre>
 </li>
 </ul>
-<a name="insideCloseButton-float-float-">
+<a name="insideStopButton-float-float-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>insideCloseButton</h4>
-<pre>public&nbsp;boolean&nbsp;insideCloseButton(float&nbsp;x,
-                                 float&nbsp;y)</pre>
+<h4>insideStopButton</h4>
+<pre>public&nbsp;boolean&nbsp;insideStopButton(float&nbsp;x,
+                                float&nbsp;y)</pre>
 </li>
 </ul>
 <a name="threadIsCurrent--">

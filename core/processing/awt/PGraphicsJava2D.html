@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -413,28 +413,35 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
 </td>
 </tr>
 <tr id="i23" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Image.html?is-external=true" title="class or interface in java.awt">Image</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#getImage--">getImage</a></span>()</code>
+<div class="block">Still need a means to get the java.awt.Image object, since getNative()
+ is going to return the <a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Graphics2D.html?is-external=true" title="class or interface in java.awt"><code>Graphics2D</code></a> object.</div>
+</td>
+</tr>
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#getMatrix--">getMatrix</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../processing/core/PMatrix2D.html" title="class in processing.core">PMatrix2D</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#getMatrix-processing.core.PMatrix2D-">getMatrix</a></span>(<a href="../../processing/core/PMatrix2D.html" title="class in processing.core">PMatrix2D</a>&nbsp;target)</code>
 <div class="block">Copy the current transformation matrix into the specified target.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="../../processing/core/PMatrix3D.html" title="class in processing.core">PMatrix3D</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#getMatrix-processing.core.PMatrix3D-">getMatrix</a></span>(<a href="../../processing/core/PMatrix3D.html" title="class in processing.core">PMatrix3D</a>&nbsp;target)</code>
 <div class="block">Copy the current transformation matrix into the specified target.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#getNative--">getNative</a></span>()</code>
 <div class="block">Returns the java.awt.Graphics2D object used by this renderer.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#hint-int-">hint</a></span>(int&nbsp;which)</code>
 <div class="block">( begin auto-generated from hint.xml )
@@ -442,7 +449,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  Set various hints and hacks for the renderer.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#line-float-float-float-float-">line</a></span>(float&nbsp;x1,
     float&nbsp;y1,
@@ -453,7 +460,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  Draws a line (a direct path between two points) to the screen.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#loadPixels--">loadPixels</a></span>()</code>
 <div class="block">( begin auto-generated from PImage_loadPixels.xml )
@@ -461,16 +468,16 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  Loads the pixel data for the image into its <b>pixels[]</b> array.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="../../processing/core/PShape.html" title="class in processing.core">PShape</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#loadShape-java.lang.String-java.lang.String-">loadShape</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filename,
          <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;options)</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#mask-int:A-">mask</a></span>(int[]&nbsp;alpha)</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#mask-processing.core.PImage-">mask</a></span>(<a href="../../processing/core/PImage.html" title="class in processing.core">PImage</a>&nbsp;alpha)</code>
 <div class="block">( begin auto-generated from PImage_mask.xml )
@@ -479,7 +486,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  using it as an alpha channel.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#noClip--">noClip</a></span>()</code>
 <div class="block">( begin auto-generated from noClip.xml )
@@ -487,7 +494,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  Disables the clipping previously started by the <b>clip()</b> function.</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#point-float-float-">point</a></span>(float&nbsp;x,
      float&nbsp;y)</code>
@@ -496,7 +503,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  Draws a point, a coordinate in space at the dimension of one pixel.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#popMatrix--">popMatrix</a></span>()</code>
 <div class="block">( begin auto-generated from popMatrix.xml )
@@ -504,7 +511,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  Pops the current transformation matrix off the matrix stack.</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#printMatrix--">printMatrix</a></span>()</code>
 <div class="block">( begin auto-generated from printMatrix.xml )
@@ -513,7 +520,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  of Processing).</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#pushMatrix--">pushMatrix</a></span>()</code>
 <div class="block">( begin auto-generated from pushMatrix.xml )
@@ -521,7 +528,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  Pushes the current transformation matrix onto the matrix stack.</div>
 </td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#quad-float-float-float-float-float-float-float-float-">quad</a></span>(float&nbsp;x1,
     float&nbsp;y1,
@@ -536,14 +543,14 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  A quad is a quadrilateral, a four sided polygon.</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#quadraticVertex-float-float-float-float-">quadraticVertex</a></span>(float&nbsp;ctrlX,
                float&nbsp;ctrlY,
                float&nbsp;endX,
                float&nbsp;endY)</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#quadraticVertex-float-float-float-float-float-float-">quadraticVertex</a></span>(float&nbsp;x2,
                float&nbsp;y2,
@@ -552,7 +559,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
                float&nbsp;y4,
                float&nbsp;z4)</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#resetMatrix--">resetMatrix</a></span>()</code>
 <div class="block">( begin auto-generated from resetMatrix.xml )
@@ -560,7 +567,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  Replaces the current matrix with the identity matrix.</div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#rotate-float-">rotate</a></span>(float&nbsp;angle)</code>
 <div class="block">( begin auto-generated from rotate.xml )
@@ -568,7 +575,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  Rotates a shape the amount specified by the <b>angle</b> parameter.</div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#rotate-float-float-float-float-">rotate</a></span>(float&nbsp;angle,
       float&nbsp;vx,
@@ -577,7 +584,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
 <div class="block">Advanced</div>
 </td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#rotateX-float-">rotateX</a></span>(float&nbsp;angle)</code>
 <div class="block">( begin auto-generated from rotateX.xml )
@@ -586,7 +593,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  <b>angle</b> parameter.</div>
 </td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#rotateY-float-">rotateY</a></span>(float&nbsp;angle)</code>
 <div class="block">( begin auto-generated from rotateY.xml )
@@ -595,7 +602,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  <b>angle</b> parameter.</div>
 </td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#rotateZ-float-">rotateZ</a></span>(float&nbsp;angle)</code>
 <div class="block">( begin auto-generated from rotateZ.xml )
@@ -604,7 +611,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  <b>angle</b> parameter.</div>
 </td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#scale-float-">scale</a></span>(float&nbsp;s)</code>
 <div class="block">( begin auto-generated from scale.xml )
@@ -613,20 +620,20 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  vertices.</div>
 </td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#scale-float-float-">scale</a></span>(float&nbsp;sx,
      float&nbsp;sy)</code>
 <div class="block">Advanced</div>
 </td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#scale-float-float-float-">scale</a></span>(float&nbsp;sx,
      float&nbsp;sy,
      float&nbsp;sz)</code>&nbsp;</td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#screenX-float-float-">screenX</a></span>(float&nbsp;x,
        float&nbsp;y)</code>
@@ -636,13 +643,13 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  where it will appear on a (two-dimensional) screen.</div>
 </td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#screenX-float-float-float-">screenX</a></span>(float&nbsp;x,
        float&nbsp;y,
        float&nbsp;z)</code>&nbsp;</td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#screenY-float-float-">screenY</a></span>(float&nbsp;x,
        float&nbsp;y)</code>
@@ -652,13 +659,13 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  where it will appear on a (two-dimensional) screen.</div>
 </td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#screenY-float-float-float-">screenY</a></span>(float&nbsp;x,
        float&nbsp;y,
        float&nbsp;z)</code>&nbsp;</td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#screenZ-float-float-float-">screenZ</a></span>(float&nbsp;x,
        float&nbsp;y,
@@ -669,7 +676,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  where it will appear on a (two-dimensional) screen.</div>
 </td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#set-int-int-int-">set</a></span>(int&nbsp;x,
    int&nbsp;y,
@@ -683,19 +690,19 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  <b>color</b> parameter specifies the color value.</div>
 </td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#setMatrix-processing.core.PMatrix2D-">setMatrix</a></span>(<a href="../../processing/core/PMatrix2D.html" title="class in processing.core">PMatrix2D</a>&nbsp;source)</code>
 <div class="block">Set the current transformation to the contents of the specified source.</div>
 </td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#setMatrix-processing.core.PMatrix3D-">setMatrix</a></span>(<a href="../../processing/core/PMatrix3D.html" title="class in processing.core">PMatrix3D</a>&nbsp;source)</code>
 <div class="block">Set the current transformation to the contents of the specified source.</div>
 </td>
 </tr>
-<tr id="i58" class="altColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#shearX-float-">shearX</a></span>(float&nbsp;angle)</code>
 <div class="block">( begin auto-generated from shearX.xml )
@@ -704,7 +711,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  <b>angle</b> parameter.</div>
 </td>
 </tr>
-<tr id="i59" class="rowColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#shearY-float-">shearY</a></span>(float&nbsp;angle)</code>
 <div class="block">( begin auto-generated from shearY.xml )
@@ -713,7 +720,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  <b>angle</b> parameter.</div>
 </td>
 </tr>
-<tr id="i60" class="altColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#sphere-float-">sphere</a></span>(float&nbsp;r)</code>
 <div class="block">( begin auto-generated from sphere.xml )
@@ -721,7 +728,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  A sphere is a hollow ball made from tessellated triangles.</div>
 </td>
 </tr>
-<tr id="i61" class="rowColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#strokeCap-int-">strokeCap</a></span>(int&nbsp;cap)</code>
 <div class="block">( begin auto-generated from strokeCap.xml )
@@ -729,7 +736,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  Sets the style for rendering line endings.</div>
 </td>
 </tr>
-<tr id="i62" class="altColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#strokeJoin-int-">strokeJoin</a></span>(int&nbsp;join)</code>
 <div class="block">( begin auto-generated from strokeJoin.xml )
@@ -737,7 +744,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  Sets the style of the joints which connect line segments.</div>
 </td>
 </tr>
-<tr id="i63" class="rowColor">
+<tr id="i64" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#strokeWeight-float-">strokeWeight</a></span>(float&nbsp;weight)</code>
 <div class="block">( begin auto-generated from strokeWeight.xml )
@@ -746,7 +753,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  around shapes.</div>
 </td>
 </tr>
-<tr id="i64" class="altColor">
+<tr id="i65" class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#textAscent--">textAscent</a></span>()</code>
 <div class="block">( begin auto-generated from textAscent.xml )
@@ -754,7 +761,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  Returns ascent of the current font at its current size.</div>
 </td>
 </tr>
-<tr id="i65" class="rowColor">
+<tr id="i66" class="altColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#textDescent--">textDescent</a></span>()</code>
 <div class="block">( begin auto-generated from textDescent.xml )
@@ -762,7 +769,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  Returns descent of the current font at its current size.</div>
 </td>
 </tr>
-<tr id="i66" class="altColor">
+<tr id="i67" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#texture-processing.core.PImage-">texture</a></span>(<a href="../../processing/core/PImage.html" title="class in processing.core">PImage</a>&nbsp;image)</code>
 <div class="block">( begin auto-generated from texture.xml )
@@ -770,7 +777,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  Sets a texture to be applied to vertex points.</div>
 </td>
 </tr>
-<tr id="i67" class="rowColor">
+<tr id="i68" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#translate-float-float-">translate</a></span>(float&nbsp;tx,
          float&nbsp;ty)</code>
@@ -779,7 +786,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  Specifies an amount to displace objects within the display window.</div>
 </td>
 </tr>
-<tr id="i68" class="altColor">
+<tr id="i69" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#triangle-float-float-float-float-float-float-">triangle</a></span>(float&nbsp;x1,
         float&nbsp;y1,
@@ -792,7 +799,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
  A triangle is a plane created by connecting three points.</div>
 </td>
 </tr>
-<tr id="i69" class="rowColor">
+<tr id="i70" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#updatePixels-int-int-int-int-">updatePixels</a></span>(int&nbsp;x,
             int&nbsp;y,
@@ -801,32 +808,32 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
 <div class="block">Update the pixels[] buffer to the PGraphics image.</div>
 </td>
 </tr>
-<tr id="i70" class="altColor">
+<tr id="i71" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#vertex-float:A-">vertex</a></span>(float[]&nbsp;v)</code>
 <div class="block">Used by renderer subclasses or PShape to efficiently pass in already
  formatted vertex information.</div>
 </td>
 </tr>
-<tr id="i71" class="rowColor">
+<tr id="i72" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#vertex-float-float-">vertex</a></span>(float&nbsp;x,
       float&nbsp;y)</code>&nbsp;</td>
 </tr>
-<tr id="i72" class="altColor">
+<tr id="i73" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#vertex-float-float-float-">vertex</a></span>(float&nbsp;x,
       float&nbsp;y,
       float&nbsp;z)</code>&nbsp;</td>
 </tr>
-<tr id="i73" class="rowColor">
+<tr id="i74" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#vertex-float-float-float-float-">vertex</a></span>(float&nbsp;x,
       float&nbsp;y,
       float&nbsp;u,
       float&nbsp;v)</code>&nbsp;</td>
 </tr>
-<tr id="i74" class="altColor">
+<tr id="i75" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/awt/PGraphicsJava2D.html#vertex-float-float-float-float-float-">vertex</a></span>(float&nbsp;x,
       float&nbsp;y,
@@ -851,7 +858,7 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;processing.core.<a href="../../processing/core/PImage.html" title="class in processing.core">PImage</a></h3>
-<code><a href="../../processing/core/PImage.html#blend-int-int-int-int-int-int-int-int-int-">blend</a>, <a href="../../processing/core/PImage.html#blend-processing.core.PImage-int-int-int-int-int-int-int-int-int-">blend</a>, <a href="../../processing/core/PImage.html#blendColor-int-int-int-">blendColor</a>, <a href="../../processing/core/PImage.html#clone--">clone</a>, <a href="../../processing/core/PImage.html#copy--">copy</a>, <a href="../../processing/core/PImage.html#filter-int-">filter</a>, <a href="../../processing/core/PImage.html#filter-int-float-">filter</a>, <a href="../../processing/core/PImage.html#get-int-int-int-int-">get</a>, <a href="../../processing/core/PImage.html#getImage--">getImage</a>, <a href="../../processing/core/PImage.html#getModifiedX1--">getModifiedX1</a>, <a href="../../processing/core/PImage.html#getModifiedX2--">getModifiedX2</a>, <a href="../../processing/core/PImage.html#getModifiedY1--">getModifiedY1</a>, <a href="../../processing/core/PImage.html#getModifiedY2--">getModifiedY2</a>, <a href="../../processing/core/PImage.html#init-int-int-int-">init</a>, <a href="../../processing/core/PImage.html#init-int-int-int-int-">init</a>, <a href="../../processing/core/PImage.html#isLoaded--">isLoaded</a>, <a href="../../processing/core/PImage.html#isModified--">isModified</a>, <a href="../../processing/core/PImage.html#resize-int-int-">resize</a>, <a href="../../processing/core/PImage.html#set-int-int-processing.core.PImage-">set</a>, <a href="../../processing/core/PImage.html#setLoaded--">setLoaded</a>, <a href="../../processing/core/PImage.html#setLoaded-boolean-">setLoaded</a>, <a href="../../processing/core/PImage.html#setModified--">setModified</a>, <a href="../../processing/core/PImage.html#setModified-boolean-">setModified</a>, <a href="../../processing/core/PImage.html#updatePixels--">updatePixels</a></code></li>
+<code><a href="../../processing/core/PImage.html#blend-int-int-int-int-int-int-int-int-int-">blend</a>, <a href="../../processing/core/PImage.html#blend-processing.core.PImage-int-int-int-int-int-int-int-int-int-">blend</a>, <a href="../../processing/core/PImage.html#blendColor-int-int-int-">blendColor</a>, <a href="../../processing/core/PImage.html#clone--">clone</a>, <a href="../../processing/core/PImage.html#copy--">copy</a>, <a href="../../processing/core/PImage.html#filter-int-">filter</a>, <a href="../../processing/core/PImage.html#filter-int-float-">filter</a>, <a href="../../processing/core/PImage.html#get-int-int-int-int-">get</a>, <a href="../../processing/core/PImage.html#getModifiedX1--">getModifiedX1</a>, <a href="../../processing/core/PImage.html#getModifiedX2--">getModifiedX2</a>, <a href="../../processing/core/PImage.html#getModifiedY1--">getModifiedY1</a>, <a href="../../processing/core/PImage.html#getModifiedY2--">getModifiedY2</a>, <a href="../../processing/core/PImage.html#init-int-int-int-">init</a>, <a href="../../processing/core/PImage.html#init-int-int-int-int-">init</a>, <a href="../../processing/core/PImage.html#isLoaded--">isLoaded</a>, <a href="../../processing/core/PImage.html#isModified--">isModified</a>, <a href="../../processing/core/PImage.html#resize-int-int-">resize</a>, <a href="../../processing/core/PImage.html#set-int-int-processing.core.PImage-">set</a>, <a href="../../processing/core/PImage.html#setLoaded--">setLoaded</a>, <a href="../../processing/core/PImage.html#setLoaded-boolean-">setLoaded</a>, <a href="../../processing/core/PImage.html#setModified--">setModified</a>, <a href="../../processing/core/PImage.html#setModified-boolean-">setModified</a>, <a href="../../processing/core/PImage.html#updatePixels--">updatePixels</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -954,6 +961,21 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../processing/core/PGraphics.html#createSurface--">createSurface</a></code>&nbsp;in class&nbsp;<code><a href="../../processing/core/PGraphics.html" title="class in processing.core">PGraphics</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getImage--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getImage</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Image.html?is-external=true" title="class or interface in java.awt">Image</a>&nbsp;getImage()</pre>
+<div class="block">Still need a means to get the java.awt.Image object, since getNative()
+ is going to return the <a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Graphics2D.html?is-external=true" title="class or interface in java.awt"><code>Graphics2D</code></a> object.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../processing/core/PImage.html#getImage--">getImage</a></code>&nbsp;in class&nbsp;<code><a href="../../processing/core/PImage.html" title="class in processing.core">PImage</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -2947,6 +2969,8 @@ extends <a href="../../processing/core/PGraphics.html" title="class in processin
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../processing/core/PImage.html#mask-processing.core.PImage-">mask</a></code>&nbsp;in class&nbsp;<code><a href="../../processing/core/PImage.html" title="class in processing.core">PImage</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>alpha</code> - image to use as the mask</dd>
 </dl>
 </li>
 </ul>

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -174,6 +174,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../processing/app/syntax/im/CompositionTextPainter.html#setCaret-java.awt.font.TextHitInfo-">setCaret</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/font/TextHitInfo.html?is-external=true" title="class or interface in java.awt.font">TextHitInfo</a>&nbsp;caret)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../processing/app/syntax/im/CompositionTextPainter.html#setComposedTextLayout-java.awt.font.TextLayout-int-">setComposedTextLayout</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/font/TextLayout.html?is-external=true" title="class or interface in java.awt.font">TextLayout</a>&nbsp;composedTextLayout,
                      int&nbsp;composedStartCaretPosition)</code>
 <div class="block">Set TextLayout to the painter.</div>
@@ -232,10 +236,6 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <pre>public&nbsp;boolean&nbsp;hasComposedTextLayout()</pre>
 <div class="block">Check the painter has TextLayout.
  If a user input via InputMethod, this result will return true.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>textarea</code> - textarea used by PDE.</dd>
-</dl>
 </li>
 </ul>
 <a name="setComposedTextLayout-java.awt.font.TextLayout-int-">
@@ -249,8 +249,6 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <div class="block">Set TextLayout to the painter.
  TextLayout will be created and set by CompositionTextManager.</div>
 <dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>textarea</code> - textarea used by PDE.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../processing/app/syntax/im/CompositionTextManager.html" title="class in processing.app.syntax.im"><code>CompositionTextManager</code></a></dd>
 </dl>
@@ -270,7 +268,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <a name="draw-java.awt.Graphics-java.awt.Color-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>draw</h4>
 <pre>public&nbsp;void&nbsp;draw(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Graphics.html?is-external=true" title="class or interface in java.awt">Graphics</a>&nbsp;gfx,
@@ -287,14 +285,21 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
  
  This draw method is proceeded with the following steps.
  1. Original TextAreaPainter draws characters. 
- 2. This refillComposedArea method erase previous paint characters by textarea's background color.
-    The refill area is only square that width and height defined by characters with input method.
- 3. CompositionTextPainter.draw method paints composed text. It was actually drawn by TextLayout.</div>
+ 2. CompositionTextPainter.draw method paints composed text. It was actually drawn by TextLayout.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>gfx</code> - set TextAreaPainter's Graphics object.</dd>
 <dd><code>fillBackGroundColor</code> - set textarea's background.</dd>
 </dl>
+</li>
+</ul>
+<a name="setCaret-java.awt.font.TextHitInfo-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setCaret</h4>
+<pre>public&nbsp;void&nbsp;setCaret(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/font/TextHitInfo.html?is-external=true" title="class or interface in java.awt.font">TextHitInfo</a>&nbsp;caret)</pre>
 </li>
 </ul>
 </li>

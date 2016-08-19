@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":10,"i11":9,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":10,"i11":9,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -105,10 +105,26 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd>SerialPortEventListener</dd>
+</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">Serial</span>
-extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements SerialPortEventListener</pre>
+<div class="block">( begin auto-generated from Serial.xml )
+ 
+ Class for sending and receiving data using the serial communication protocol.
+ 
+ ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Class for sending and receiving data using the serial communication protocol.</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>Application</dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -146,23 +162,23 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#Serial-processing.core.PApplet-">Serial</a></span>(PApplet&nbsp;parent)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#Serial-processing.core.PApplet-">Serial</a></span>(<a href="../../../../javadoc/core/processing/core/PApplet.html?is-external=true" title="class or interface in processing.core">PApplet</a>&nbsp;parent)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#Serial-processing.core.PApplet-int-">Serial</a></span>(PApplet&nbsp;parent,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#Serial-processing.core.PApplet-int-">Serial</a></span>(<a href="../../../../javadoc/core/processing/core/PApplet.html?is-external=true" title="class or interface in processing.core">PApplet</a>&nbsp;parent,
       int&nbsp;baudRate)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#Serial-processing.core.PApplet-java.lang.String-">Serial</a></span>(PApplet&nbsp;parent,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#Serial-processing.core.PApplet-java.lang.String-">Serial</a></span>(<a href="../../../../javadoc/core/processing/core/PApplet.html?is-external=true" title="class or interface in processing.core">PApplet</a>&nbsp;parent,
       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;portName)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#Serial-processing.core.PApplet-java.lang.String-int-">Serial</a></span>(PApplet&nbsp;parent,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#Serial-processing.core.PApplet-java.lang.String-int-">Serial</a></span>(<a href="../../../../javadoc/core/processing/core/PApplet.html?is-external=true" title="class or interface in processing.core">PApplet</a>&nbsp;parent,
       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;portName,
       int&nbsp;baudRate)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#Serial-processing.core.PApplet-java.lang.String-int-char-int-float-">Serial</a></span>(PApplet&nbsp;parent,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#Serial-processing.core.PApplet-java.lang.String-int-char-int-float-">Serial</a></span>(<a href="../../../../javadoc/core/processing/core/PApplet.html?is-external=true" title="class or interface in processing.core">PApplet</a>&nbsp;parent,
       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;portName,
       int&nbsp;baudRate,
       char&nbsp;parity,
@@ -209,7 +225,9 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#dispose--">dispose</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#dispose--">dispose</a></span>()</code>
+<div class="block">Used by PApplet to shut things down.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -249,54 +267,70 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#readBytes-byte:A-">readBytes</a></span>(byte[]&nbsp;dest)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#readBytes-byte:A-">readBytes</a></span>(byte[]&nbsp;dest)</code>
+<div class="block">Advanced</div>
+</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#readBytesUntil-int-">readBytesUntil</a></span>(int&nbsp;inByte)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#readBytes-int-">readBytes</a></span>(int&nbsp;max)</code>
+<div class="block">Advanced</div>
+</td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#readBytesUntil-int-byte:A-">readBytesUntil</a></span>(int&nbsp;inByte,
-              byte[]&nbsp;dest)</code>&nbsp;</td>
+<td class="colFirst"><code>byte[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#readBytesUntil-int-">readBytesUntil</a></span>(int&nbsp;inByte)</code>&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#readBytesUntil-int-byte:A-">readBytesUntil</a></span>(int&nbsp;inByte,
+              byte[]&nbsp;dest)</code>
+<div class="block">Advanced</div>
+</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>char</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#readChar--">readChar</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#readString--">readString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#readStringUntil-int-">readStringUntil</a></span>(int&nbsp;inByte)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#serialEvent-SerialPortEvent-">serialEvent</a></span>(SerialPortEvent&nbsp;event)</code>&nbsp;</td>
-</tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#setDTR-boolean-">setDTR</a></span>(boolean&nbsp;state)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#serialEvent-jssc.SerialPortEvent-">serialEvent</a></span>(SerialPortEvent&nbsp;event)</code>&nbsp;</td>
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#setRTS-boolean-">setRTS</a></span>(boolean&nbsp;state)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#setDTR-boolean-">setDTR</a></span>(boolean&nbsp;state)</code>
+<div class="block">Set the DTR line</div>
+</td>
 </tr>
 <tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#stop--">stop</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#setRTS-boolean-">setRTS</a></span>(boolean&nbsp;state)</code>
+<div class="block">Set the RTS line</div>
+</td>
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#write-byte:A-">write</a></span>(byte[]&nbsp;src)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#stop--">stop</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#write-int-">write</a></span>(int&nbsp;src)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#write-byte:A-">write</a></span>(byte[]&nbsp;src)</code>&nbsp;</td>
 </tr>
 <tr id="i27" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#write-int-">write</a></span>(int&nbsp;src)</code>
+<div class="block">Advanced</div>
+</td>
+</tr>
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/serial/Serial.html#write-java.lang.String-">write</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;src)</code>&nbsp;</td>
 </tr>
@@ -345,7 +379,11 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>Serial</h4>
-<pre>public&nbsp;Serial(PApplet&nbsp;parent)</pre>
+<pre>public&nbsp;Serial(<a href="../../../../javadoc/core/processing/core/PApplet.html?is-external=true" title="class or interface in processing.core">PApplet</a>&nbsp;parent)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>parent</code> - typically use "this"</dd>
+</dl>
 </li>
 </ul>
 <a name="Serial-processing.core.PApplet-int-">
@@ -354,8 +392,12 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>Serial</h4>
-<pre>public&nbsp;Serial(PApplet&nbsp;parent,
+<pre>public&nbsp;Serial(<a href="../../../../javadoc/core/processing/core/PApplet.html?is-external=true" title="class or interface in processing.core">PApplet</a>&nbsp;parent,
               int&nbsp;baudRate)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>baudRate</code> - 9600 is the default</dd>
+</dl>
 </li>
 </ul>
 <a name="Serial-processing.core.PApplet-java.lang.String-">
@@ -364,8 +406,12 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>Serial</h4>
-<pre>public&nbsp;Serial(PApplet&nbsp;parent,
+<pre>public&nbsp;Serial(<a href="../../../../javadoc/core/processing/core/PApplet.html?is-external=true" title="class or interface in processing.core">PApplet</a>&nbsp;parent,
               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;portName)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>portName</code> - name of the port (COM1 is the default)</dd>
+</dl>
 </li>
 </ul>
 <a name="Serial-processing.core.PApplet-java.lang.String-int-">
@@ -374,7 +420,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>Serial</h4>
-<pre>public&nbsp;Serial(PApplet&nbsp;parent,
+<pre>public&nbsp;Serial(<a href="../../../../javadoc/core/processing/core/PApplet.html?is-external=true" title="class or interface in processing.core">PApplet</a>&nbsp;parent,
               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;portName,
               int&nbsp;baudRate)</pre>
 </li>
@@ -385,12 +431,18 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Serial</h4>
-<pre>public&nbsp;Serial(PApplet&nbsp;parent,
+<pre>public&nbsp;Serial(<a href="../../../../javadoc/core/processing/core/PApplet.html?is-external=true" title="class or interface in processing.core">PApplet</a>&nbsp;parent,
               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;portName,
               int&nbsp;baudRate,
               char&nbsp;parity,
               int&nbsp;dataBits,
               float&nbsp;stopBits)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>parity</code> - 'N' for none, 'E' for even, 'O' for odd, 'M' for mark, 'S' for space ('N' is the default)</dd>
+<dd><code>dataBits</code> - 8 is the default</dd>
+<dd><code>stopBits</code> - 1.0, 1.5, or 2.0 (1.0 is the default)</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -408,6 +460,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>dispose</h4>
 <pre>public&nbsp;void&nbsp;dispose()</pre>
+<div class="block">Used by PApplet to shut things down.</div>
 </li>
 </ul>
 <a name="active--">
@@ -437,6 +490,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>available</h4>
 <pre>public&nbsp;int&nbsp;available()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 <a name="buffer-int-">
@@ -446,6 +503,12 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>buffer</h4>
 <pre>public&nbsp;void&nbsp;buffer(int&nbsp;size)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>size</code> - number of bytes to buffer</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 <a name="bufferUntil-int-">
@@ -455,6 +518,12 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>bufferUntil</h4>
 <pre>public&nbsp;void&nbsp;bufferUntil(int&nbsp;inByte)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>inByte</code> - the value to buffer until</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 <a name="clear--">
@@ -464,6 +533,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>clear</h4>
 <pre>public&nbsp;void&nbsp;clear()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 <a name="getCTS--">
@@ -500,6 +573,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>last</h4>
 <pre>public&nbsp;int&nbsp;last()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 <a name="lastChar--">
@@ -509,6 +586,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>lastChar</h4>
 <pre>public&nbsp;char&nbsp;lastChar()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 <a name="list--">
@@ -518,6 +599,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>list</h4>
 <pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;list()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 <a name="read--">
@@ -527,6 +612,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>read</h4>
 <pre>public&nbsp;int&nbsp;read()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 <a name="readBytes--">
@@ -536,6 +625,29 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>readBytes</h4>
 <pre>public&nbsp;byte[]&nbsp;readBytes()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
+</li>
+</ul>
+<a name="readBytes-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readBytes</h4>
+<pre>public&nbsp;byte[]&nbsp;readBytes(int&nbsp;max)</pre>
+<div class="block"><h3>Advanced</h3>
+ Return a byte array of anything that's in the serial buffer
+ up to the specified maximum number of bytes.
+ Not particularly memory/speed efficient, because it creates
+ a byte array on each read, but it's easier to use than
+ readBytes(byte b[]) (see below).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>max</code> - the maximum number of bytes to read</dd>
+</dl>
 </li>
 </ul>
 <a name="readBytes-byte:A-">
@@ -545,6 +657,14 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>readBytes</h4>
 <pre>public&nbsp;int&nbsp;readBytes(byte[]&nbsp;dest)</pre>
+<div class="block"><h3>Advanced</h3>
+ Grab whatever is in the serial buffer, and stuff it into a
+ byte buffer passed in by the user. This is more memory/time
+ efficient than readBytes() returning a byte[] array.
+
+ Returns an int for how many bytes were read. If more bytes
+ are available than can fit into the byte array, only those
+ that will fit are read.</div>
 </li>
 </ul>
 <a name="readBytesUntil-int-">
@@ -554,6 +674,12 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>readBytesUntil</h4>
 <pre>public&nbsp;byte[]&nbsp;readBytesUntil(int&nbsp;inByte)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>inByte</code> - character designated to mark the end of the data</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 <a name="readBytesUntil-int-byte:A-">
@@ -564,6 +690,15 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <h4>readBytesUntil</h4>
 <pre>public&nbsp;int&nbsp;readBytesUntil(int&nbsp;inByte,
                           byte[]&nbsp;dest)</pre>
+<div class="block"><h3>Advanced</h3>
+ If dest[] is not big enough, then -1 is returned,
+   and an error message is printed on the console.
+ If nothing is in the buffer, zero is returned.
+ If 'interesting' byte is not in the buffer, then 0 is returned.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>dest</code> - passed in byte array to be altered</dd>
+</dl>
 </li>
 </ul>
 <a name="readChar--">
@@ -573,6 +708,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>readChar</h4>
 <pre>public&nbsp;char&nbsp;readChar()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 <a name="readString--">
@@ -582,6 +721,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>readString</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;readString()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 <a name="readStringUntil-int-">
@@ -591,15 +734,29 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>readStringUntil</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;readStringUntil(int&nbsp;inByte)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>inByte</code> - character designated to mark the end of the data</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
-<a name="serialEvent-SerialPortEvent-">
+<a name="serialEvent-jssc.SerialPortEvent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>serialEvent</h4>
 <pre>public&nbsp;void&nbsp;serialEvent(SerialPortEvent&nbsp;event)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>serialEvent</code>&nbsp;in interface&nbsp;<code>SerialPortEventListener</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>event</code> - the port where new data is available</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 <a name="setDTR-boolean-">
@@ -609,6 +766,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>setDTR</h4>
 <pre>public&nbsp;void&nbsp;setDTR(boolean&nbsp;state)</pre>
+<div class="block">Set the DTR line</div>
 </li>
 </ul>
 <a name="setRTS-boolean-">
@@ -618,6 +776,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>setRTS</h4>
 <pre>public&nbsp;void&nbsp;setRTS(boolean&nbsp;state)</pre>
+<div class="block">Set the RTS line</div>
 </li>
 </ul>
 <a name="stop--">
@@ -627,6 +786,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>stop</h4>
 <pre>public&nbsp;void&nbsp;stop()</pre>
+<dl>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 <a name="write-byte:A-">
@@ -636,6 +799,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>write</h4>
 <pre>public&nbsp;void&nbsp;write(byte[]&nbsp;src)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>src</code> - data to write</dd>
+</dl>
 </li>
 </ul>
 <a name="write-int-">
@@ -645,6 +812,12 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>write</h4>
 <pre>public&nbsp;void&nbsp;write(int&nbsp;src)</pre>
+<div class="block"><h3>Advanced</h3>
+ This will handle both ints, bytes and chars transparently.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>src</code> - data to write</dd>
+</dl>
 </li>
 </ul>
 <a name="write-java.lang.String-">
@@ -654,6 +827,12 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>write</h4>
 <pre>public&nbsp;void&nbsp;write(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;src)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>src</code> - data to write</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>web_application</dd>
+</dl>
 </li>
 </ul>
 </li>

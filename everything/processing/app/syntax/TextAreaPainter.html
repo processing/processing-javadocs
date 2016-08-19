@@ -124,6 +124,10 @@ var activeTableTab = "activeTableTab";
 <dt>All Implemented Interfaces:</dt>
 <dd><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/image/ImageObserver.html?is-external=true" title="class or interface in java.awt.image">ImageObserver</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/awt/MenuContainer.html?is-external=true" title="class or interface in java.awt">MenuContainer</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/text/TabExpander.html?is-external=true" title="class or interface in javax.swing.text">TabExpander</a></dd>
 </dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../processing/app/syntax/PdeTextAreaPainter.html" title="class in processing.app.syntax">PdeTextAreaPainter</a></dd>
+</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">TextAreaPainter</span>
@@ -272,16 +276,16 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/text/Ta
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/syntax/TextAreaPainter.html#getFontMetrics-processing.app.syntax.SyntaxStyle-">getFontMetrics</a></span>(<a href="../../../processing/app/syntax/SyntaxStyle.html" title="class in processing.app.syntax">SyntaxStyle</a>&nbsp;style)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Dimension.html?is-external=true" title="class or interface in java.awt">Dimension</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/syntax/TextAreaPainter.html#getMinimumSize--">getMinimumSize</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/syntax/TextAreaPainter.html#getLineHeight--">getLineHeight</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Dimension.html?is-external=true" title="class or interface in java.awt">Dimension</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/syntax/TextAreaPainter.html#getPreferredSize--">getPreferredSize</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/syntax/TextAreaPainter.html#getMinimumSize--">getMinimumSize</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/print/Printable.html?is-external=true" title="class or interface in java.awt.print">Printable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/syntax/TextAreaPainter.html#getPrintable--">getPrintable</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Dimension.html?is-external=true" title="class or interface in java.awt">Dimension</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/syntax/TextAreaPainter.html#getPreferredSize--">getPreferredSize</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>int</code></td>
@@ -498,6 +502,15 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/text/Ta
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/FontMetrics.html?is-external=true" title="class or interface in java.awt">FontMetrics</a>&nbsp;getFontMetrics(<a href="../../../processing/app/syntax/SyntaxStyle.html" title="class in processing.app.syntax">SyntaxStyle</a>&nbsp;style)</pre>
 </li>
 </ul>
+<a name="getLineHeight--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLineHeight</h4>
+<pre>public&nbsp;int&nbsp;getLineHeight()</pre>
+</li>
+</ul>
 <a name="paint-java.awt.Graphics-">
 <!--   -->
 </a>
@@ -512,15 +525,6 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/text/Ta
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>gfx</code> - The graphics context</dd>
 </dl>
-</li>
-</ul>
-<a name="getPrintable--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getPrintable</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/print/Printable.html?is-external=true" title="class or interface in java.awt.print">Printable</a>&nbsp;getPrintable()</pre>
 </li>
 </ul>
 <a name="invalidateLine-int-">

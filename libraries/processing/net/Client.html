@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -121,6 +121,12 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  listening on a different port, an exception is thrown.
  
  ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>The client class is used to create client Objects which connect to a server to exchange data.</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>Application</dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -162,11 +168,11 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/net/Client.html#Client-processing.core.PApplet-java.net.Socket-">Client</a></span>(PApplet&nbsp;parent,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/net/Client.html#Client-processing.core.PApplet-java.net.Socket-">Client</a></span>(<a href="../../../../javadoc/core/processing/core/PApplet.html?is-external=true" title="class or interface in processing.core">PApplet</a>&nbsp;parent,
       <a href="http://docs.oracle.com/javase/7/docs/api/java/net/Socket.html?is-external=true" title="class or interface in java.net">Socket</a>&nbsp;socket)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/net/Client.html#Client-processing.core.PApplet-java.lang.String-int-">Client</a></span>(PApplet&nbsp;parent,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/net/Client.html#Client-processing.core.PApplet-java.lang.String-int-">Client</a></span>(<a href="../../../../javadoc/core/processing/core/PApplet.html?is-external=true" title="class or interface in processing.core">PApplet</a>&nbsp;parent,
       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;host,
       int&nbsp;port)</code>&nbsp;</td>
 </tr>
@@ -249,6 +255,12 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/net/Client.html#readBytes-int-">readBytes</a></span>(int&nbsp;max)</code>
+<div class="block">Advanced</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>byte[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/net/Client.html#readBytesUntil-int-">readBytesUntil</a></span>(int&nbsp;interesting)</code>
 <div class="block">( begin auto-generated from Client_readBytesUntil.xml )
  
@@ -256,14 +268,14 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  particular character.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/net/Client.html#readBytesUntil-int-byte:A-">readBytesUntil</a></span>(int&nbsp;interesting,
               byte[]&nbsp;byteBuffer)</code>
 <div class="block">Advanced</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>char</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/net/Client.html#readChar--">readChar</a></span>()</code>
 <div class="block">( begin auto-generated from Client_readChar.xml )
@@ -271,7 +283,7 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  Returns the next byte in the buffer as a char.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/net/Client.html#readString--">readString</a></span>()</code>
 <div class="block">( begin auto-generated from Client_readString.xml )
@@ -279,7 +291,7 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  Returns the all the data from the buffer as a String.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/net/Client.html#readStringUntil-int-">readStringUntil</a></span>(int&nbsp;interesting)</code>
 <div class="block">( begin auto-generated from Client_readStringUntil.xml )
@@ -287,11 +299,11 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  Combination of <b>readBytesUntil()</b> and <b>readString()</b>.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/net/Client.html#run--">run</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/net/Client.html#stop--">stop</a></span>()</code>
 <div class="block">( begin auto-generated from Client_stop.xml )
@@ -299,11 +311,11 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  Disconnects from the server.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/net/Client.html#write-byte:A-">write</a></span>(byte[]&nbsp;data)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/net/Client.html#write-int-">write</a></span>(int&nbsp;data)</code>
 <div class="block">( begin auto-generated from Client_write.xml )
@@ -311,7 +323,7 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  Writes data to a server specified when constructing the client.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/net/Client.html#write-java.lang.String-">write</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;data)</code>
 <div class="block">Advanced</div>
@@ -371,7 +383,7 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
 <ul class="blockList">
 <li class="blockList">
 <h4>Client</h4>
-<pre>public&nbsp;Client(PApplet&nbsp;parent,
+<pre>public&nbsp;Client(<a href="../../../../javadoc/core/processing/core/PApplet.html?is-external=true" title="class or interface in processing.core">PApplet</a>&nbsp;parent,
               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;host,
               int&nbsp;port)</pre>
 <dl>
@@ -388,7 +400,7 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Client</h4>
-<pre>public&nbsp;Client(PApplet&nbsp;parent,
+<pre>public&nbsp;Client(<a href="../../../../javadoc/core/processing/core/PApplet.html?is-external=true" title="class or interface in processing.core">PApplet</a>&nbsp;parent,
               <a href="http://docs.oracle.com/javase/7/docs/api/java/net/Socket.html?is-external=true" title="class or interface in java.net">Socket</a>&nbsp;socket)
        throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl>
@@ -420,6 +432,12 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  finished with the Client.
  
  ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Disconnects from the server</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>application</dd>
+</dl>
 </li>
 </ul>
 <a name="dispose--">
@@ -461,6 +479,12 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  into any trouble.
  
  ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Returns true if this client is still active</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>application</dd>
+</dl>
 </li>
 </ul>
 <a name="ip--">
@@ -475,6 +499,12 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  Returns the IP address of the computer to which the Client is attached.
  
  ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Returns the IP address of the machine as a String</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>application</dd>
+</dl>
 </li>
 </ul>
 <a name="available--">
@@ -490,6 +520,12 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  available from the server, it returns the number of bytes.
  
  ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Returns the number of bytes in the buffer waiting to be read</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>application</dd>
+</dl>
 </li>
 </ul>
 <a name="clear--">
@@ -504,6 +540,12 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  Empty the buffer, removes all the data stored there.
  
  ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Clears the buffer</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>application</dd>
+</dl>
 </li>
 </ul>
 <a name="read--">
@@ -520,6 +562,12 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  avoided by first cheacking <b>available()</b> to see if any data is available.
  
  ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Returns a value from the buffer</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>application</dd>
+</dl>
 </li>
 </ul>
 <a name="readChar--">
@@ -535,6 +583,12 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  nothing is there.
  
  ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Returns the next byte in the buffer as a char</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>application</dd>
+</dl>
 </li>
 </ul>
 <a name="readBytes--">
@@ -560,6 +614,31 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  Not particularly memory/speed efficient, because it creates
  a byte array on each read, but it's easier to use than
  readBytes(byte b[]) (see below).</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Reads everything in the buffer</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>application</dd>
+</dl>
+</li>
+</ul>
+<a name="readBytes-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readBytes</h4>
+<pre>public&nbsp;byte[]&nbsp;readBytes(int&nbsp;max)</pre>
+<div class="block"><h3>Advanced</h3>
+ Return a byte array of anything that's in the serial buffer
+ up to the specified maximum number of bytes.
+ Not particularly memory/speed efficient, because it creates
+ a byte array on each read, but it's easier to use than
+ readBytes(byte b[]) (see below).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>max</code> - the maximum number of bytes to read</dd>
+</dl>
 </li>
 </ul>
 <a name="readBytes-byte:A-">
@@ -607,6 +686,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>interesting</code> - character designated to mark the end of the data</dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Reads from the buffer of bytes up to and including a particular character</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>application</dd>
 </dl>
 </li>
 </ul>
@@ -649,6 +732,12 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
  send it as a byte array.
  
  ( end auto-generated )</div>
+<dl>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Returns the buffer as a String</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>application</dd>
+</dl>
 </li>
 </ul>
 <a name="readStringUntil-int-">
@@ -672,6 +761,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>interesting</code> - character designated to mark the end of the data</dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Returns the buffer as a String up to and including a particular character</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>application</dd>
 </dl>
 </li>
 </ul>
@@ -690,6 +783,10 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>data</code> - data to write</dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Writes bytes, chars, ints, bytes[], Strings</dd>
+<dt><span class="simpleTagLabel">Usage:</span></dt>
+<dd>application</dd>
 </dl>
 </li>
 </ul>

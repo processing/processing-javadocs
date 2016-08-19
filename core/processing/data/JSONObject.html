@@ -153,7 +153,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
  <code>{ } [ ] / \ : , = ; #</code> and if they do not look like numbers and
  if they are not the reserved words <code>true</code>, <code>false</code>, or
  <code>null</code>.</li>
- <li>Keys can be followed by <code>=</code> or <code>=></code> as well as by
+ <li>Keys can be followed by <code>=</code> or <code>=&gt;</code> as well as by
  <code>:</code>.</li>
  <li>Values can be followed by <code>;</code> <small>(semicolon)</small> as
  well as by <code>,</code> <small>(comma)</small>.</li>
@@ -341,8 +341,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/data/JSONObject.html#isNull-java.lang.String-">isNull</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
-<div class="block">Determine if the value associated with the key is null or if there is
-  no value.</div>
+<div class="block">Determine if the value associated with the key is null or if there is 
+ no value.</div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
@@ -555,7 +555,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
   with <code>{</code>&nbsp;<small>(left brace)</small> and ending
   with <code>}</code>&nbsp;<small>(right brace)</small>.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If there is a syntax error in the source
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If there is a syntax error in the source
   string or a duplicated key.</dd>
 </dl>
 </li>
@@ -574,11 +574,13 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A string which is the value.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - if there is no string value for the key.</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - if there is no string value for the key.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONObject.html#getInt-java.lang.String-"><code>getInt(String)</code></a>, 
 <a href="../../processing/data/JSONObject.html#getFloat-java.lang.String-"><code>getFloat(String)</code></a>, 
 <a href="../../processing/data/JSONObject.html#getBoolean-java.lang.String-"><code>getBoolean(String)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the string value associated with a key</dd>
 </dl>
 </li>
 </ul>
@@ -611,16 +613,18 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <div class="block">Gets the int value associated with a key</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>key</code> - a key string</dd>
+<dd><code>key</code> - A key string.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The integer value.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - if the key is not found or if the value cannot
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - if the key is not found or if the value cannot
   be converted to an integer.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONObject.html#getFloat-java.lang.String-"><code>getFloat(String)</code></a>, 
 <a href="../../processing/data/JSONObject.html#getString-java.lang.String-"><code>getString(String)</code></a>, 
 <a href="../../processing/data/JSONObject.html#getBoolean-java.lang.String-"><code>getBoolean(String)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the int value associated with a key</dd>
 </dl>
 </li>
 </ul>
@@ -659,7 +663,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The long value.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - if the key is not found or if the value cannot
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - if the key is not found or if the value cannot
   be converted to a long.</dd>
 </dl>
 </li>
@@ -699,6 +703,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dd><a href="../../processing/data/JSONObject.html#getInt-java.lang.String-"><code>getInt(String)</code></a>, 
 <a href="../../processing/data/JSONObject.html#getString-java.lang.String-"><code>getString(String)</code></a>, 
 <a href="../../processing/data/JSONObject.html#getBoolean-java.lang.String-"><code>getBoolean(String)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the float value associated with a key</dd>
 </dl>
 </li>
 </ul>
@@ -726,7 +732,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The numeric value.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - if the key is not found or
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - if the key is not found or
   if the value is not a Number object and cannot be converted to a number.</dd>
 </dl>
 </li>
@@ -766,11 +772,13 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The truth.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - if the value is not a Boolean or the String "true" or "false".</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - if the value is not a Boolean or the String "true" or "false".</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONObject.html#getInt-java.lang.String-"><code>getInt(String)</code></a>, 
 <a href="../../processing/data/JSONObject.html#getFloat-java.lang.String-"><code>getFloat(String)</code></a>, 
 <a href="../../processing/data/JSONObject.html#getString-java.lang.String-"><code>getString(String)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the boolean value associated with a key</dd>
 </dl>
 </li>
 </ul>
@@ -808,11 +816,13 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A JSONArray which is the value.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - if the key is not found or if the value is not a JSONArray.</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - if the key is not found or if the value is not a JSONArray.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONObject.html#getJSONObject-java.lang.String-"><code>getJSONObject(String)</code></a>, 
 <a href="../../processing/data/JSONObject.html#setJSONObject-java.lang.String-processing.data.JSONObject-"><code>setJSONObject(String, JSONObject)</code></a>, 
 <a href="../../processing/data/JSONObject.html#setJSONArray-java.lang.String-processing.data.JSONArray-"><code>setJSONArray(String, JSONArray)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the JSONArray value associated with a key</dd>
 </dl>
 </li>
 </ul>
@@ -830,11 +840,13 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A JSONObject which is the value.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - if the key is not found or if the value is not a JSONObject.</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - if the key is not found or if the value is not a JSONObject.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONObject.html#getJSONArray-java.lang.String-"><code>getJSONArray(String)</code></a>, 
 <a href="../../processing/data/JSONObject.html#setJSONObject-java.lang.String-processing.data.JSONObject-"><code>setJSONObject(String, JSONObject)</code></a>, 
 <a href="../../processing/data/JSONObject.html#setJSONArray-java.lang.String-processing.data.JSONArray-"><code>setJSONArray(String, JSONArray)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Gets the JSONObject value associated with a key</dd>
 </dl>
 </li>
 </ul>
@@ -861,8 +873,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>isNull</h4>
 <pre>public&nbsp;boolean&nbsp;isNull(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
-<div class="block">Determine if the value associated with the key is null or if there is
-  no value.</div>
+<div class="block">Determine if the value associated with the key is null or if there is 
+ no value.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - A key string.</dd>
@@ -930,6 +942,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dd><a href="../../processing/data/JSONObject.html#setInt-java.lang.String-int-"><code>setInt(String, int)</code></a>, 
 <a href="../../processing/data/JSONObject.html#setFloat-java.lang.String-float-"><code>setFloat(String, float)</code></a>, 
 <a href="../../processing/data/JSONObject.html#setBoolean-java.lang.String-boolean-"><code>setBoolean(String, boolean)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Put a key/String pair in the JSONObject</dd>
 </dl>
 </li>
 </ul>
@@ -949,11 +963,13 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If the key is null.</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If the key is null.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONObject.html#setFloat-java.lang.String-float-"><code>setFloat(String, float)</code></a>, 
 <a href="../../processing/data/JSONObject.html#setString-java.lang.String-java.lang.String-"><code>setString(String, String)</code></a>, 
 <a href="../../processing/data/JSONObject.html#setBoolean-java.lang.String-boolean-"><code>setBoolean(String, boolean)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Put a key/int pair in the JSONObject</dd>
 </dl>
 </li>
 </ul>
@@ -973,7 +989,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If the key is null.</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If the key is null.</dd>
 </dl>
 </li>
 </ul>
@@ -989,10 +1005,14 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - a key string</dd>
 <dd><code>value</code> - the value to assign</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If the key is null or if the number is NaN or infinite.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONObject.html#setInt-java.lang.String-int-"><code>setInt(String, int)</code></a>, 
 <a href="../../processing/data/JSONObject.html#setString-java.lang.String-java.lang.String-"><code>setString(String, String)</code></a>, 
 <a href="../../processing/data/JSONObject.html#setBoolean-java.lang.String-boolean-"><code>setBoolean(String, boolean)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Put a key/float pair in the JSONObject</dd>
 </dl>
 </li>
 </ul>
@@ -1012,7 +1032,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If the key is null or if the number is invalid.</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If the key is null or if the number is NaN or infinite.</dd>
 </dl>
 </li>
 </ul>
@@ -1032,11 +1052,13 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If the key is null.</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If the key is null.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../processing/data/JSONObject.html#setInt-java.lang.String-int-"><code>setInt(String, int)</code></a>, 
 <a href="../../processing/data/JSONObject.html#setFloat-java.lang.String-float-"><code>setFloat(String, float)</code></a>, 
 <a href="../../processing/data/JSONObject.html#setString-java.lang.String-java.lang.String-"><code>setString(String, String)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Put a key/boolean pair in the JSONObject</dd>
 </dl>
 </li>
 </ul>
@@ -1056,6 +1078,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dd><a href="../../processing/data/JSONObject.html#setJSONArray-java.lang.String-processing.data.JSONArray-"><code>setJSONArray(String, JSONArray)</code></a>, 
 <a href="../../processing/data/JSONObject.html#getJSONObject-java.lang.String-"><code>getJSONObject(String)</code></a>, 
 <a href="../../processing/data/JSONObject.html#getJSONArray-java.lang.String-"><code>getJSONArray(String)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Sets the JSONObject value associated with a key</dd>
 </dl>
 </li>
 </ul>
@@ -1075,6 +1099,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dd><a href="../../processing/data/JSONObject.html#setJSONObject-java.lang.String-processing.data.JSONObject-"><code>setJSONObject(String, JSONObject)</code></a>, 
 <a href="../../processing/data/JSONObject.html#getJSONObject-java.lang.String-"><code>getJSONObject(String)</code></a>, 
 <a href="../../processing/data/JSONObject.html#getJSONArray-java.lang.String-"><code>getJSONArray(String)</code></a></dd>
+<dt><span class="simpleTagLabel">In brief:</span></dt>
+<dd>Sets the JSONArray value associated with a key</dd>
 </dl>
 </li>
 </ul>
@@ -1160,7 +1186,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
   with <code>{</code>&nbsp;<small>(left brace)</small> and ending
   with <code>}</code>&nbsp;<small>(right brace)</small>.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>JSONException</code> - If the object contains an invalid number.</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - If the object contains an invalid number.</dd>
 </dl>
 </li>
 </ul>

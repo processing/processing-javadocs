@@ -114,7 +114,16 @@ var activeTableTab = "activeTableTab";
 <pre>public class <span class="typeNameLabel">PMatrix2D</span>
 extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></pre>
-<div class="block">3x2 affine matrix implementation.</div>
+<div class="block">3x2 affine matrix implementation.
+ Matrices are used to describe a transformation; see <a href="../../processing/core/PMatrix.html" title="interface in processing.core"><code>PMatrix</code></a> for a
+ general description. This matrix looks like the following when multiplying
+ a vector (x, y) in <code>mult()</code>.
+ <pre>
+ [m00 m01 m02][x]   [m00*x + m01*y + m02*1]   [x']
+ [m10 m11 m12][y] = [m10*x + m11*y + m12*1] = [y']
+ [ 0   0   1 ][1]   [ 0*x  +  0*y  +  1*1 ]   [ 1]</pre>
+ (x', y') is returned. The values in the matrix determine the transformation.
+ They are modified by the various transformation functions.</div>
 </li>
 </ul>
 </div>
@@ -172,7 +181,9 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#PMatrix2D--">PMatrix2D</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#PMatrix2D--">PMatrix2D</a></span>()</code>
+<div class="block">Create a new matrix, set to the identity matrix.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#PMatrix2D-float-float-float-float-float-float-">PMatrix2D</a></span>(float&nbsp;m00,
@@ -207,7 +218,9 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
      float&nbsp;n02,
      float&nbsp;n10,
      float&nbsp;n11,
-     float&nbsp;n12)</code>&nbsp;</td>
+     float&nbsp;n12)</code>
+<div class="block">Multiply this matrix by another.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -226,7 +239,9 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
      float&nbsp;n30,
      float&nbsp;n31,
      float&nbsp;n32,
-     float&nbsp;n33)</code>&nbsp;</td>
+     float&nbsp;n33)</code>
+<div class="block">Unavailable in 2D.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -236,11 +251,15 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#apply-processing.core.PMatrix2D-">apply</a></span>(<a href="../../processing/core/PMatrix2D.html" title="class in processing.core">PMatrix2D</a>&nbsp;source)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#apply-processing.core.PMatrix2D-">apply</a></span>(<a href="../../processing/core/PMatrix2D.html" title="class in processing.core">PMatrix2D</a>&nbsp;source)</code>
+<div class="block">Multiply this matrix by another.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#apply-processing.core.PMatrix3D-">apply</a></span>(<a href="../../processing/core/PMatrix3D.html" title="class in processing.core">PMatrix3D</a>&nbsp;source)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#apply-processing.core.PMatrix3D-">apply</a></span>(<a href="../../processing/core/PMatrix3D.html" title="class in processing.core">PMatrix3D</a>&nbsp;source)</code>
+<div class="block">Unavailable in 2D.</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>float</code></td>
@@ -275,18 +294,24 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <td class="colFirst"><code><a href="../../processing/core/PVector.html" title="class in processing.core">PVector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#mult-processing.core.PVector-processing.core.PVector-">mult</a></span>(<a href="../../processing/core/PVector.html" title="class in processing.core">PVector</a>&nbsp;source,
     <a href="../../processing/core/PVector.html" title="class in processing.core">PVector</a>&nbsp;target)</code>
-<div class="block">Multiply the x and y coordinates of a PVector against this matrix.</div>
+<div class="block">Multiply source by this matrix, and return the result.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#multX-float-float-">multX</a></span>(float&nbsp;x,
-     float&nbsp;y)</code>&nbsp;</td>
+     float&nbsp;y)</code>
+<div class="block">Returns the x-coordinate of the result of multiplying the point (x, y)
+ by this matrix.</div>
+</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#multY-float-float-">multY</a></span>(float&nbsp;x,
-     float&nbsp;y)</code>&nbsp;</td>
+     float&nbsp;y)</code>
+<div class="block">Returns the y-coordinate of the result of multiplying the point (x, y)
+ by this matrix.</div>
+</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -295,7 +320,9 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
         float&nbsp;n02,
         float&nbsp;n10,
         float&nbsp;n11,
-        float&nbsp;n12)</code>&nbsp;</td>
+        float&nbsp;n12)</code>
+<div class="block">Apply another matrix to the left of this one.</div>
+</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -314,7 +341,9 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
         float&nbsp;n30,
         float&nbsp;n31,
         float&nbsp;n32,
-        float&nbsp;n33)</code>&nbsp;</td>
+        float&nbsp;n33)</code>
+<div class="block">Unavailable in 2D.</div>
+</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -324,11 +353,15 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#preApply-processing.core.PMatrix2D-">preApply</a></span>(<a href="../../processing/core/PMatrix2D.html" title="class in processing.core">PMatrix2D</a>&nbsp;left)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#preApply-processing.core.PMatrix2D-">preApply</a></span>(<a href="../../processing/core/PMatrix2D.html" title="class in processing.core">PMatrix2D</a>&nbsp;left)</code>
+<div class="block">Apply another matrix to the left of this one.</div>
+</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#preApply-processing.core.PMatrix3D-">preApply</a></span>(<a href="../../processing/core/PMatrix3D.html" title="class in processing.core">PMatrix3D</a>&nbsp;left)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#preApply-processing.core.PMatrix3D-">preApply</a></span>(<a href="../../processing/core/PMatrix3D.html" title="class in processing.core">PMatrix3D</a>&nbsp;left)</code>
+<div class="block">Unavailable in 2D.</div>
+</td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -336,7 +369,9 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#reset--">reset</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#reset--">reset</a></span>()</code>
+<div class="block">Make this an identity matrix.</div>
+</td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -347,15 +382,21 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#rotate-float-float-float-float-">rotate</a></span>(float&nbsp;angle,
       float&nbsp;v0,
       float&nbsp;v1,
-      float&nbsp;v2)</code>&nbsp;</td>
+      float&nbsp;v2)</code>
+<div class="block">Unavailable in 2D.</div>
+</td>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#rotateX-float-">rotateX</a></span>(float&nbsp;angle)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#rotateX-float-">rotateX</a></span>(float&nbsp;angle)</code>
+<div class="block">Unavailable in 2D.</div>
+</td>
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#rotateY-float-">rotateY</a></span>(float&nbsp;angle)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#rotateY-float-">rotateY</a></span>(float&nbsp;angle)</code>
+<div class="block">Unavailable in 2D.</div>
+</td>
 </tr>
 <tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -374,11 +415,15 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#scale-float-float-float-">scale</a></span>(float&nbsp;x,
      float&nbsp;y,
-     float&nbsp;z)</code>&nbsp;</td>
+     float&nbsp;z)</code>
+<div class="block">Unavailable in 2D.</div>
+</td>
 </tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#set-float:A-">set</a></span>(float[]&nbsp;source)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#set-float:A-">set</a></span>(float[]&nbsp;source)</code>
+<div class="block">Set the contents of this matrix to the contents of source.</div>
+</td>
 </tr>
 <tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -387,7 +432,9 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
    float&nbsp;m02,
    float&nbsp;m10,
    float&nbsp;m11,
-   float&nbsp;m12)</code>&nbsp;</td>
+   float&nbsp;m12)</code>
+<div class="block">Sets the matrix content.</div>
+</td>
 </tr>
 <tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -406,15 +453,21 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
    float&nbsp;m30,
    float&nbsp;m31,
    float&nbsp;m32,
-   float&nbsp;m33)</code>&nbsp;</td>
+   float&nbsp;m33)</code>
+<div class="block">Unavailable in 2D.</div>
+</td>
 </tr>
 <tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#set-processing.core.PMatrix-">set</a></span>(<a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a>&nbsp;matrix)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#set-processing.core.PMatrix-">set</a></span>(<a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a>&nbsp;matrix)</code>
+<div class="block">If matrix is a PMatrix2D, sets this matrix to be a copy of it.</div>
+</td>
 </tr>
 <tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#set-processing.core.PMatrix3D-">set</a></span>(<a href="../../processing/core/PMatrix3D.html" title="class in processing.core">PMatrix3D</a>&nbsp;src)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#set-processing.core.PMatrix3D-">set</a></span>(<a href="../../processing/core/PMatrix3D.html" title="class in processing.core">PMatrix3D</a>&nbsp;src)</code>
+<div class="block">Unavailable in 2D.</div>
+</td>
 </tr>
 <tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -433,12 +486,14 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#translate-float-float-float-">translate</a></span>(float&nbsp;x,
          float&nbsp;y,
-         float&nbsp;z)</code>&nbsp;</td>
+         float&nbsp;z)</code>
+<div class="block">Unavailable in 2D.</div>
+</td>
 </tr>
 <tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/core/PMatrix2D.html#transpose--">transpose</a></span>()</code>
-<div class="block">Transpose this matrix.</div>
+<div class="block">Unavailable in 2D.</div>
 </td>
 </tr>
 </table>
@@ -532,6 +587,7 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>PMatrix2D</h4>
 <pre>public&nbsp;PMatrix2D()</pre>
+<div class="block">Create a new matrix, set to the identity matrix.</div>
 </li>
 </ul>
 <a name="PMatrix2D-float-float-float-float-float-float-">
@@ -572,6 +628,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>reset</h4>
 <pre>public&nbsp;void&nbsp;reset()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../processing/core/PMatrix.html#reset--">PMatrix</a></code></span></div>
+<div class="block">Make this an identity matrix. Multiplying by it will have no effect.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#reset--">reset</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -600,7 +658,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <h4>get</h4>
 <pre>public&nbsp;float[]&nbsp;get(float[]&nbsp;target)</pre>
 <div class="block">Copies the matrix contents into a 6 entry float array.
- If target is null (or not the correct size), a new array will be created.</div>
+ If target is null (or not the correct size), a new array will be created.
+ Returned in the order <code>{m00, m01, m02, m10, m11, m12}</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#get-float:A-">get</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -614,9 +673,12 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>set</h4>
 <pre>public&nbsp;void&nbsp;set(<a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a>&nbsp;matrix)</pre>
+<div class="block">If matrix is a PMatrix2D, sets this matrix to be a copy of it.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#set-processing.core.PMatrix-">set</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - If <tt>matrix</tt> is not 2D.</dd>
 </dl>
 </li>
 </ul>
@@ -627,6 +689,7 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>set</h4>
 <pre>public&nbsp;void&nbsp;set(<a href="../../processing/core/PMatrix3D.html" title="class in processing.core">PMatrix3D</a>&nbsp;src)</pre>
+<div class="block">Unavailable in 2D. Does nothing.</div>
 </li>
 </ul>
 <a name="set-float:A-">
@@ -636,6 +699,9 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>set</h4>
 <pre>public&nbsp;void&nbsp;set(float[]&nbsp;source)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../processing/core/PMatrix.html#set-float:A-">PMatrix</a></code></span></div>
+<div class="block">Set the contents of this matrix to the contents of source. Fills the
+ matrix left-to-right, starting in the top row.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#set-float:A-">set</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -654,6 +720,7 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
                 float&nbsp;m10,
                 float&nbsp;m11,
                 float&nbsp;m12)</pre>
+<div class="block">Sets the matrix content.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#set-float-float-float-float-float-float-">set</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -682,6 +749,7 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
                 float&nbsp;m31,
                 float&nbsp;m32,
                 float&nbsp;m33)</pre>
+<div class="block">Unavailable in 2D. Does nothing.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#set-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-">set</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -711,9 +779,12 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <pre>public&nbsp;void&nbsp;translate(float&nbsp;x,
                       float&nbsp;y,
                       float&nbsp;z)</pre>
+<div class="block">Unavailable in 2D.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#translate-float-float-float-">translate</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -737,9 +808,12 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>rotateX</h4>
 <pre>public&nbsp;void&nbsp;rotateX(float&nbsp;angle)</pre>
+<div class="block">Unavailable in 2D.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#rotateX-float-">rotateX</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -750,9 +824,12 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>rotateY</h4>
 <pre>public&nbsp;void&nbsp;rotateY(float&nbsp;angle)</pre>
+<div class="block">Unavailable in 2D.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#rotateY-float-">rotateY</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -779,9 +856,12 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
                    float&nbsp;v0,
                    float&nbsp;v1,
                    float&nbsp;v2)</pre>
+<div class="block">Unavailable in 2D.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#rotate-float-float-float-float-">rotate</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -821,9 +901,12 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <pre>public&nbsp;void&nbsp;scale(float&nbsp;x,
                   float&nbsp;y,
                   float&nbsp;z)</pre>
+<div class="block">Unavailable in 2D.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#scale-float-float-float-">scale</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -875,6 +958,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>apply</h4>
 <pre>public&nbsp;void&nbsp;apply(<a href="../../processing/core/PMatrix2D.html" title="class in processing.core">PMatrix2D</a>&nbsp;source)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../processing/core/PMatrix.html#apply-processing.core.PMatrix2D-">PMatrix</a></code></span></div>
+<div class="block">Multiply this matrix by another.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#apply-processing.core.PMatrix2D-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -888,9 +973,12 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>apply</h4>
 <pre>public&nbsp;void&nbsp;apply(<a href="../../processing/core/PMatrix3D.html" title="class in processing.core">PMatrix3D</a>&nbsp;source)</pre>
+<div class="block">Unavailable in 2D.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#apply-processing.core.PMatrix3D-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -906,6 +994,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
                   float&nbsp;n10,
                   float&nbsp;n11,
                   float&nbsp;n12)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../processing/core/PMatrix.html#apply-float-float-float-float-float-float-">PMatrix</a></code></span></div>
+<div class="block">Multiply this matrix by another.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#apply-float-float-float-float-float-float-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -934,9 +1024,12 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
                   float&nbsp;n31,
                   float&nbsp;n32,
                   float&nbsp;n33)</pre>
+<div class="block">Unavailable in 2D.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#apply-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -961,6 +1054,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>preApply</h4>
 <pre>public&nbsp;void&nbsp;preApply(<a href="../../processing/core/PMatrix2D.html" title="class in processing.core">PMatrix2D</a>&nbsp;left)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../processing/core/PMatrix.html#preApply-processing.core.PMatrix2D-">PMatrix</a></code></span></div>
+<div class="block">Apply another matrix to the left of this one.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#preApply-processing.core.PMatrix2D-">preApply</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -974,9 +1069,12 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>preApply</h4>
 <pre>public&nbsp;void&nbsp;preApply(<a href="../../processing/core/PMatrix3D.html" title="class in processing.core">PMatrix3D</a>&nbsp;left)</pre>
+<div class="block">Unavailable in 2D.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#preApply-processing.core.PMatrix3D-">preApply</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -992,6 +1090,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
                      float&nbsp;n10,
                      float&nbsp;n11,
                      float&nbsp;n12)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../processing/core/PMatrix.html#preApply-float-float-float-float-float-float-">PMatrix</a></code></span></div>
+<div class="block">Apply another matrix to the left of this one.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#preApply-float-float-float-float-float-float-">preApply</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -1020,9 +1120,12 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
                      float&nbsp;n31,
                      float&nbsp;n32,
                      float&nbsp;n33)</pre>
+<div class="block">Unavailable in 2D.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#preApply-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-">preApply</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1034,7 +1137,11 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <h4>mult</h4>
 <pre>public&nbsp;<a href="../../processing/core/PVector.html" title="class in processing.core">PVector</a>&nbsp;mult(<a href="../../processing/core/PVector.html" title="class in processing.core">PVector</a>&nbsp;source,
                     <a href="../../processing/core/PVector.html" title="class in processing.core">PVector</a>&nbsp;target)</pre>
-<div class="block">Multiply the x and y coordinates of a PVector against this matrix.</div>
+<div class="block">Multiply source by this matrix, and return the result.
+ The result will be stored in target if target is non-null, and target
+ will then be the matrix returned. This improves performance if you reuse
+ target, so it's recommended if you call this many times in draw().
+ Ignores any z component.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#mult-processing.core.PVector-processing.core.PVector-">mult</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -1066,6 +1173,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <h4>multX</h4>
 <pre>public&nbsp;float&nbsp;multX(float&nbsp;x,
                    float&nbsp;y)</pre>
+<div class="block">Returns the x-coordinate of the result of multiplying the point (x, y)
+ by this matrix.</div>
 </li>
 </ul>
 <a name="multY-float-float-">
@@ -1076,6 +1185,8 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <h4>multY</h4>
 <pre>public&nbsp;float&nbsp;multY(float&nbsp;x,
                    float&nbsp;y)</pre>
+<div class="block">Returns the y-coordinate of the result of multiplying the point (x, y)
+ by this matrix.</div>
 </li>
 </ul>
 <a name="transpose--">
@@ -1085,7 +1196,7 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>transpose</h4>
 <pre>public&nbsp;void&nbsp;transpose()</pre>
-<div class="block">Transpose this matrix.</div>
+<div class="block">Unavailable in 2D. Does nothing.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#transpose--">transpose</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
@@ -1099,7 +1210,9 @@ implements <a href="../../processing/core/PMatrix.html" title="interface in proc
 <li class="blockList">
 <h4>invert</h4>
 <pre>public&nbsp;boolean&nbsp;invert()</pre>
-<div class="block">Invert this matrix. Implementation stolen from OpenJDK.</div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../processing/core/PMatrix.html#invert--">PMatrix</a></code></span></div>
+<div class="block">Invert this matrix. Will not necessarily succeed, because some matrices
+ map more than one point to the same image point, and so are irreversible.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../processing/core/PMatrix.html#invert--">invert</a></code>&nbsp;in interface&nbsp;<code><a href="../../processing/core/PMatrix.html" title="interface in processing.core">PMatrix</a></code></dd>
