@@ -180,7 +180,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/SoftwareServo.html#attach-int-int-int-">attach</a></span>(int&nbsp;pin,
       int&nbsp;minPulse,
       int&nbsp;maxPulse)</code>
-<div class="block">Attaches a servo motor to a GPIO pin</div>
+<div class="block">Attaches a servo motor to a GPIO pin using custom pulse widths</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -204,7 +204,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/SoftwareServo.html#write-float-">write</a></span>(float&nbsp;angle)</code>
-<div class="block">Move a servo motor to a given orientation</div>
+<div class="block">Moves a servo motor to a given orientation</div>
 </td>
 </tr>
 </table>
@@ -318,10 +318,9 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <pre>public&nbsp;void&nbsp;attach(int&nbsp;pin,
                    int&nbsp;minPulse,
                    int&nbsp;maxPulse)</pre>
-<div class="block">Attaches a servo motor to a GPIO pin</div>
+<div class="block">Attaches a servo motor to a GPIO pin using custom pulse widths</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>pin</code> - GPIO pin</dd>
 <dd><code>minPulse</code> - minimum pulse width in microseconds (default: 544, same as on Arduino)</dd>
 <dd><code>maxPulse</code> - maximum pulse width in microseconds (default: 2400, same as on Arduino)</dd>
 </dl>
@@ -334,7 +333,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>write</h4>
 <pre>public&nbsp;void&nbsp;write(float&nbsp;angle)</pre>
-<div class="block">Move a servo motor to a given orientation</div>
+<div class="block">Moves a servo motor to a given orientation</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>angle</code> - angle in degrees (controls speed and direction on continuous-rotation servos)</dd>
