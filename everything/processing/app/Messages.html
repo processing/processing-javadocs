@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -95,7 +95,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></li>
+<li>Object</li>
 <li>
 <ul class="inheritance">
 <li>Messages</li>
@@ -108,7 +108,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">Messages</span>
-extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+extends Object</pre>
 </li>
 </ul>
 </div>
@@ -146,96 +146,105 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#log-java.lang.Object-java.lang.String-">log</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;from,
-   <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#log-java.lang.Object-java.lang.String-">log</a></span>(Object&nbsp;from,
+   String&nbsp;message)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#log-java.lang.String-">log</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#log-java.lang.String-">log</a></span>(String&nbsp;message)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#loge-java.lang.String-">loge</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#loge-java.lang.String-">loge</a></span>(String&nbsp;message)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#loge-java.lang.String-java.lang.Throwable-">loge</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
-    <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#loge-java.lang.String-java.lang.Throwable-">loge</a></span>(String&nbsp;message,
+    Throwable&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#logf-java.lang.String-java.lang.Object...-">logf</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
-    <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#logf-java.lang.String-java.lang.Object...-">logf</a></span>(String&nbsp;message,
+    Object...&nbsp;args)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#showError-java.lang.String-java.lang.String-java.lang.Throwable-">showError</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
-         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e)</code>
-<div class="block">Show an error message that's actually fatal to the program.</div>
-</td>
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#showCustomQuestion-java.awt.Frame-java.lang.String-java.lang.String-java.lang.String-int-java.lang.String...-">showCustomQuestion</a></span>(Frame&nbsp;editor,
+                  String&nbsp;title,
+                  String&nbsp;primary,
+                  String&nbsp;secondary,
+                  int&nbsp;highlight,
+                  String...&nbsp;options)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#showMessage-java.lang.String-java.lang.String-">showMessage</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
-<div class="block">"No cookie for you" type messages.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#showError-java.lang.String-java.lang.String-java.lang.Throwable-">showError</a></span>(String&nbsp;title,
+         String&nbsp;message,
+         Throwable&nbsp;e)</code>
+<div class="block">Show an error message that's actually fatal to the program.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#showTrace-java.lang.String-java.lang.String-java.lang.Throwable-boolean-">showTrace</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
-         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;t,
-         boolean&nbsp;fatal)</code>
-<div class="block">Testing a new warning window that includes the stack trace.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#showMessage-java.lang.String-java.lang.String-">showMessage</a></span>(String&nbsp;title,
+           String&nbsp;message)</code>
+<div class="block">"No cookie for you" type messages.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#showWarning-java.lang.String-java.lang.String-">showWarning</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
-<div class="block">Non-fatal error message.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#showTrace-java.lang.String-java.lang.String-java.lang.Throwable-boolean-">showTrace</a></span>(String&nbsp;title,
+         String&nbsp;message,
+         Throwable&nbsp;t,
+         boolean&nbsp;fatal)</code>
+<div class="block">Testing a new warning window that includes the stack trace.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#showWarning-java.lang.String-java.lang.String-java.lang.Throwable-">showWarning</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
-           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e)</code>
-<div class="block">Non-fatal error message with optional stack trace side dish.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#showWarning-java.lang.String-java.lang.String-">showWarning</a></span>(String&nbsp;title,
+           String&nbsp;message)</code>
+<div class="block">Non-fatal error message.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#showWarningTiered-java.lang.String-java.lang.String-java.lang.String-java.lang.Throwable-">showWarningTiered</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;primary,
-                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;secondary,
-                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#showWarning-java.lang.String-java.lang.String-java.lang.Throwable-">showWarning</a></span>(String&nbsp;title,
+           String&nbsp;message,
+           Throwable&nbsp;e)</code>
 <div class="block">Non-fatal error message with optional stack trace side dish.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#showYesNoCancelQuestion-processing.app.ui.Editor-java.lang.String-java.lang.String-java.lang.String-">showYesNoCancelQuestion</a></span>(<a href="../../processing/app/ui/Editor.html" title="class in processing.app.ui">Editor</a>&nbsp;editor,
-                       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;primary,
-                       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;secondary)</code>&nbsp;</td>
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#showWarningTiered-java.lang.String-java.lang.String-java.lang.String-java.lang.Throwable-">showWarningTiered</a></span>(String&nbsp;title,
+                 String&nbsp;primary,
+                 String&nbsp;secondary,
+                 Throwable&nbsp;e)</code>
+<div class="block">Non-fatal error message with optional stack trace side dish.</div>
+</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#showYesNoQuestion-java.awt.Frame-java.lang.String-java.lang.String-java.lang.String-">showYesNoQuestion</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Frame.html?is-external=true" title="class or interface in java.awt">Frame</a>&nbsp;editor,
-                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;primary,
-                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;secondary)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#showYesNoCancelQuestion-processing.app.ui.Editor-java.lang.String-java.lang.String-java.lang.String-">showYesNoCancelQuestion</a></span>(<a href="../../processing/app/ui/Editor.html" title="class in processing.app.ui">Editor</a>&nbsp;editor,
+                       String&nbsp;title,
+                       String&nbsp;primary,
+                       String&nbsp;secondary)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/app/Messages.html#showYesNoQuestion-java.awt.Frame-java.lang.String-java.lang.String-java.lang.String-">showYesNoQuestion</a></span>(Frame&nbsp;editor,
+                 String&nbsp;title,
+                 String&nbsp;primary,
+                 String&nbsp;secondary)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<h3>Methods inherited from class&nbsp;Object</h3>
+<code>equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -274,8 +283,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>showMessage</h4>
-<pre>public static&nbsp;void&nbsp;showMessage(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
+<pre>public static&nbsp;void&nbsp;showMessage(String&nbsp;title,
+                               String&nbsp;message)</pre>
 <div class="block">"No cookie for you" type messages. Nothing fatal or all that
  much of a bummer, but something to notify the user about.</div>
 </li>
@@ -286,8 +295,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>showWarning</h4>
-<pre>public static&nbsp;void&nbsp;showWarning(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
+<pre>public static&nbsp;void&nbsp;showWarning(String&nbsp;title,
+                               String&nbsp;message)</pre>
 <div class="block">Non-fatal error message.</div>
 </li>
 </ul>
@@ -297,9 +306,9 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>showWarning</h4>
-<pre>public static&nbsp;void&nbsp;showWarning(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
-                               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e)</pre>
+<pre>public static&nbsp;void&nbsp;showWarning(String&nbsp;title,
+                               String&nbsp;message,
+                               Throwable&nbsp;e)</pre>
 <div class="block">Non-fatal error message with optional stack trace side dish.</div>
 </li>
 </ul>
@@ -309,10 +318,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>showWarningTiered</h4>
-<pre>public static&nbsp;void&nbsp;showWarningTiered(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                                     <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;primary,
-                                     <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;secondary,
-                                     <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e)</pre>
+<pre>public static&nbsp;void&nbsp;showWarningTiered(String&nbsp;title,
+                                     String&nbsp;primary,
+                                     String&nbsp;secondary,
+                                     Throwable&nbsp;e)</pre>
 <div class="block">Non-fatal error message with optional stack trace side dish.</div>
 </li>
 </ul>
@@ -322,9 +331,9 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>showError</h4>
-<pre>public static&nbsp;void&nbsp;showError(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                             <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
-                             <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e)</pre>
+<pre>public static&nbsp;void&nbsp;showError(String&nbsp;title,
+                             String&nbsp;message,
+                             Throwable&nbsp;e)</pre>
 <div class="block">Show an error message that's actually fatal to the program.
  This is an error that can't be recovered. Use showWarning()
  for errors that allow P5 to continue running.</div>
@@ -336,9 +345,9 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>showTrace</h4>
-<pre>public static&nbsp;void&nbsp;showTrace(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                             <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
-                             <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;t,
+<pre>public static&nbsp;void&nbsp;showTrace(String&nbsp;title,
+                             String&nbsp;message,
+                             Throwable&nbsp;t,
                              boolean&nbsp;fatal)</pre>
 <div class="block">Testing a new warning window that includes the stack trace.</div>
 </li>
@@ -350,9 +359,9 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>showYesNoCancelQuestion</h4>
 <pre>public static&nbsp;int&nbsp;showYesNoCancelQuestion(<a href="../../processing/app/ui/Editor.html" title="class in processing.app.ui">Editor</a>&nbsp;editor,
-                                          <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                                          <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;primary,
-                                          <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;secondary)</pre>
+                                          String&nbsp;title,
+                                          String&nbsp;primary,
+                                          String&nbsp;secondary)</pre>
 </li>
 </ul>
 <a name="showYesNoQuestion-java.awt.Frame-java.lang.String-java.lang.String-java.lang.String-">
@@ -361,10 +370,31 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>showYesNoQuestion</h4>
-<pre>public static&nbsp;int&nbsp;showYesNoQuestion(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Frame.html?is-external=true" title="class or interface in java.awt">Frame</a>&nbsp;editor,
-                                    <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                                    <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;primary,
-                                    <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;secondary)</pre>
+<pre>public static&nbsp;int&nbsp;showYesNoQuestion(Frame&nbsp;editor,
+                                    String&nbsp;title,
+                                    String&nbsp;primary,
+                                    String&nbsp;secondary)</pre>
+</li>
+</ul>
+<a name="showCustomQuestion-java.awt.Frame-java.lang.String-java.lang.String-java.lang.String-int-java.lang.String...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>showCustomQuestion</h4>
+<pre>public static&nbsp;int&nbsp;showCustomQuestion(Frame&nbsp;editor,
+                                     String&nbsp;title,
+                                     String&nbsp;primary,
+                                     String&nbsp;secondary,
+                                     int&nbsp;highlight,
+                                     String...&nbsp;options)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>highlight</code> - A valid array index for options[] that specifies the
+                  default (i.e. safe) choice.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The (zero-based) index of the selected value, -1 otherwise.</dd>
+</dl>
 </li>
 </ul>
 <a name="log-java.lang.Object-java.lang.String-">
@@ -373,8 +403,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>log</h4>
-<pre>public static&nbsp;void&nbsp;log(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;from,
-                       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
+<pre>public static&nbsp;void&nbsp;log(Object&nbsp;from,
+                       String&nbsp;message)</pre>
 </li>
 </ul>
 <a name="log-java.lang.String-">
@@ -383,7 +413,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>log</h4>
-<pre>public static&nbsp;void&nbsp;log(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
+<pre>public static&nbsp;void&nbsp;log(String&nbsp;message)</pre>
 </li>
 </ul>
 <a name="logf-java.lang.String-java.lang.Object...-">
@@ -392,8 +422,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>logf</h4>
-<pre>public static&nbsp;void&nbsp;logf(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
-                        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
+<pre>public static&nbsp;void&nbsp;logf(String&nbsp;message,
+                        Object...&nbsp;args)</pre>
 </li>
 </ul>
 <a name="loge-java.lang.String-java.lang.Throwable-">
@@ -402,8 +432,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>loge</h4>
-<pre>public static&nbsp;void&nbsp;loge(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
-                        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;e)</pre>
+<pre>public static&nbsp;void&nbsp;loge(String&nbsp;message,
+                        Throwable&nbsp;e)</pre>
 </li>
 </ul>
 <a name="loge-java.lang.String-">
@@ -412,7 +442,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockListLast">
 <li class="blockList">
 <h4>loge</h4>
-<pre>public static&nbsp;void&nbsp;loge(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
+<pre>public static&nbsp;void&nbsp;loge(String&nbsp;message)</pre>
 </li>
 </ul>
 </li>

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -95,7 +95,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></li>
+<li>Object</li>
 <li>
 <ul class="inheritance">
 <li>NativeInterface</li>
@@ -108,7 +108,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">NativeInterface</span>
-extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+extends Object</pre>
 </li>
 </ul>
 </div>
@@ -153,7 +153,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#closeDevice-int-">closeDevice</a></span>(int&nbsp;handle)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colFirst"><code>static String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#getError-int-">getError</a></span>(int&nbsp;errno)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -166,71 +166,86 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#openDevice-java.lang.String-">openDevice</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fn)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#openDevice-java.lang.String-">openDevice</a></span>(String&nbsp;fn)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#pollDevice-java.lang.String-int-">pollDevice</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fn,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#pollDevice-java.lang.String-int-">pollDevice</a></span>(String&nbsp;fn,
           int&nbsp;timeout)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#readFile-java.lang.String-byte:A-">readFile</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fn,
-        byte[]&nbsp;in)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#raspbianGpioMemRead-int-">raspbianGpioMemRead</a></span>(int&nbsp;offset)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#raspbianGpioMemSetPinBias-int-int-">raspbianGpioMemSetPinBias</a></span>(int&nbsp;gpio,
+                         int&nbsp;mode)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#raspbianGpioMemWrite-int-int-int-">raspbianGpioMemWrite</a></span>(int&nbsp;offset,
+                    int&nbsp;mask,
+                    int&nbsp;value)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#readFile-java.lang.String-byte:A-">readFile</a></span>(String&nbsp;fn,
+        byte[]&nbsp;in)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#servoStartThread-int-int-int-">servoStartThread</a></span>(int&nbsp;gpio,
                 int&nbsp;pulse,
                 int&nbsp;period)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#servoStopThread-long-">servoStopThread</a></span>(long&nbsp;handle)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#servoUpdateThread-long-int-int-">servoUpdateThread</a></span>(long&nbsp;handle,
                  int&nbsp;pulse,
                  int&nbsp;period)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#setSpiSettings-int-int-int-int-">setSpiSettings</a></span>(int&nbsp;handle,
               int&nbsp;maxSpeed,
               int&nbsp;dataOrder,
               int&nbsp;mode)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#transferI2c-int-int-byte:A-byte:A-">transferI2c</a></span>(int&nbsp;handle,
            int&nbsp;slave,
            byte[]&nbsp;out,
            byte[]&nbsp;in)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#transferSpi-int-byte:A-byte:A-">transferSpi</a></span>(int&nbsp;handle,
            byte[]&nbsp;out,
            byte[]&nbsp;in)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#writeFile-java.lang.String-byte:A-">writeFile</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fn,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#writeFile-java.lang.String-byte:A-">writeFile</a></span>(String&nbsp;fn,
          byte[]&nbsp;out)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#writeFile-java.lang.String-java.lang.String-">writeFile</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fn,
-         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;out)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../processing/io/NativeInterface.html#writeFile-java.lang.String-java.lang.String-">writeFile</a></span>(String&nbsp;fn,
+         String&nbsp;out)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<h3>Methods inherited from class&nbsp;Object</h3>
+<code>equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -296,7 +311,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>openDevice</h4>
-<pre>public static&nbsp;int&nbsp;openDevice(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fn)</pre>
+<pre>public static&nbsp;int&nbsp;openDevice(String&nbsp;fn)</pre>
 </li>
 </ul>
 <a name="getError-int-">
@@ -305,7 +320,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getError</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getError(int&nbsp;errno)</pre>
+<pre>public static&nbsp;String&nbsp;getError(int&nbsp;errno)</pre>
 </li>
 </ul>
 <a name="closeDevice-int-">
@@ -323,7 +338,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>readFile</h4>
-<pre>public static&nbsp;int&nbsp;readFile(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fn,
+<pre>public static&nbsp;int&nbsp;readFile(String&nbsp;fn,
                            byte[]&nbsp;in)</pre>
 </li>
 </ul>
@@ -333,7 +348,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>writeFile</h4>
-<pre>public static&nbsp;int&nbsp;writeFile(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fn,
+<pre>public static&nbsp;int&nbsp;writeFile(String&nbsp;fn,
                             byte[]&nbsp;out)</pre>
 </li>
 </ul>
@@ -343,8 +358,38 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>writeFile</h4>
-<pre>public static&nbsp;int&nbsp;writeFile(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fn,
-                            <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;out)</pre>
+<pre>public static&nbsp;int&nbsp;writeFile(String&nbsp;fn,
+                            String&nbsp;out)</pre>
+</li>
+</ul>
+<a name="raspbianGpioMemRead-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>raspbianGpioMemRead</h4>
+<pre>public static&nbsp;int&nbsp;raspbianGpioMemRead(int&nbsp;offset)</pre>
+</li>
+</ul>
+<a name="raspbianGpioMemWrite-int-int-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>raspbianGpioMemWrite</h4>
+<pre>public static&nbsp;int&nbsp;raspbianGpioMemWrite(int&nbsp;offset,
+                                       int&nbsp;mask,
+                                       int&nbsp;value)</pre>
+</li>
+</ul>
+<a name="raspbianGpioMemSetPinBias-int-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>raspbianGpioMemSetPinBias</h4>
+<pre>public static&nbsp;int&nbsp;raspbianGpioMemSetPinBias(int&nbsp;gpio,
+                                            int&nbsp;mode)</pre>
 </li>
 </ul>
 <a name="pollDevice-java.lang.String-int-">
@@ -353,7 +398,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>pollDevice</h4>
-<pre>public static&nbsp;int&nbsp;pollDevice(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fn,
+<pre>public static&nbsp;int&nbsp;pollDevice(String&nbsp;fn,
                              int&nbsp;timeout)</pre>
 </li>
 </ul>

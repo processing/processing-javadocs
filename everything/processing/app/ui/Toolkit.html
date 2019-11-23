@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":9,"i29":9,"i30":9,"i31":9,"i32":9,"i33":9,"i34":9,"i35":9,"i36":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":9,"i29":9,"i30":9,"i31":9,"i32":9,"i33":9,"i34":9,"i35":9,"i36":9,"i37":9,"i38":9,"i39":9,"i40":9,"i41":9,"i42":9,"i43":9,"i44":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -95,7 +95,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></li>
+<li>Object</li>
 <li>
 <ul class="inheritance">
 <li>Toolkit</li>
@@ -108,7 +108,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">Toolkit</span>
-extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+extends Object</pre>
 <div class="block">Utility functions for base that require a java.awt.Toolkit object. These
  are broken out from Base as we start moving toward the possibility of the
  code running in headless mode.</div>
@@ -131,7 +131,11 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/KeyStroke.html?is-external=true" title="class or interface in javax.swing">KeyStroke</a></code></td>
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#BORDER">BORDER</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static KeyStroke</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#WINDOW_CLOSE_KEYSTROKE">WINDOW_CLOSE_KEYSTROKE</a></span></code>
 <div class="block">Command-W on Mac OS X, Ctrl-W on Windows and Linux</div>
 </td>
@@ -170,34 +174,34 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#addDisabledItem-javax.swing.JMenu-java.lang.String-">addDisabledItem</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenu.html?is-external=true" title="class or interface in javax.swing">JMenu</a>&nbsp;menu,
-               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#addDisabledItem-javax.swing.JMenu-java.lang.String-">addDisabledItem</a></span>(JMenu&nbsp;menu,
+               String&nbsp;title)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#beep--">beep</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JButton.html?is-external=true" title="class or interface in javax.swing">JButton</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#createIconButton-java.lang.String-">createIconButton</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;base)</code>
+<td class="colFirst"><code>static JButton</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#createIconButton-java.lang.String-">createIconButton</a></span>(String&nbsp;base)</code>
 <div class="block">Same as above, but with no text title (follows JButton constructor)</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JButton.html?is-external=true" title="class or interface in javax.swing">JButton</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#createIconButton-java.lang.String-javax.swing.Icon-">createIconButton</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/Icon.html?is-external=true" title="class or interface in javax.swing">Icon</a>&nbsp;icon)</code>&nbsp;</td>
+<td class="colFirst"><code>static JButton</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#createIconButton-java.lang.String-javax.swing.Icon-">createIconButton</a></span>(String&nbsp;title,
+                Icon&nbsp;icon)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JButton.html?is-external=true" title="class or interface in javax.swing">JButton</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#createIconButton-java.lang.String-java.lang.String-">createIconButton</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;base)</code>
+<td class="colFirst"><code>static JButton</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#createIconButton-java.lang.String-java.lang.String-">createIconButton</a></span>(String&nbsp;title,
+                String&nbsp;base)</code>
 <div class="block">Create a JButton with an icon, and set its disabled and pressed images
  to be the same image, so that 2x versions of the icon work properly.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Shape.html?is-external=true" title="class or interface in java.awt">Shape</a></code></td>
+<td class="colFirst"><code>static Shape</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#createRoundRect-float-float-float-float-float-float-float-float-">createRoundRect</a></span>(float&nbsp;x1,
                float&nbsp;y1,
                float&nbsp;x2,
@@ -209,7 +213,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getAscent-java.awt.Graphics-">getAscent</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Graphics.html?is-external=true" title="class or interface in java.awt">Graphics</a>&nbsp;g)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getAscent-java.awt.Graphics-">getAscent</a></span>(Graphics&nbsp;g)</code>
 <div class="block">Synthesized replacement for FontMetrics.getAscent(), which is dreadfully
  inaccurate and inconsistent across platforms.</div>
 </td>
@@ -221,155 +225,193 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/ImageIcon.html?is-external=true" title="class or interface in javax.swing">ImageIcon</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getIconX-java.io.File-java.lang.String-">getIconX</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;dir,
-        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;base)</code>&nbsp;</td>
+<td class="colFirst"><code>static ImageIcon</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getIconX-java.io.File-java.lang.String-">getIconX</a></span>(File&nbsp;dir,
+        String&nbsp;base)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/ImageIcon.html?is-external=true" title="class or interface in javax.swing">ImageIcon</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getIconX-java.io.File-java.lang.String-int-">getIconX</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;dir,
-        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;base,
+<td class="colFirst"><code>static ImageIcon</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getIconX-java.io.File-java.lang.String-int-">getIconX</a></span>(File&nbsp;dir,
+        String&nbsp;base,
         int&nbsp;size)</code>
 <div class="block">Get an icon of the format base-NN.png where NN is the size, but if it's
  a hidpi display, get the NN*2 version automatically, sized at NN</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/ImageIcon.html?is-external=true" title="class or interface in javax.swing">ImageIcon</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getLibIcon-java.lang.String-">getLibIcon</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filename)</code>
-<div class="block">Get an ImageIcon from the Processing 'lib' folder.</div>
+<td class="colFirst"><code>static KeyStroke</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getKeyStrokeExt-java.lang.String-">getKeyStrokeExt</a></span>(String&nbsp;base)</code>
+<div class="block">Return the correct KeyStroke per locale and platform.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/ImageIcon.html?is-external=true" title="class or interface in javax.swing">ImageIcon</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getLibIconX-java.lang.String-">getLibIconX</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;base)</code>
-<div class="block">Get an image icon with hi-dpi support.</div>
+<td class="colFirst"><code>static ImageIcon</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getLibIcon-java.lang.String-">getLibIcon</a></span>(String&nbsp;filename)</code>
+<div class="block">Get an ImageIcon from the Processing 'lib' folder.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/ImageIcon.html?is-external=true" title="class or interface in javax.swing">ImageIcon</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getLibIconX-java.lang.String-int-">getLibIconX</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;base,
-           int&nbsp;size)</code>&nbsp;</td>
+<td class="colFirst"><code>static ImageIcon</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getLibIconX-java.lang.String-">getLibIconX</a></span>(String&nbsp;base)</code>
+<div class="block">Get an image icon with hi-dpi support.</div>
+</td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Image.html?is-external=true" title="class or interface in java.awt">Image</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getLibImage-java.lang.String-">getLibImage</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filename)</code>
+<td class="colFirst"><code>static ImageIcon</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getLibIconX-java.lang.String-int-">getLibIconX</a></span>(String&nbsp;base,
+           int&nbsp;size)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>static Image</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getLibImage-java.lang.String-">getLibImage</a></span>(String&nbsp;filename)</code>
 <div class="block">Return an Image object from inside the Processing 'lib' folder.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getMenuItemIndex-javax.swing.JMenu-javax.swing.JMenuItem-">getMenuItemIndex</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenu.html?is-external=true" title="class or interface in javax.swing">JMenu</a>&nbsp;menu,
-                <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenuItem.html?is-external=true" title="class or interface in javax.swing">JMenuItem</a>&nbsp;item)</code>&nbsp;</td>
-</tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Font.html?is-external=true" title="class or interface in java.awt">Font</a></code></td>
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getMenuItemIndex-javax.swing.JMenu-javax.swing.JMenuItem-">getMenuItemIndex</a></span>(JMenu&nbsp;menu,
+                JMenuItem&nbsp;item)</code>&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>static Font</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getMonoFont-int-int-">getMonoFont</a></span>(int&nbsp;size,
            int&nbsp;style)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>static String[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getMonoFontFamilies--">getMonoFontFamilies</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>static String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getMonoFontName--">getMonoFontName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Font.html?is-external=true" title="class or interface in java.awt">Font</a></code></td>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>static Font</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getSansFont-int-int-">getSansFont</a></span>(int&nbsp;size,
            int&nbsp;style)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>static String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getSansFontName--">getSansFontName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Dimension.html?is-external=true" title="class or interface in java.awt">Dimension</a></code></td>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>static Dimension</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getScreenSize--">getScreenSize</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/awt/datatransfer/Clipboard.html?is-external=true" title="class or interface in java.awt.datatransfer">Clipboard</a></code></td>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>static Clipboard</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#getSystemClipboard--">getSystemClipboard</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
-<td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#highResDisplay--">highResDisplay</a></span>()</code>&nbsp;</td>
-</tr>
 <tr id="i23" class="rowColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JCheckBoxMenuItem.html?is-external=true" title="class or interface in javax.swing">JCheckBoxMenuItem</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#newJCheckBoxMenuItem-java.lang.String-int-">newJCheckBoxMenuItem</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                    int&nbsp;what)</code>&nbsp;</td>
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#highResImages--">highResImages</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i24" class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenuItem.html?is-external=true" title="class or interface in javax.swing">JMenuItem</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#newJMenuItem-javax.swing.Action-int-">newJMenuItem</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/Action.html?is-external=true" title="class or interface in javax.swing">Action</a>&nbsp;action,
-            int&nbsp;what)</code>&nbsp;</td>
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#isRetina--">isRetina</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i25" class="rowColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenuItem.html?is-external=true" title="class or interface in javax.swing">JMenuItem</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#newJMenuItem-java.lang.String-int-">newJMenuItem</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+<td class="colFirst"><code>static JCheckBoxMenuItem</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#newJCheckBoxMenuItem-java.lang.String-int-">newJCheckBoxMenuItem</a></span>(String&nbsp;title,
+                    int&nbsp;what)</code>&nbsp;</td>
+</tr>
+<tr id="i26" class="altColor">
+<td class="colFirst"><code>static JMenuItem</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#newJMenuItem-javax.swing.Action-int-">newJMenuItem</a></span>(Action&nbsp;action,
+            int&nbsp;what)</code>&nbsp;</td>
+</tr>
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code>static JMenuItem</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#newJMenuItem-java.lang.String-int-">newJMenuItem</a></span>(String&nbsp;title,
             int&nbsp;what)</code>
 <div class="block">A software engineer, somewhere, needs to have their abstraction
  taken away.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenuItem.html?is-external=true" title="class or interface in javax.swing">JMenuItem</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#newJMenuItemAlt-java.lang.String-int-">newJMenuItemAlt</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>static JMenuItem</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#newJMenuItemAlt-java.lang.String-int-">newJMenuItemAlt</a></span>(String&nbsp;title,
                int&nbsp;what)</code>
 <div class="block">Same as newJMenuItem(), but adds the ALT (on Linux and Windows)
  or OPTION (on Mac OS X) key as a modifier.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenuItem.html?is-external=true" title="class or interface in javax.swing">JMenuItem</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#newJMenuItemShift-javax.swing.Action-int-">newJMenuItemShift</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/Action.html?is-external=true" title="class or interface in javax.swing">Action</a>&nbsp;action,
-                 int&nbsp;what)</code>
-<div class="block">Like newJMenuItem() but adds shift as a modifier for the shortcut.</div>
-</td>
-</tr>
-<tr id="i28" class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenuItem.html?is-external=true" title="class or interface in javax.swing">JMenuItem</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#newJMenuItemShift-java.lang.String-int-">newJMenuItemShift</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                 int&nbsp;what)</code>
-<div class="block">Like newJMenuItem() but adds shift as a modifier for the shortcut.</div>
-</td>
-</tr>
 <tr id="i29" class="rowColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Graphics2D.html?is-external=true" title="class or interface in java.awt">Graphics2D</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#prepareGraphics-java.awt.Graphics-">prepareGraphics</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Graphics.html?is-external=true" title="class or interface in java.awt">Graphics</a>&nbsp;g)</code>
+<td class="colFirst"><code>static JMenuItem</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#newJMenuItemExt-java.lang.String-">newJMenuItemExt</a></span>(String&nbsp;base)</code>
+<div class="block">Create a menu item and set its KeyStroke by name (so it can be stored
+ in the language settings or the preferences.</div>
+</td>
+</tr>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>static JMenuItem</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#newJMenuItemShift-javax.swing.Action-int-">newJMenuItemShift</a></span>(Action&nbsp;action,
+                 int&nbsp;what)</code>
+<div class="block">Like newJMenuItem() but adds shift as a modifier for the shortcut.</div>
+</td>
+</tr>
+<tr id="i31" class="rowColor">
+<td class="colFirst"><code>static JMenuItem</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#newJMenuItemShift-java.lang.String-int-">newJMenuItemShift</a></span>(String&nbsp;title,
+                 int&nbsp;what)</code>
+<div class="block">Like newJMenuItem() but adds shift as a modifier for the shortcut.</div>
+</td>
+</tr>
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>static Image</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#offscreenGraphics-java.awt.Component-int-int-">offscreenGraphics</a></span>(Component&nbsp;comp,
+                 int&nbsp;width,
+                 int&nbsp;height)</code>
+<div class="block">Create an Image to be used as an offscreen drawing context,
+ automatically doubling the size if running on a retina display.</div>
+</td>
+</tr>
+<tr id="i33" class="rowColor">
+<td class="colFirst"><code>static Graphics2D</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#prepareGraphics-java.awt.Graphics-">prepareGraphics</a></span>(Graphics&nbsp;g)</code>
 <div class="block">Handles scaling for high-res displays, also sets text anti-aliasing
  options to be far less ugly than the defaults.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#registerWindowCloseKeys-javax.swing.JRootPane-java.awt.event.ActionListener-">registerWindowCloseKeys</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JRootPane.html?is-external=true" title="class or interface in javax.swing">JRootPane</a>&nbsp;root,
-                       <a href="http://docs.oracle.com/javase/7/docs/api/java/awt/event/ActionListener.html?is-external=true" title="class or interface in java.awt.event">ActionListener</a>&nbsp;disposer)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#registerWindowCloseKeys-javax.swing.JRootPane-java.awt.event.ActionListener-">registerWindowCloseKeys</a></span>(JRootPane&nbsp;root,
+                       ActionListener&nbsp;disposer)</code>
 <div class="block">Registers key events for a Ctrl-W and ESC with an ActionListener
  that will take care of disposing the window.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#setIcon-java.awt.Frame-">setIcon</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Frame.html?is-external=true" title="class or interface in java.awt">Frame</a>&nbsp;frame)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#setBorder-javax.swing.JComponent-">setBorder</a></span>(JComponent&nbsp;comp)</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#setIcon-java.awt.Window-">setIcon</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Window.html?is-external=true" title="class or interface in java.awt">Window</a>&nbsp;window)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#setBorder-javax.swing.JComponent-int-int-int-int-">setBorder</a></span>(JComponent&nbsp;comp,
+         int&nbsp;top,
+         int&nbsp;left,
+         int&nbsp;bottom,
+         int&nbsp;right)</code>&nbsp;</td>
+</tr>
+<tr id="i37" class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#setIcon-java.awt.Frame-">setIcon</a></span>(Frame&nbsp;frame)</code>&nbsp;</td>
+</tr>
+<tr id="i38" class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#setIcon-java.awt.Window-">setIcon</a></span>(Window&nbsp;window)</code>
 <div class="block">Give this Frame the Processing icon set.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#setMenuMnemonics-javax.swing.JMenuBar-">setMenuMnemonics</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenuBar.html?is-external=true" title="class or interface in javax.swing">JMenuBar</a>&nbsp;menubar)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#setMenuMnemonics-javax.swing.JMenuBar-">setMenuMnemonics</a></span>(JMenuBar&nbsp;menubar)</code>
 <div class="block">As setMenuMnemonics(JMenuItem...).</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#setMenuMnemonics-javax.swing.JMenuItem...-">setMenuMnemonics</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenuItem.html?is-external=true" title="class or interface in javax.swing">JMenuItem</a>...&nbsp;menu)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#setMenuMnemonics-javax.swing.JMenuItem...-">setMenuMnemonics</a></span>(JMenuItem...&nbsp;menu)</code>
 <div class="block">Removes all mnemonics, then sets a mnemonic for each menu and menu item
  recursively by these rules:
  
@@ -380,25 +422,34 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
   that is not taken.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#setMenuMnemonics-javax.swing.JPopupMenu-">setMenuMnemonics</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JPopupMenu.html?is-external=true" title="class or interface in javax.swing">JPopupMenu</a>&nbsp;menu)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#setMenuMnemonics-javax.swing.JPopupMenu-">setMenuMnemonics</a></span>(JPopupMenu&nbsp;menu)</code>
 <div class="block">As setMenuMnemonics(JMenuItem...).</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#setMenuMnemsInside-javax.swing.JMenu-">setMenuMnemsInside</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenu.html?is-external=true" title="class or interface in javax.swing">JMenu</a>&nbsp;menu)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#setMenuMnemsInside-javax.swing.JMenu-">setMenuMnemsInside</a></span>(JMenu&nbsp;menu)</code>
 <div class="block">Calls setMenuMnemonics(JMenuItem...) on the sub-elements only.</div>
 </td>
+</tr>
+<tr id="i43" class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#zoom-int-">zoom</a></span>(int&nbsp;pixels)</code>&nbsp;</td>
+</tr>
+<tr id="i44" class="altColor">
+<td class="colFirst"><code>static Dimension</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/ui/Toolkit.html#zoom-int-int-">zoom</a></span>(int&nbsp;w,
+    int&nbsp;h)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<h3>Methods inherited from class&nbsp;Object</h3>
+<code>equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -417,11 +468,20 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <a name="WINDOW_CLOSE_KEYSTROKE">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>WINDOW_CLOSE_KEYSTROKE</h4>
-<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/KeyStroke.html?is-external=true" title="class or interface in javax.swing">KeyStroke</a> WINDOW_CLOSE_KEYSTROKE</pre>
+<pre>public static final&nbsp;KeyStroke WINDOW_CLOSE_KEYSTROKE</pre>
 <div class="block">Command-W on Mac OS X, Ctrl-W on Windows and Linux</div>
+</li>
+</ul>
+<a name="BORDER">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>BORDER</h4>
+<pre>public static final&nbsp;int BORDER</pre>
 </li>
 </ul>
 </li>
@@ -462,13 +522,49 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
  for languages that are consistently wider than English.</div>
 </li>
 </ul>
+<a name="getKeyStrokeExt-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getKeyStrokeExt</h4>
+<pre>public static&nbsp;KeyStroke&nbsp;getKeyStrokeExt(String&nbsp;base)</pre>
+<div class="block">Return the correct KeyStroke per locale and platform.
+ Also checks for any additional overrides in preferences.txt.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>base</code> - the localization key for the menu item
+             (.keystroke and .platform will be added to the end)</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>KeyStroke for base + .keystroke + .platform
+         (or the value from preferences) or null if none found</dd>
+</dl>
+</li>
+</ul>
+<a name="newJMenuItemExt-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newJMenuItemExt</h4>
+<pre>public static&nbsp;JMenuItem&nbsp;newJMenuItemExt(String&nbsp;base)</pre>
+<div class="block">Create a menu item and set its KeyStroke by name (so it can be stored
+ in the language settings or the preferences. Syntax is here:
+ https://docs.oracle.com/javase/8/docs/api/javax/swing/KeyStroke.html#getKeyStroke-java.lang.String-</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sequence</code> - the name, as outlined by the KeyStroke API</dd>
+<dd><code>fallback</code> - what to use if getKeyStroke() comes back null</dd>
+</dl>
+</li>
+</ul>
 <a name="newJMenuItem-java.lang.String-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>newJMenuItem</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenuItem.html?is-external=true" title="class or interface in javax.swing">JMenuItem</a>&nbsp;newJMenuItem(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+<pre>public static&nbsp;JMenuItem&nbsp;newJMenuItem(String&nbsp;title,
                                      int&nbsp;what)</pre>
 <div class="block">A software engineer, somewhere, needs to have their abstraction
  taken away. Who crafts the sort of API that would require a
@@ -482,7 +578,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>newJMenuItem</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenuItem.html?is-external=true" title="class or interface in javax.swing">JMenuItem</a>&nbsp;newJMenuItem(<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/Action.html?is-external=true" title="class or interface in javax.swing">Action</a>&nbsp;action,
+<pre>public static&nbsp;JMenuItem&nbsp;newJMenuItem(Action&nbsp;action,
                                      int&nbsp;what)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -497,7 +593,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>newJMenuItemShift</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenuItem.html?is-external=true" title="class or interface in javax.swing">JMenuItem</a>&nbsp;newJMenuItemShift(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+<pre>public static&nbsp;JMenuItem&nbsp;newJMenuItemShift(String&nbsp;title,
                                           int&nbsp;what)</pre>
 <div class="block">Like newJMenuItem() but adds shift as a modifier for the shortcut.</div>
 </li>
@@ -508,7 +604,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>newJMenuItemShift</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenuItem.html?is-external=true" title="class or interface in javax.swing">JMenuItem</a>&nbsp;newJMenuItemShift(<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/Action.html?is-external=true" title="class or interface in javax.swing">Action</a>&nbsp;action,
+<pre>public static&nbsp;JMenuItem&nbsp;newJMenuItemShift(Action&nbsp;action,
                                           int&nbsp;what)</pre>
 <div class="block">Like newJMenuItem() but adds shift as a modifier for the shortcut.</div>
 </li>
@@ -519,7 +615,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>newJMenuItemAlt</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenuItem.html?is-external=true" title="class or interface in javax.swing">JMenuItem</a>&nbsp;newJMenuItemAlt(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+<pre>public static&nbsp;JMenuItem&nbsp;newJMenuItemAlt(String&nbsp;title,
                                         int&nbsp;what)</pre>
 <div class="block">Same as newJMenuItem(), but adds the ALT (on Linux and Windows)
  or OPTION (on Mac OS X) key as a modifier. This function should almost
@@ -533,7 +629,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>newJCheckBoxMenuItem</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JCheckBoxMenuItem.html?is-external=true" title="class or interface in javax.swing">JCheckBoxMenuItem</a>&nbsp;newJCheckBoxMenuItem(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+<pre>public static&nbsp;JCheckBoxMenuItem&nbsp;newJCheckBoxMenuItem(String&nbsp;title,
                                                      int&nbsp;what)</pre>
 </li>
 </ul>
@@ -543,8 +639,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>addDisabledItem</h4>
-<pre>public static&nbsp;void&nbsp;addDisabledItem(<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenu.html?is-external=true" title="class or interface in javax.swing">JMenu</a>&nbsp;menu,
-                                   <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title)</pre>
+<pre>public static&nbsp;void&nbsp;addDisabledItem(JMenu&nbsp;menu,
+                                   String&nbsp;title)</pre>
 </li>
 </ul>
 <a name="setMenuMnemonics-javax.swing.JMenuItem...-">
@@ -553,7 +649,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>setMenuMnemonics</h4>
-<pre>public static&nbsp;void&nbsp;setMenuMnemonics(<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenuItem.html?is-external=true" title="class or interface in javax.swing">JMenuItem</a>...&nbsp;menu)</pre>
+<pre>public static&nbsp;void&nbsp;setMenuMnemonics(JMenuItem...&nbsp;menu)</pre>
 <div class="block">Removes all mnemonics, then sets a mnemonic for each menu and menu item
  recursively by these rules:
  <ol>
@@ -598,7 +694,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>setMenuMnemonics</h4>
-<pre>public static&nbsp;void&nbsp;setMenuMnemonics(<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenuBar.html?is-external=true" title="class or interface in javax.swing">JMenuBar</a>&nbsp;menubar)</pre>
+<pre>public static&nbsp;void&nbsp;setMenuMnemonics(JMenuBar&nbsp;menubar)</pre>
 <div class="block">As setMenuMnemonics(JMenuItem...).</div>
 </li>
 </ul>
@@ -608,7 +704,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>setMenuMnemonics</h4>
-<pre>public static&nbsp;void&nbsp;setMenuMnemonics(<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JPopupMenu.html?is-external=true" title="class or interface in javax.swing">JPopupMenu</a>&nbsp;menu)</pre>
+<pre>public static&nbsp;void&nbsp;setMenuMnemonics(JPopupMenu&nbsp;menu)</pre>
 <div class="block">As setMenuMnemonics(JMenuItem...).</div>
 </li>
 </ul>
@@ -618,7 +714,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>setMenuMnemsInside</h4>
-<pre>public static&nbsp;void&nbsp;setMenuMnemsInside(<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenu.html?is-external=true" title="class or interface in javax.swing">JMenu</a>&nbsp;menu)</pre>
+<pre>public static&nbsp;void&nbsp;setMenuMnemsInside(JMenu&nbsp;menu)</pre>
 <div class="block">Calls setMenuMnemonics(JMenuItem...) on the sub-elements only.</div>
 </li>
 </ul>
@@ -628,7 +724,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getScreenSize</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Dimension.html?is-external=true" title="class or interface in java.awt">Dimension</a>&nbsp;getScreenSize()</pre>
+<pre>public static&nbsp;Dimension&nbsp;getScreenSize()</pre>
 </li>
 </ul>
 <a name="getLibImage-java.lang.String-">
@@ -637,7 +733,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getLibImage</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Image.html?is-external=true" title="class or interface in java.awt">Image</a>&nbsp;getLibImage(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filename)</pre>
+<pre>public static&nbsp;Image&nbsp;getLibImage(String&nbsp;filename)</pre>
 <div class="block">Return an Image object from inside the Processing 'lib' folder.
  Moved here so that Base can stay headless.</div>
 </li>
@@ -648,7 +744,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getLibIcon</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/ImageIcon.html?is-external=true" title="class or interface in javax.swing">ImageIcon</a>&nbsp;getLibIcon(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filename)</pre>
+<pre>public static&nbsp;ImageIcon&nbsp;getLibIcon(String&nbsp;filename)</pre>
 <div class="block">Get an ImageIcon from the Processing 'lib' folder.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
@@ -662,8 +758,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getIconX</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/ImageIcon.html?is-external=true" title="class or interface in javax.swing">ImageIcon</a>&nbsp;getIconX(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;dir,
-                                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;base)</pre>
+<pre>public static&nbsp;ImageIcon&nbsp;getIconX(File&nbsp;dir,
+                                 String&nbsp;base)</pre>
 </li>
 </ul>
 <a name="getIconX-java.io.File-java.lang.String-int-">
@@ -672,8 +768,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getIconX</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/ImageIcon.html?is-external=true" title="class or interface in javax.swing">ImageIcon</a>&nbsp;getIconX(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;dir,
-                                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;base,
+<pre>public static&nbsp;ImageIcon&nbsp;getIconX(File&nbsp;dir,
+                                 String&nbsp;base,
                                  int&nbsp;size)</pre>
 <div class="block">Get an icon of the format base-NN.png where NN is the size, but if it's
  a hidpi display, get the NN*2 version automatically, sized at NN</div>
@@ -685,7 +781,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getLibIconX</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/ImageIcon.html?is-external=true" title="class or interface in javax.swing">ImageIcon</a>&nbsp;getLibIconX(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;base)</pre>
+<pre>public static&nbsp;ImageIcon&nbsp;getLibIconX(String&nbsp;base)</pre>
 <div class="block">Get an image icon with hi-dpi support. Pulls 1x or 2x versions of the
  file depending on the display type, but sizes them based on 1x.</div>
 </li>
@@ -696,7 +792,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getLibIconX</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/ImageIcon.html?is-external=true" title="class or interface in javax.swing">ImageIcon</a>&nbsp;getLibIconX(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;base,
+<pre>public static&nbsp;ImageIcon&nbsp;getLibIconX(String&nbsp;base,
                                     int&nbsp;size)</pre>
 </li>
 </ul>
@@ -706,8 +802,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>createIconButton</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JButton.html?is-external=true" title="class or interface in javax.swing">JButton</a>&nbsp;createIconButton(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                                       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;base)</pre>
+<pre>public static&nbsp;JButton&nbsp;createIconButton(String&nbsp;title,
+                                       String&nbsp;base)</pre>
 <div class="block">Create a JButton with an icon, and set its disabled and pressed images
  to be the same image, so that 2x versions of the icon work properly.</div>
 </li>
@@ -718,7 +814,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>createIconButton</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JButton.html?is-external=true" title="class or interface in javax.swing">JButton</a>&nbsp;createIconButton(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;base)</pre>
+<pre>public static&nbsp;JButton&nbsp;createIconButton(String&nbsp;base)</pre>
 <div class="block">Same as above, but with no text title (follows JButton constructor)</div>
 </li>
 </ul>
@@ -728,8 +824,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>createIconButton</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JButton.html?is-external=true" title="class or interface in javax.swing">JButton</a>&nbsp;createIconButton(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
-                                       <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/Icon.html?is-external=true" title="class or interface in javax.swing">Icon</a>&nbsp;icon)</pre>
+<pre>public static&nbsp;JButton&nbsp;createIconButton(String&nbsp;title,
+                                       Icon&nbsp;icon)</pre>
 </li>
 </ul>
 <a name="setIcon-java.awt.Frame-">
@@ -738,7 +834,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>setIcon</h4>
-<pre>public static&nbsp;void&nbsp;setIcon(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Frame.html?is-external=true" title="class or interface in java.awt">Frame</a>&nbsp;frame)</pre>
+<pre>public static&nbsp;void&nbsp;setIcon(Frame&nbsp;frame)</pre>
 </li>
 </ul>
 <a name="setIcon-java.awt.Window-">
@@ -747,7 +843,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>setIcon</h4>
-<pre>public static&nbsp;void&nbsp;setIcon(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Window.html?is-external=true" title="class or interface in java.awt">Window</a>&nbsp;window)</pre>
+<pre>public static&nbsp;void&nbsp;setIcon(Window&nbsp;window)</pre>
 <div class="block">Give this Frame the Processing icon set. Ignored on OS X, because they
  thought different and made this function set the minified image of the
  window, not the window icon for the dock or cmd-tab.</div>
@@ -759,7 +855,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>createRoundRect</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Shape.html?is-external=true" title="class or interface in java.awt">Shape</a>&nbsp;createRoundRect(float&nbsp;x1,
+<pre>public static&nbsp;Shape&nbsp;createRoundRect(float&nbsp;x1,
                                     float&nbsp;y1,
                                     float&nbsp;x2,
                                     float&nbsp;y2,
@@ -775,8 +871,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>registerWindowCloseKeys</h4>
-<pre>public static&nbsp;void&nbsp;registerWindowCloseKeys(<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JRootPane.html?is-external=true" title="class or interface in javax.swing">JRootPane</a>&nbsp;root,
-                                           <a href="http://docs.oracle.com/javase/7/docs/api/java/awt/event/ActionListener.html?is-external=true" title="class or interface in java.awt.event">ActionListener</a>&nbsp;disposer)</pre>
+<pre>public static&nbsp;void&nbsp;registerWindowCloseKeys(JRootPane&nbsp;root,
+                                           ActionListener&nbsp;disposer)</pre>
 <div class="block">Registers key events for a Ctrl-W and ESC with an ActionListener
  that will take care of disposing the window.</div>
 </li>
@@ -796,7 +892,20 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getSystemClipboard</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/datatransfer/Clipboard.html?is-external=true" title="class or interface in java.awt.datatransfer">Clipboard</a>&nbsp;getSystemClipboard()</pre>
+<pre>public static&nbsp;Clipboard&nbsp;getSystemClipboard()</pre>
+</li>
+</ul>
+<a name="offscreenGraphics-java.awt.Component-int-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>offscreenGraphics</h4>
+<pre>public static&nbsp;Image&nbsp;offscreenGraphics(Component&nbsp;comp,
+                                      int&nbsp;width,
+                                      int&nbsp;height)</pre>
+<div class="block">Create an Image to be used as an offscreen drawing context,
+ automatically doubling the size if running on a retina display.</div>
 </li>
 </ul>
 <a name="prepareGraphics-java.awt.Graphics-">
@@ -805,7 +914,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>prepareGraphics</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Graphics2D.html?is-external=true" title="class or interface in java.awt">Graphics2D</a>&nbsp;prepareGraphics(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Graphics.html?is-external=true" title="class or interface in java.awt">Graphics</a>&nbsp;g)</pre>
+<pre>public static&nbsp;Graphics2D&nbsp;prepareGraphics(Graphics&nbsp;g)</pre>
 <div class="block">Handles scaling for high-res displays, also sets text anti-aliasing
  options to be far less ugly than the defaults.
  Moved to a utility function because it's used in several classes.</div>
@@ -815,13 +924,63 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
-<a name="highResDisplay--">
+<a name="zoom-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>highResDisplay</h4>
-<pre>public static&nbsp;boolean&nbsp;highResDisplay()</pre>
+<h4>zoom</h4>
+<pre>public static&nbsp;int&nbsp;zoom(int&nbsp;pixels)</pre>
+</li>
+</ul>
+<a name="zoom-int-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>zoom</h4>
+<pre>public static&nbsp;Dimension&nbsp;zoom(int&nbsp;w,
+                             int&nbsp;h)</pre>
+</li>
+</ul>
+<a name="setBorder-javax.swing.JComponent-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setBorder</h4>
+<pre>public static&nbsp;void&nbsp;setBorder(JComponent&nbsp;comp)</pre>
+</li>
+</ul>
+<a name="setBorder-javax.swing.JComponent-int-int-int-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setBorder</h4>
+<pre>public static&nbsp;void&nbsp;setBorder(JComponent&nbsp;comp,
+                             int&nbsp;top,
+                             int&nbsp;left,
+                             int&nbsp;bottom,
+                             int&nbsp;right)</pre>
+</li>
+</ul>
+<a name="highResImages--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>highResImages</h4>
+<pre>public static&nbsp;boolean&nbsp;highResImages()</pre>
+</li>
+</ul>
+<a name="isRetina--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isRetina</h4>
+<pre>public static&nbsp;boolean&nbsp;isRetina()</pre>
 </li>
 </ul>
 <a name="getMonoFontFamilies--">
@@ -830,7 +989,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getMonoFontFamilies</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;getMonoFontFamilies()</pre>
+<pre>public static&nbsp;String[]&nbsp;getMonoFontFamilies()</pre>
 </li>
 </ul>
 <a name="getMonoFontName--">
@@ -839,7 +998,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getMonoFontName</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getMonoFontName()</pre>
+<pre>public static&nbsp;String&nbsp;getMonoFontName()</pre>
 </li>
 </ul>
 <a name="getMonoFont-int-int-">
@@ -848,7 +1007,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getMonoFont</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Font.html?is-external=true" title="class or interface in java.awt">Font</a>&nbsp;getMonoFont(int&nbsp;size,
+<pre>public static&nbsp;Font&nbsp;getMonoFont(int&nbsp;size,
                                int&nbsp;style)</pre>
 </li>
 </ul>
@@ -858,7 +1017,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getSansFontName</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getSansFontName()</pre>
+<pre>public static&nbsp;String&nbsp;getSansFontName()</pre>
 </li>
 </ul>
 <a name="getSansFont-int-int-">
@@ -867,7 +1026,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getSansFont</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Font.html?is-external=true" title="class or interface in java.awt">Font</a>&nbsp;getSansFont(int&nbsp;size,
+<pre>public static&nbsp;Font&nbsp;getSansFont(int&nbsp;size,
                                int&nbsp;style)</pre>
 </li>
 </ul>
@@ -877,7 +1036,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getAscent</h4>
-<pre>public static&nbsp;double&nbsp;getAscent(<a href="http://docs.oracle.com/javase/7/docs/api/java/awt/Graphics.html?is-external=true" title="class or interface in java.awt">Graphics</a>&nbsp;g)</pre>
+<pre>public static&nbsp;double&nbsp;getAscent(Graphics&nbsp;g)</pre>
 <div class="block">Synthesized replacement for FontMetrics.getAscent(), which is dreadfully
  inaccurate and inconsistent across platforms.</div>
 </li>
@@ -888,8 +1047,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getMenuItemIndex</h4>
-<pre>public static&nbsp;int&nbsp;getMenuItemIndex(<a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenu.html?is-external=true" title="class or interface in javax.swing">JMenu</a>&nbsp;menu,
-                                   <a href="http://docs.oracle.com/javase/7/docs/api/javax/swing/JMenuItem.html?is-external=true" title="class or interface in javax.swing">JMenuItem</a>&nbsp;item)</pre>
+<pre>public static&nbsp;int&nbsp;getMenuItemIndex(JMenu&nbsp;menu,
+                                   JMenuItem&nbsp;item)</pre>
 </li>
 </ul>
 </li>

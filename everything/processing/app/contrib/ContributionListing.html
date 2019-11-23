@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -95,7 +95,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></li>
+<li>Object</li>
 <li>
 <ul class="inheritance">
 <li>ContributionListing</li>
@@ -108,7 +108,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">ContributionListing</span>
-extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+extends Object</pre>
 </li>
 </ul>
 </div>
@@ -147,7 +147,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</a>&lt;<a href="../../../processing/app/contrib/Contribution.html" title="class in processing.app.contrib">Contribution</a>&gt;</code></td>
+<td class="colFirst"><code>static Comparator&lt;<a href="../../../processing/app/contrib/Contribution.html" title="class in processing.app.contrib">Contribution</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/contrib/ContributionListing.html#COMPARATOR">COMPARATOR</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -184,18 +184,23 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/contrib/ContributionListing.html#getInstance--">getInstance</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../processing/app/contrib/Contribution.html" title="class in processing.app.contrib">Contribution</a>&gt;</code></td>
+<td class="colFirst"><code>Map&lt;String,<a href="../../../processing/app/contrib/Contribution.html" title="class in processing.app.contrib">Contribution</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/contrib/ContributionListing.html#getLibrariesByImportHeader--">getLibrariesByImportHeader</a></span>()</code>
 <div class="block">Used by JavaEditor to auto-import</div>
 </td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/contrib/ContributionListing.html#matches-processing.app.contrib.Contribution-java.lang.String-">matches</a></span>(<a href="../../../processing/app/contrib/Contribution.html" title="class in processing.app.contrib">Contribution</a>&nbsp;contrib,
+       String&nbsp;typed)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<h3>Methods inherited from class&nbsp;Object</h3>
+<code>equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -217,7 +222,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockListLast">
 <li class="blockList">
 <h4>COMPARATOR</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</a>&lt;<a href="../../../processing/app/contrib/Contribution.html" title="class in processing.app.contrib">Contribution</a>&gt; COMPARATOR</pre>
+<pre>public static&nbsp;Comparator&lt;<a href="../../../processing/app/contrib/Contribution.html" title="class in processing.app.contrib">Contribution</a>&gt; COMPARATOR</pre>
 </li>
 </ul>
 </li>
@@ -235,6 +240,16 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>getInstance</h4>
 <pre>public static&nbsp;<a href="../../../processing/app/contrib/ContributionListing.html" title="class in processing.app.contrib">ContributionListing</a>&nbsp;getInstance()</pre>
+</li>
+</ul>
+<a name="matches-processing.app.contrib.Contribution-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>matches</h4>
+<pre>public&nbsp;boolean&nbsp;matches(<a href="../../../processing/app/contrib/Contribution.html" title="class in processing.app.contrib">Contribution</a>&nbsp;contrib,
+                       String&nbsp;typed)</pre>
 </li>
 </ul>
 <a name="downloadAvailableList-processing.app.Base-processing.app.contrib.ContribProgressMonitor-">
@@ -272,7 +287,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getLibrariesByImportHeader</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../processing/app/contrib/Contribution.html" title="class in processing.app.contrib">Contribution</a>&gt;&nbsp;getLibrariesByImportHeader()</pre>
+<pre>public&nbsp;Map&lt;String,<a href="../../../processing/app/contrib/Contribution.html" title="class in processing.app.contrib">Contribution</a>&gt;&nbsp;getLibrariesByImportHeader()</pre>
 <div class="block">Used by JavaEditor to auto-import</div>
 </li>
 </ul>

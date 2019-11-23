@@ -95,7 +95,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></li>
+<li>Object</li>
 <li>
 <ul class="inheritance">
 <li><a href="../../../processing/app/contrib/Contribution.html" title="class in processing.app.contrib">Contribution</a></li>
@@ -117,13 +117,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../processing/app/contrib/ToolContribution.html" title="class in processing.app.contrib">ToolContribution</a>&gt;, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang">Runnable</a>, <a href="../../../processing/app/tools/Tool.html" title="interface in processing.app.tools">Tool</a></dd>
+<dd>Comparable&lt;<a href="../../../processing/app/contrib/ToolContribution.html" title="class in processing.app.contrib">ToolContribution</a>&gt;, Runnable, <a href="../../../processing/app/tools/Tool.html" title="interface in processing.app.tools">Tool</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">ToolContribution</span>
 extends <a href="../../../processing/app/contrib/LocalContribution.html" title="class in processing.app.contrib">LocalContribution</a>
-implements <a href="../../../processing/app/tools/Tool.html" title="interface in processing.app.tools">Tool</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../processing/app/contrib/ToolContribution.html" title="class in processing.app.contrib">ToolContribution</a>&gt;</pre>
+implements <a href="../../../processing/app/tools/Tool.html" title="interface in processing.app.tools">Tool</a>, Comparable&lt;<a href="../../../processing/app/contrib/ToolContribution.html" title="class in processing.app.contrib">ToolContribution</a>&gt;</pre>
 </li>
 </ul>
 </div>
@@ -184,11 +184,11 @@ implements <a href="../../../processing/app/tools/Tool.html" title="interface in
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/contrib/ToolContribution.html#compareTo-processing.app.contrib.ToolContribution-">compareTo</a></span>(<a href="../../../processing/app/contrib/ToolContribution.html" title="class in processing.app.contrib">ToolContribution</a>&nbsp;o)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/contrib/ToolContribution.html#getMenuTitle--">getMenuTitle</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
+<td class="colFirst"><code>File</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/contrib/ToolContribution.html#getReferenceIndexFile--">getReferenceIndexFile</a></span>()</code>
 <div class="block">Returns the object stored in the referenceFile field, which contains an
  instance of the file object representing the index file of the reference</div>
@@ -210,11 +210,11 @@ implements <a href="../../../processing/app/tools/Tool.html" title="interface in
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../processing/app/contrib/ToolContribution.html" title="class in processing.app.contrib">ToolContribution</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/contrib/ToolContribution.html#load-java.io.File-">load</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;folder)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/contrib/ToolContribution.html#load-java.io.File-">load</a></span>(File&nbsp;folder)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../processing/app/contrib/ToolContribution.html" title="class in processing.app.contrib">ToolContribution</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/contrib/ToolContribution.html#loadAll-java.io.File-">loadAll</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;toolsFolder)</code>&nbsp;</td>
+<td class="colFirst"><code>static List&lt;<a href="../../../processing/app/contrib/ToolContribution.html" title="class in processing.app.contrib">ToolContribution</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../processing/app/contrib/ToolContribution.html#loadAll-java.io.File-">loadAll</a></span>(File&nbsp;toolsFolder)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -233,14 +233,14 @@ implements <a href="../../../processing/app/tools/Tool.html" title="interface in
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;<a href="../../../processing/app/contrib/Contribution.html" title="class in processing.app.contrib">Contribution</a></h3>
-<code><a href="../../../processing/app/contrib/Contribution.html#getAuthorList--">getAuthorList</a>, <a href="../../../processing/app/contrib/Contribution.html#getBenignVersion--">getBenignVersion</a>, <a href="../../../processing/app/contrib/Contribution.html#getLastUpdated--">getLastUpdated</a>, <a href="../../../processing/app/contrib/Contribution.html#getMaxRevision--">getMaxRevision</a>, <a href="../../../processing/app/contrib/Contribution.html#getMinRevision--">getMinRevision</a>, <a href="../../../processing/app/contrib/Contribution.html#getName--">getName</a>, <a href="../../../processing/app/contrib/Contribution.html#getParagraph--">getParagraph</a>, <a href="../../../processing/app/contrib/Contribution.html#getPrettyVersion--">getPrettyVersion</a>, <a href="../../../processing/app/contrib/Contribution.html#getSentence--">getSentence</a>, <a href="../../../processing/app/contrib/Contribution.html#getTypeName--">getTypeName</a>, <a href="../../../processing/app/contrib/Contribution.html#getUrl--">getUrl</a>, <a href="../../../processing/app/contrib/Contribution.html#getVersion--">getVersion</a>, <a href="../../../processing/app/contrib/Contribution.html#isCompatible-int-">isCompatible</a>, <a href="../../../processing/app/contrib/Contribution.html#isFoundation--">isFoundation</a>, <a href="../../../processing/app/contrib/Contribution.html#loadProperties-java.io.File-">loadProperties</a>, <a href="../../../processing/app/contrib/Contribution.html#loadProperties-java.io.File-processing.app.contrib.ContributionType-">loadProperties</a>, <a href="../../../processing/app/contrib/Contribution.html#setPrettyVersion-java.lang.String-">setPrettyVersion</a></code></li>
+<code><a href="../../../processing/app/contrib/Contribution.html#equals-java.lang.Object-">equals</a>, <a href="../../../processing/app/contrib/Contribution.html#getAuthorList--">getAuthorList</a>, <a href="../../../processing/app/contrib/Contribution.html#getBenignVersion--">getBenignVersion</a>, <a href="../../../processing/app/contrib/Contribution.html#getLastUpdated--">getLastUpdated</a>, <a href="../../../processing/app/contrib/Contribution.html#getMaxRevision--">getMaxRevision</a>, <a href="../../../processing/app/contrib/Contribution.html#getMinRevision--">getMinRevision</a>, <a href="../../../processing/app/contrib/Contribution.html#getName--">getName</a>, <a href="../../../processing/app/contrib/Contribution.html#getParagraph--">getParagraph</a>, <a href="../../../processing/app/contrib/Contribution.html#getPrettyVersion--">getPrettyVersion</a>, <a href="../../../processing/app/contrib/Contribution.html#getSentence--">getSentence</a>, <a href="../../../processing/app/contrib/Contribution.html#getTypeName--">getTypeName</a>, <a href="../../../processing/app/contrib/Contribution.html#getUrl--">getUrl</a>, <a href="../../../processing/app/contrib/Contribution.html#getVersion--">getVersion</a>, <a href="../../../processing/app/contrib/Contribution.html#hashCode--">hashCode</a>, <a href="../../../processing/app/contrib/Contribution.html#isCompatible-int-">isCompatible</a>, <a href="../../../processing/app/contrib/Contribution.html#isFoundation--">isFoundation</a>, <a href="../../../processing/app/contrib/Contribution.html#loadProperties-java.io.File-">loadProperties</a>, <a href="../../../processing/app/contrib/Contribution.html#loadProperties-java.io.File-processing.app.contrib.ContributionType-">loadProperties</a>, <a href="../../../processing/app/contrib/Contribution.html#setPrettyVersion-java.lang.String-">setPrettyVersion</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<h3>Methods inherited from class&nbsp;Object</h3>
+<code>getClass, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -262,7 +262,7 @@ implements <a href="../../../processing/app/tools/Tool.html" title="interface in
 <ul class="blockList">
 <li class="blockList">
 <h4>load</h4>
-<pre>public static&nbsp;<a href="../../../processing/app/contrib/ToolContribution.html" title="class in processing.app.contrib">ToolContribution</a>&nbsp;load(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;folder)</pre>
+<pre>public static&nbsp;<a href="../../../processing/app/contrib/ToolContribution.html" title="class in processing.app.contrib">ToolContribution</a>&nbsp;load(File&nbsp;folder)</pre>
 </li>
 </ul>
 <a name="clearClassLoader--">
@@ -282,7 +282,7 @@ implements <a href="../../../processing/app/tools/Tool.html" title="interface in
 <ul class="blockList">
 <li class="blockList">
 <h4>loadAll</h4>
-<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../processing/app/contrib/ToolContribution.html" title="class in processing.app.contrib">ToolContribution</a>&gt;&nbsp;loadAll(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;toolsFolder)</pre>
+<pre>public static&nbsp;List&lt;<a href="../../../processing/app/contrib/ToolContribution.html" title="class in processing.app.contrib">ToolContribution</a>&gt;&nbsp;loadAll(File&nbsp;toolsFolder)</pre>
 </li>
 </ul>
 <a name="init-processing.app.Base-">
@@ -307,7 +307,7 @@ implements <a href="../../../processing/app/tools/Tool.html" title="interface in
 <pre>public&nbsp;void&nbsp;run()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html?is-external=true#run--" title="class or interface in java.lang">run</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang">Runnable</a></code></dd>
+<dd><code>run</code>&nbsp;in interface&nbsp;<code>Runnable</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../processing/app/tools/Tool.html#run--">run</a></code>&nbsp;in interface&nbsp;<code><a href="../../../processing/app/tools/Tool.html" title="interface in processing.app.tools">Tool</a></code></dd>
 </dl>
@@ -319,7 +319,7 @@ implements <a href="../../../processing/app/tools/Tool.html" title="interface in
 <ul class="blockList">
 <li class="blockList">
 <h4>getMenuTitle</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getMenuTitle()</pre>
+<pre>public&nbsp;String&nbsp;getMenuTitle()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../processing/app/tools/Tool.html#getMenuTitle--">getMenuTitle</a></code>&nbsp;in interface&nbsp;<code><a href="../../../processing/app/tools/Tool.html" title="interface in processing.app.tools">Tool</a></code></dd>
@@ -345,7 +345,7 @@ implements <a href="../../../processing/app/tools/Tool.html" title="interface in
 <ul class="blockList">
 <li class="blockList">
 <h4>getReferenceIndexFile</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;getReferenceIndexFile()</pre>
+<pre>public&nbsp;File&nbsp;getReferenceIndexFile()</pre>
 <div class="block">Returns the object stored in the referenceFile field, which contains an
  instance of the file object representing the index file of the reference</div>
 <dl>
@@ -378,7 +378,7 @@ implements <a href="../../../processing/app/tools/Tool.html" title="interface in
 <pre>public&nbsp;int&nbsp;compareTo(<a href="../../../processing/app/contrib/ToolContribution.html" title="class in processing.app.contrib">ToolContribution</a>&nbsp;o)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Comparable.html?is-external=true#compareTo-T-" title="class or interface in java.lang">compareTo</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../processing/app/contrib/ToolContribution.html" title="class in processing.app.contrib">ToolContribution</a>&gt;</code></dd>
+<dd><code>compareTo</code>&nbsp;in interface&nbsp;<code>Comparable&lt;<a href="../../../processing/app/contrib/ToolContribution.html" title="class in processing.app.contrib">ToolContribution</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
